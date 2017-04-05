@@ -4,7 +4,7 @@ description: 'Custom theme using CSS Grids'
 core: 8.x
 libraries:
   - digital_cssgrid/global-styling
-#base theme: classy
+#base theme: stable
 regions:
   header: Header
   content: Content

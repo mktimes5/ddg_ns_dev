@@ -3,6 +3,5 @@ global-styling:
   css:
     theme:
       css/global.css: {}
-  js-footer:
-    js:
-       js/gen.js: {}
+  js:
+    js/gen.js: {}
