@@ -33,20 +33,42 @@
  *	- page.footer
  */
 #}
-<div class="main-grid">
 
-  <header role="banner" id="page-header">
+<header role="banner" id="page-header">
+  <div class="row">
 
-  	<div class="site-logo">
-  		<a href={{ base_path }} title="Dorey Digital">DoreyDigital</a>
-  	</div>
-    	{{ page.header }}
-    </site-logo>
-  </header>
-  <section id="content">
-  	{{ page.content }}
-  </section>
-  <footer id="footer">
-  	{{ page.footer }}
-  </footer>
-</div>
+    <div class="large-4 columns">
+
+    	<div class="site-logo">
+    		<a href={{ base_path }} title="Dorey Digital">DoreyDigital</a>
+    	</div>
+
+    </div>
+
+    <div class="large-6 columns">
+  	 {{ page.header }}
+    </div>
+
+    <div class="large-2 columns">
+      newsletter
+    </div>
+
+
+  </div> <!-- /row -->
+  
+</header>
+
+
+<section id="content">
+  <div class="row">
+	 {{ page.content }}
+  </div>
+</section>
+
+
+<footer id="footer">
+  <div class="row">
+	 {{ page.footer }}
+  </div>
+</footer>
+
