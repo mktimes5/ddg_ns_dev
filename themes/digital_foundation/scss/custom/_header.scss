@@ -1,0 +1,32 @@
+#page-header {
+
+}
+
+.site-logo {
+	position: relative;
+	
+	a {
+		font-size: 3em;
+		display: block;
+		transition: all .5s ease-out;
+		&:before {
+		content: 'D|D';
+		transition: all .5s ease-out;
+		color: $white;
+		position: absolute;
+		left: -30%;
+		transition: all .5s ease-out;
+		}
+
+		&:hover {
+			color: $white;
+			width: 50%;
+			transition: all .5s ease-out;
+			&:before {
+				left: 0;
+				transition: all .5s ease-out;
+				color: $primary-color;
+			}
+		}
+	}
+}
