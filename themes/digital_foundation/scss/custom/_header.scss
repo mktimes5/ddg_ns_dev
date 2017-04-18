@@ -79,6 +79,12 @@
 /// news-letter 
 .news-letter {
 	font-family: $euphemia;
+	//
+
+	.fa {
+		font-size: rem-calc(30);
+		margin-left: 18px;
+	}
 }
 
 
