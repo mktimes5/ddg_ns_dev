@@ -1,12 +1,12 @@
 #page-header {
 
 }
-
+// logo
 .site-logo {
 	position: relative;
 	
 	a {
-		font-size: 3em;
+		font-size: rem-calc(48);
 		display: block;
 		transition: all .5s ease-out;
 		&:before {
@@ -30,3 +30,80 @@
 		}
 	}
 }
+
+// main menu
+#block-digital-foundation-main-menu {
+	ul {
+		@include clean-list;
+		display:flex;
+		justify-content: flex-start;
+		li {
+			//padding-top: 20px;
+
+			a {
+				color: $c-black;
+				font-size: rem-calc(22);
+				transition: all .5s ease-out;
+				position: relative;
+				font-family: $euphemia;
+
+				&:after {
+					position: absolute;
+					bottom: -6px;
+					left: 0;
+					right: 0;
+					margin: auto;
+					width: 0%;
+					content: '.';
+					color: transparent;
+					background: $light-blue;
+					height: 4px;
+					transition: all .1s ease-out;
+				}
+
+				&:hover {
+					&:after {
+						width: 100%;
+						transition: all .1s ease-out;
+					}
+				}
+			}
+		}
+
+		li + li {
+			padding-left: 20px;
+		}
+	}
+}
+
+/// news-letter 
+.news-letter {
+	font-family: $euphemia;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

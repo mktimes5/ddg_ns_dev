@@ -4,3 +4,16 @@ $light-blue-rgb: 153,219,252;
 $orange: #DBAD86;
 $orage-hex: 219,173,134;
 $c-black: #3B3A37;
+
+
+
+
+
+
+/// -- mxinins -- ////
+
+@mixin clean-list {
+	list-style-type: none;
+	padding: 0;
+	margin:0;
+}
