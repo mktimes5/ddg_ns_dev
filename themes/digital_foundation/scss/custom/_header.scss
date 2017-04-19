@@ -77,9 +77,13 @@
 }
 
 /// news-letter 
+
+.header-end {
+	border-left: 2px solid $dark-grey;
+	padding-bottom: 20px;
+}
 .news-letter {
 	font-family: $euphemia;
-	//
 
 	.fa {
 		font-size: rem-calc(30);

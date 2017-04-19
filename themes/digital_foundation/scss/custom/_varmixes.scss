@@ -4,6 +4,8 @@ $light-blue-rgb: 153,219,252;
 $orange: #DBAD86;
 $orage-hex: 219,173,134;
 $c-black: #3B3A37;
+$light-grey: #F4F4F4;
+$dark-grey: #979797;
 
 
 
@@ -16,4 +18,14 @@ $c-black: #3B3A37;
 	list-style-type: none;
 	padding: 0;
 	margin:0;
+}
+
+@mixin step-ladder {
+	$margin: 0px;
+	@for $i from 1 through 20 {
+		&:nth-child(#{$i}) {
+		  margin-left: ($margin);
+		  $margin: $margin + 75px;
+		}
+	}
 }

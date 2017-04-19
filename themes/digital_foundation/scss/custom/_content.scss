@@ -1,0 +1,40 @@
+#home-splash {
+	height: 90vh;
+	border-top: 1px solid $dark-grey;
+	border-bottom: 1px solid $dark-grey;
+	border-left: 1px solid $dark-grey;
+	position: relative;
+	background-color: $light-grey;
+
+	&:after {
+		border-right: 1px solid $dark-grey;
+		border-top: 1px solid $dark-grey;
+		border-bottom: 1px solid $dark-grey;
+		width: 20px;
+		height: 90vh;
+		position: absolute;
+		top: -1px;
+		right: -20px;
+		background-color: $light-grey;
+		content: ' ';
+	}
+
+	.slogan {
+		@include clean-list;
+		margin: 0px -19px;
+
+		li {
+			font-family: $bebas;
+			font-size: rem-calc(49);
+			color: $orange;
+			font-style: uppercase;
+			@include step-ladder
+		}
+
+
+		li + li {
+			margin-top: 50px;
+		}
+
+	}
+}
