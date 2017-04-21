@@ -1,40 +1,78 @@
 #home-splash {
-	height: 90vh;
-	border-top: 1px solid $dark-grey;
-	border-bottom: 1px solid $dark-grey;
-	border-left: 1px solid $dark-grey;
+	height: 951px;
+	border: 1px solid $dark-grey;
 	position: relative;
 	background-color: $light-grey;
-
+	width: 115%;
+	padding: 0px;
+	overflow: hidden;
+	position: relative;
+	/*
 	&:after {
 		border-right: 1px solid $dark-grey;
 		border-top: 1px solid $dark-grey;
 		border-bottom: 1px solid $dark-grey;
 		width: 20px;
-		height: 90vh;
+		height: 951px;
 		position: absolute;
 		top: -1px;
 		right: -20px;
 		background-color: $light-grey;
 		content: ' ';
 	}
+	*/
 
 	.slogan {
 		@include clean-list;
-		margin: 0px -19px;
+		margin: 150px 0 0 -3px;
+		z-index: 20;
+		position: relative;
 
 		li {
 			font-family: $bebas;
 			font-size: rem-calc(49);
 			color: $orange;
-			font-style: uppercase;
-			@include step-ladder
+			text-transform: uppercase;
+			@include step-ladder;
 		}
 
 
 		li + li {
-			margin-top: 50px;
+			margin-top: 90px;
 		}
 
+	}
+
+	.slogan-graphic {
+			position: absolute;
+			bottom: 78px;
+			left: 330px;
+		}
+}
+
+
+
+.slogan-graphic {
+	z-index: 10;
+	font-size: rem-calc(400);
+	font-family: $euphemia;
+	color: $light-blue;
+	line-height: rem-calc(400);
+	cursor: default;
+	perspective: 200px;
+	width: 100%;
+	
+	
+	span {
+		transition: all 1s cubic-bezier(1.000, 0.045, 0.715, 0.920); /* custom */
+		display:block;
+
+		&:hover {
+		 transform: rotateY(15deg);
+		 color: scale-color($light-blue, $lightness: -10%);
+		 overflow: visible;
+		 transition: all 1s cubic-bezier(1.000, 0.045, 0.715, 0.920); /* custom */
+		 font-size: 23.5rem
+		}
 	}
 }

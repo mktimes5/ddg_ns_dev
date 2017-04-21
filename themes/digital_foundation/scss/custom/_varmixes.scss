@@ -25,7 +25,7 @@ $dark-grey: #979797;
 	@for $i from 1 through 20 {
 		&:nth-child(#{$i}) {
 		  margin-left: ($margin);
-		  $margin: $margin + 75px;
+		  $margin: $margin + 150px;
 		}
 	}
 }
