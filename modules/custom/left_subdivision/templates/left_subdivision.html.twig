@@ -1,0 +1,22 @@
+{#
+/**
+ * @file left_subdivision.html.twig
+ * Default theme implementation to present Left Sub Division data.
+ *
+ * This template is used when viewing Left Sub Division pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_left_subdivision()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('left_subdivision') }}>
+  {% if content %}
+    {{- content -}}
+  {% endif %}
+</div>

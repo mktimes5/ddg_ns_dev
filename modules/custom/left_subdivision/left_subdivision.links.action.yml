@@ -1,0 +1,5 @@
+entity.left_subdivision.add_form:
+  route_name: entity.left_subdivision.add_form
+  title: 'Add Left Sub Divison'
+  appears_on:
+    - entity.left_subdivision.collection

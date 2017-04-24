@@ -1,0 +1,14 @@
+
+# Left Sub Divison menu items definition
+entity.left_subdivision.collection:
+  title: 'Left Sub Divison list'
+  route_name: entity.left_subdivision.collection
+  description: 'List Left Sub Divison entities'
+  parent: system.admin_structure
+  weight: 100
+
+left_subdivision.admin.structure.settings:
+  title: Left Sub Divison settings
+  description: 'Configure Left Sub Divison entities'
+  route_name: left_subdivision.settings
+  parent: system.admin_structure

@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains left_subdivision.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function left_subdivision_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the left_subdivision module.
+    case 'help.page.left_subdivision':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('left style sub section') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function left_subdivision_theme() {
+  return [
+    'left_subdivision' => [
+      'render element' => 'children',
+    ],
+  ];
+}
