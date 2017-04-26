@@ -7,6 +7,7 @@ libraries:
 #base theme: stable
 regions:
   header: Header
+  utils: 'Utils'
   splash: Splash
   content: Content
   footer: Footer
