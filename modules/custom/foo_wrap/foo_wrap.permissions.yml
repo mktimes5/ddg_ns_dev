@@ -1,0 +1,33 @@
+add foowrap entities:
+  title: 'Create new Foowrap entities'
+
+administer foowrap entities:
+  title: 'Administer Foowrap entities'
+  description: 'Allow to access the administration form to configure Foowrap entities.'
+  restrict access: true
+
+delete foowrap entities:
+  title: 'Delete Foowrap entities'
+
+edit foowrap entities:
+  title: 'Edit Foowrap entities'
+
+access foowrap overview:
+  title: 'Access the Foowrap overview page'
+
+view published foowrap entities:
+  title: 'View published Foowrap entities'
+
+view unpublished foowrap entities:
+  title: 'View unpublished Foowrap entities'
+
+view all foowrap revisions:
+  title: 'View all Foowrap revisions'
+
+revert all foowrap revisions:
+  title: 'Revert all Foowrap revisions'
+  description: 'Role requires permission <em>view Foowrap revisions</em> and <em>edit rights</em> for foowrap entities in question or <em>administer foowrap entities</em>.'
+
+delete all foowrap revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Foowrap revisions</em> and <em>delete rights</em> for foowrap entities in question or <em>administer foowrap entities</em>.'

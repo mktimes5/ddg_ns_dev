@@ -1,0 +1,11 @@
+entity.foowrap.add_form:
+  route_name: 'entity.foowrap.add_page'
+  title: 'Add Foowrap'
+  appears_on:
+    - entity.foowrap.collection
+entity.foowrap_type.add_form:
+  route_name: 'entity.foowrap_type.add_form'
+  title: 'Add Foowrap type'
+  appears_on:
+    - entity.foowrap_type.collection
+

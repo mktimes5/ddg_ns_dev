@@ -1,0 +1,59 @@
+<?php
+
+/**
+ * @file
+ * Contains foo_wrap.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function foo_wrap_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the foo_wrap module.
+    case 'help.page.foo_wrap':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('wrap of foo') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+
+/**
+ * Implements hook_theme().
+ */
+function foo_wrap_theme() {
+  $theme = [];
+  $theme['foowrap'] = [
+    'render element' => 'elements',
+    'file' => 'foowrap.page.inc',
+    'template' => 'foowrap',
+  ];
+  $theme['foowrap_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'foowrap.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+* Implements hook_theme_suggestions_HOOK().
+*/
+function foo_wrap_theme_suggestions_foowrap(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#foowrap'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'foowrap__' . $sanitized_view_mode;
+  $suggestions[] = 'foowrap__' . $entity->bundle();
+  $suggestions[] = 'foowrap__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'foowrap__' . $entity->id();
+  $suggestions[] = 'foowrap__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}

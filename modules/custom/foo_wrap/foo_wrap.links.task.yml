@@ -1,0 +1,23 @@
+# Foowrap routing definition
+
+entity.foowrap.canonical:
+  route_name: entity.foowrap.canonical
+  base_route: entity.foowrap.canonical
+  title: 'View'
+
+entity.foowrap.edit_form:
+  route_name: entity.foowrap.edit_form
+  base_route: entity.foowrap.canonical
+  title: 'Edit'
+
+entity.foowrap.version_history:
+  route_name: entity.foowrap.version_history
+  base_route: entity.foowrap.canonical
+  title: 'Revisions'
+
+entity.foowrap.delete_form:
+  route_name:  entity.foowrap.delete_form
+  base_route:  entity.foowrap.canonical
+  title: Delete
+  weight: 10
+

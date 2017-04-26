@@ -1,0 +1,5 @@
+name: foo wrap
+type: module
+description: wrap of foo
+core: 8.x
+package: Custom

@@ -1,0 +1,18 @@
+
+# Foowrap menu items definition
+entity.foowrap.collection:
+  title: 'Foowrap list'
+  route_name: entity.foowrap.collection
+  description: 'List Foowrap entities'
+  parent: system.admin_structure
+  weight: 100
+
+
+# Foowrap type menu items definition
+entity.foowrap_type.collection:
+  title: 'Foowrap type'
+  route_name: entity.foowrap_type.collection
+  description: 'List Foowrap type (bundles)'
+  parent: system.admin_structure
+  weight: 99
+
