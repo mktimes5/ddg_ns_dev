@@ -1,0 +1,20 @@
+uuid: b9f9fe1b-387f-4763-a998-ee7b25d17175
+langcode: en
+status: true
+dependencies:
+  theme:
+    - digital_foundation
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: digital_foundation_local_actions
+theme: digital_foundation
+region: utils
+weight: 2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: 4c14a087-f0cd-479e-9f6e-a7f294f5caa4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_work_url
+    - node.type.work
+  module:
+    - link
+id: node.work.field_work_url
+field_name: field_work_url
+entity_type: node
+bundle: work
+label: Url
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

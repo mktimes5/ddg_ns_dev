@@ -1,0 +1,22 @@
+uuid: bca8fb67-5523-45d7-8be9-f9c126e5e92e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - digital_foundation
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: digital_foundation_content
+theme: digital_foundation
+region: content
+weight: -5
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

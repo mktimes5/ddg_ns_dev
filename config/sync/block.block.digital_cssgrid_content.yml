@@ -1,0 +1,22 @@
+uuid: bf096032-c3d1-45f7-a330-b6b0df6a13b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - digital_cssgrid
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: digital_cssgrid_content
+theme: digital_cssgrid
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

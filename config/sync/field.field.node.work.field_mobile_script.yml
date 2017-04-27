@@ -1,0 +1,21 @@
+uuid: ad718a40-8a26-41be-907b-6462dafed023
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mobile_script
+    - node.type.work
+  module:
+    - text
+id: node.work.field_mobile_script
+field_name: field_mobile_script
+entity_type: node
+bundle: work
+label: 'Mobile Description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

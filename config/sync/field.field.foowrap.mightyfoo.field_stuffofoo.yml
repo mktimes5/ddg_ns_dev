@@ -1,0 +1,21 @@
+uuid: 8def43b7-7b1e-4b6a-8c72-280743ee82b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.foowrap.field_stuffofoo
+    - foo_wrap.foowrap_type.mightyfoo
+  module:
+    - text
+id: foowrap.mightyfoo.field_stuffofoo
+field_name: field_stuffofoo
+entity_type: foowrap
+bundle: mightyfoo
+label: stuffOfoo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

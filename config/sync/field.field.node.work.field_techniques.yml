@@ -1,0 +1,28 @@
+uuid: b2d99258-c3cc-4174-bd1d-2adb6706b66a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_techniques
+    - node.type.work
+    - taxonomy.vocabulary.techniques
+id: node.work.field_techniques
+field_name: field_techniques
+entity_type: node
+bundle: work
+label: Techniques
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      techniques: techniques
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

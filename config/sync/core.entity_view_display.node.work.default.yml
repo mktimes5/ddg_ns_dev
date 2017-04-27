@@ -1,0 +1,121 @@
+uuid: ffa83aa5-55e8-434a-8867-7843695160a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.work.body
+    - field.field.node.work.field_desktop
+    - field.field.node.work.field_desktop_
+    - field.field.node.work.field_desktop_iamge
+    - field.field.node.work.field_hero_image
+    - field.field.node.work.field_mobile_image
+    - field.field.node.work.field_mobile_script
+    - field.field.node.work.field_platform
+    - field.field.node.work.field_techniques
+    - field.field.node.work.field_work_url
+    - node.type.work
+  module:
+    - ds
+    - image
+    - link
+    - text
+    - user
+id: node.work.default
+targetEntityType: node
+bundle: work
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_desktop:
+    weight: 8
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_desktop_:
+    weight: 9
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_desktop_iamge:
+    weight: 10
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_hero_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_mobile_image:
+    weight: 7
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_mobile_script:
+    weight: 12
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_platform:
+    weight: 4
+    label: hidden
+    settings:
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: entity_reference_label
+    region: content
+  field_techniques:
+    weight: 5
+    label: hidden
+    settings:
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: entity_reference_label
+    region: content
+  field_work_url:
+    weight: 11
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

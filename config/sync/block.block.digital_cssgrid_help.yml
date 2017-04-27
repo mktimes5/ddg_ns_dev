@@ -1,0 +1,22 @@
+uuid: 8bbd06f0-d04c-4199-b7b4-e806f97d4a10
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - digital_cssgrid
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: digital_cssgrid_help
+theme: digital_cssgrid
+region: content
+weight: -4
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

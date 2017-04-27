@@ -1,0 +1,10 @@
+uuid: e0e984e0-ad5d-4190-bf3e-f72e630b8f6e
+langcode: en
+status: true
+dependencies:
+  module:
+    - foo_wrap
+id: foowrap.token
+label: Token
+targetEntityType: foowrap
+cache: true

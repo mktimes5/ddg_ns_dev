@@ -1,0 +1,22 @@
+uuid: c3508481-0eb9-4c94-ae3a-3a7b3fbcfa18
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - digital_cssgrid
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: digital_cssgrid_search
+theme: digital_cssgrid
+region: header
+weight: -3
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

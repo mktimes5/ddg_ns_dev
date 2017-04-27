@@ -1,0 +1,22 @@
+uuid: 464ecc69-bb0c-4933-9788-cdc7787c96b2
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - digital_cssgrid
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: digital_cssgrid_powered
+theme: digital_cssgrid
+region: header
+weight: -4
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 6163b679-6222-4ae3-829c-ef1af2c8f31f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - digital_foundation
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: digital_foundation_messages
+theme: digital_foundation
+region: utils
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

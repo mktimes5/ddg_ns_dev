@@ -1,0 +1,22 @@
+uuid: a52bd25b-06ee-4618-9c4f-c2f1b311e859
+langcode: en
+status: true
+dependencies:
+  theme:
+    - digital_foundation
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: digital_foundation_local_tasks
+theme: digital_foundation
+region: utils
+weight: 1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

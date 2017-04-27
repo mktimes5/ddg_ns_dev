@@ -1,0 +1,40 @@
+uuid: 8b6d74de-3bdd-4063-a7b7-27ed8b2c2658
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.foowrap.mightyfoo.field_stuffofoo
+    - foo_wrap.foowrap_type.mightyfoo
+  module:
+    - text
+id: foowrap.mightyfoo.default
+targetEntityType: foowrap
+bundle: mightyfoo
+mode: default
+content:
+  field_stuffofoo:
+    weight: 26
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  name:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  user_id:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

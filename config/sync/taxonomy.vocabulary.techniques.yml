@@ -1,0 +1,9 @@
+uuid: 7bfc7a8d-c400-45f9-b527-270ea4edeb67
+langcode: en
+status: true
+dependencies: {  }
+name: Techniques
+vid: techniques
+description: ''
+hierarchy: 0
+weight: 0

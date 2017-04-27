@@ -1,0 +1,19 @@
+uuid: f4b6af95-d549-4952-bc52-a8b1fdff1b63
+langcode: en
+status: true
+dependencies:
+  module:
+    - foo_wrap
+    - text
+id: foowrap.field_stuffofoo
+field_name: field_stuffofoo
+entity_type: foowrap
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

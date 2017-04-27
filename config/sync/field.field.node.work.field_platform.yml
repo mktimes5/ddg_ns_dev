@@ -1,0 +1,28 @@
+uuid: 9b0c43f4-dbeb-4a69-8cb5-db7787e59425
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_platform
+    - node.type.work
+    - taxonomy.vocabulary.platform
+id: node.work.field_platform
+field_name: field_platform
+entity_type: node
+bundle: work
+label: Platform
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      platform: platform
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

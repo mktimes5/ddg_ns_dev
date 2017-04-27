@@ -1,0 +1,18 @@
+uuid: fa0be469-5428-48b0-98d6-700a14d13be6
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Work
+type: work
+description: 'Work work work work'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

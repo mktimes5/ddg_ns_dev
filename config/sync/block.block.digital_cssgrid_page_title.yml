@@ -1,0 +1,20 @@
+uuid: 005f27fc-a665-40c0-94a0-476ee1a21310
+langcode: en
+status: true
+dependencies:
+  theme:
+    - digital_cssgrid
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: digital_cssgrid_page_title
+theme: digital_cssgrid
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }
