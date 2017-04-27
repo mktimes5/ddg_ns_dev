@@ -1,4 +1,4 @@
-uuid: 1a507ec6-46ef-4075-b1da-647edfd48e46
+uuid: bf5c707f-a3f9-4bb0-98d2-b406244e2e32
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,8 @@ dependencies:
     - file
     - image
     - node
-id: node.field_desktop_iamge
-field_name: field_desktop_iamge
+id: node.field_desktop_image
+field_name: field_desktop_image
 entity_type: node
 type: image
 settings:

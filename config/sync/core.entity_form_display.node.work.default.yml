@@ -4,9 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.work.body
-    - field.field.node.work.field_desktop
-    - field.field.node.work.field_desktop_script
+    - field.field.node.work.field_descktop_description
     - field.field.node.work.field_desktop_image
+    - field.field.node.work.field_desktop_title
     - field.field.node.work.field_hero_image
     - field.field.node.work.field_mobile_image
     - field.field.node.work.field_mobile_script
@@ -70,8 +70,8 @@ third_party_settings:
       label: Mobile
     group_desktop:
       children:
-        - field_desktop
-        - field_desktop_script
+        - field_desktop_title
+        - field_descktop_description
         - field_desktop_image
       parent_name: group_tab_group
       weight: 2
@@ -103,13 +103,21 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_desktop:
-    weight: 8
+  field_descktop_description:
+    weight: 29
     settings:
-      size: 60
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
+    type: text_textarea
+    region: content
+  field_desktop_image:
+    weight: 30
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   field_desktop_script:
     weight: 10
@@ -119,13 +127,13 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
-  field_desktop_image:
-    weight: 11
+  field_desktop_title:
+    weight: 28
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: image_image
+    type: string_textfield
     region: content
   field_hero_image:
     weight: 3
@@ -208,4 +216,5 @@ content:
       placeholder: ''
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_desktop_: true

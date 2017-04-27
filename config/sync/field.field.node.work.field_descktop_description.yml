@@ -1,14 +1,14 @@
-uuid: 5474e24c-4630-4a18-869f-8949c60cfff5
+uuid: a8358624-563c-4821-93b8-62e97b8aba92
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_desktop_script
+    - field.storage.node.field_descktop_description
     - node.type.work
   module:
     - text
-id: node.work.field_desktop_script
-field_name: field_desktop_script
+id: node.work.field_descktop_description
+field_name: field_descktop_description
 entity_type: node
 bundle: work
 label: 'Desktop Description'

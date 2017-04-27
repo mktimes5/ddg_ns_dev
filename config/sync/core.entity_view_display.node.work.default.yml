@@ -4,9 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.work.body
-    - field.field.node.work.field_desktop
-    - field.field.node.work.field_desktop_
-    - field.field.node.work.field_desktop_iamge
+    - field.field.node.work.field_descktop_description
+    - field.field.node.work.field_desktop_image
+    - field.field.node.work.field_desktop_title
     - field.field.node.work.field_hero_image
     - field.field.node.work.field_mobile_image
     - field.field.node.work.field_mobile_script
@@ -32,29 +32,36 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_desktop:
-    weight: 8
-    label: hidden
-    settings:
-      link_to_entity: false
+  field_descktop_description:
+    weight: 13
+    label: above
+    settings: {  }
     third_party_settings: {  }
-    type: string
+    type: text_default
     region: content
-  field_desktop_:
+  field_desktop_image:
+    weight: 14
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_desktop_script:
     weight: 9
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
-  field_desktop_iamge:
-    weight: 10
-    label: hidden
+  field_desktop_title:
+    weight: 15
+    label: above
     settings:
-      image_style: ''
-      image_link: ''
+      link_to_entity: false
     third_party_settings: {  }
-    type: image
+    type: string
     region: content
   field_hero_image:
     weight: 2
@@ -118,4 +125,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_desktop_: true
