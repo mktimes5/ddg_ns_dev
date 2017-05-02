@@ -30,11 +30,20 @@
 
 		li {
 			font-family: $bebas;
-			font-size: rem-calc(49);
+			font-size: rem-calc(37);
 			color: $orange;
 			text-transform: uppercase;
-			@include step-ladder;
+
+			&:nth-child(2) {
+				margin-left: 70px;
+			}
+
+			&:nth-child(3) {
+				margin-left: 90px;
+			}
+			
 		}
+
 
 
 		li + li {
@@ -45,8 +54,8 @@
 
 	.slogan-graphic {
 			position: absolute;
-			bottom: 78px;
-			left: 330px;
+			bottom: 157px;
+			left: 91px;
 		}
 }
 
@@ -54,10 +63,10 @@
 
 .slogan-graphic {
 	z-index: 10;
-	font-size: rem-calc(400);
+	font-size: rem-calc(310);
 	font-family: $euphemia;
 	color: $light-blue;
-	line-height: rem-calc(400);
+	line-height: rem-calc(310);
 	cursor: default;
 	perspective: 200px;
 	width: 100%;

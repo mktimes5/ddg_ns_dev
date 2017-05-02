@@ -5,7 +5,7 @@
 4 verbose stack Error: ENOENT, open '/Users/tidadog/Documents/DDG-Projects/doreyDigital/dorey-digi/public/package.json'
 4 verbose stack     at Error (native)
 5 verbose cwd /Users/tidadog/Documents/DDG-Projects/doreyDigital/dorey-digi/public
-6 error Darwin 16.4.0
+6 error Darwin 16.5.0
 7 error argv "node" "/usr/local/bin/npm" "start"
 8 error node v0.12.0
 9 error npm  v2.5.1

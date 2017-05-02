@@ -1,0 +1,25 @@
+uuid: 44e16b72-aa92-4716-b265-14327adaac09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_work_year
+    - node.type.work
+id: node.work.field_work_year
+field_name: field_work_year
+entity_type: node
+bundle: work
+label: Year
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 2017
+default_value_callback: ''
+settings:
+  min: 1991
+  max: 4017
+  prefix: ''
+  suffix: ''
+field_type: integer

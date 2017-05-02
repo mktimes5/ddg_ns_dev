@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.work.field_platform
     - field.field.node.work.field_techniques
     - field.field.node.work.field_work_url
+    - field.field.node.work.field_work_year
     - node.type.work
   module:
     - ds
@@ -90,7 +91,7 @@ content:
     region: content
   field_platform:
     weight: 4
-    label: hidden
+    label: above
     settings:
       link: false
     third_party_settings:
@@ -100,7 +101,7 @@ content:
     region: content
   field_techniques:
     weight: 5
-    label: hidden
+    label: above
     settings:
       link: false
     third_party_settings:
@@ -119,6 +120,15 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
+    region: content
+  field_work_year:
+    weight: 16
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
     region: content
   links:
     weight: 0

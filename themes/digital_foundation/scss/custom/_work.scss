@@ -1,0 +1,158 @@
+#node-work {
+
+	.work-title {
+		mix-blend-mode: difference;
+		margin-top: 25px;
+		text-align: center;
+		letter-spacing: 0.4em;
+		font-weight: bold;
+		color: $white;
+
+	}
+
+	.hero-image {
+		width: 100%;
+		min-height: 469px;
+		background-position: center center;
+		background-repeat: none;
+		background-size: cover;
+	}
+
+	.blue-col-work-left-script {
+		@include off-col-right($light-blue-op, 27.28%);
+
+		.work-body {
+			margin-left: 30%;
+			padding: 28px 0px;
+			width: 70%;
+		}
+		
+	}
+
+	.field--name-field-work-url {
+		@include white-button;
+	}
+
+	.blue-col-work-right-script {
+		display:flex;
+		justify-content: flex-end;
+		h1,h2,h3,h4,h5 {
+			font-family: $avenir;
+		}
+		.techs {
+			// 86% width total
+			padding: 55px 10% 5px 15%;
+			width: 100%;
+			background-color: $light-blue-op;
+			position: relative;
+			float: right;
+			margin-top: 105px;
+			margin-left: 10%;
+			border: 1px solid $lt-blue-grey;
+
+			.field__label {
+				font-weight: bold;
+			}
+
+			ul {
+				@include clean-list;
+
+				li {
+					font-size: rem-calc(20);
+				}
+			}
+		}
+		
+	}
+
+	.work-mobile-section {
+		@include dark-bg;
+		padding: 31px 9%;
+	}
+
+	.work-desktop {
+		@include off-col-right($light-blue-op, 50%);
+		h1,h2,h3,h4,h5 {
+			font-family: $avenir;
+		}
+
+		.desktop-left-col {
+			
+		}
+
+		.desktop-right-col {
+			h2 {
+				text-align: center;
+			}
+		}
+
+		.desktop-image {
+			image {
+				width: 100%;
+			}
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

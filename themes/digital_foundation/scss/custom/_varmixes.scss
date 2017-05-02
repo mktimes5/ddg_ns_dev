@@ -1,11 +1,15 @@
 // -- colors -- //
 $light-blue: #99DBFC;
-$light-blue-rgb: 153,219,252;
+$light-blue-op: rgba(171,226,253, 0.73);
 $orange: #DBAD86;
 $orage-hex: 219,173,134;
+
 $c-black: #3B3A37;
 $light-grey: #F4F4F4;
 $dark-grey: #979797;
+$lt-blue-grey: #F1F4FB;
+$white: #FDF7F6;
+$white-op: rgba(253,247,246, 0.1);
 
 
 
@@ -13,6 +17,11 @@ $dark-grey: #979797;
 
 
 /// -- mxinins -- ////
+
+@mixin dark-bg {
+	background-color: $dark-grey;
+	color: $white;
+}
 
 @mixin clean-list {
 	list-style-type: none;
@@ -25,7 +34,68 @@ $dark-grey: #979797;
 	@for $i from 1 through 20 {
 		&:nth-child(#{$i}) {
 		  margin-left: ($margin);
-		  $margin: $margin + 150px;
+		  $margin: $margin + 70px;
 		}
 	}
 }
+
+@mixin off-col-right($color ,$percent) {
+	width: 100%;
+	background: linear-gradient( 90deg, $color $percent, rgba(255, 255, 255, 0.0) $percent);
+	
+	//padding-right: 10%;
+}
+
+@mixin off-width-left($color) {
+	width: 100%;
+	background: linear-gradient( 100deg, $color 86%, rgba(255, 255, 255, 0.0) 14%);
+	
+	//padding-right: 10%;
+}
+
+
+//// Buttons and links
+
+@mixin white-button {
+	padding: 12px 5px 7px 5px;
+	background-color: $white-op;
+	border: 1px solid $dark-grey;
+	color: $c-black;
+	text-align: center;
+
+	a {
+		color: $c-black;
+		text-align: center;
+	}
+}
+
+
+
+// Style classes
+.grey-bg {
+	background-color: $dark-grey;
+	color: $white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
