@@ -35,39 +35,36 @@
 #}
 
 <header role="banner" id="page-header">
-  <div class="row align-middle">
-
-    <div class="large-4 columns">
-
-    	<div class="site-logo">
-    		<a href={{ base_path }} title="Dorey Digital">DoreyDigital</a>
-    	</div>
-
-    </div>
-
-    <div class="large-7 columns">
-  	 {{ page.header }}
-    </div>
-
-    <div class="header-end large-1 columns">
-      <div class="news-letter">
-        <i class="fa fa-envelope-o" aria-hidden="true"></i> <br />
-        newsletter
-      </div>
-    </div>
-
-
-  </div> <!-- /row -->
-  
+  {{ page.header }}
 </header>
+
 <section id="utils">
   {{ page.utils }}
 </section>
 
 <section id="content">
-  
+  <div class="row">
+    <div id="home-splash" class="large-11 large-offset-1 columns">
+      <ul class="slogan">
+        <li>
+          Here at dorey, we build websites. 
+        </li>
+        <li>
+           but we’re fundamentalist really, 
+        </li>
+        <li>
+          we take pride in desinging it right from the start.
+        </li>
+      </ul>
+
+        <div class="slogan-graphic">
+          <span>&#60;html&#62;</span>
+        </div>
+      
+  </div>
+  <div class="row">
 	 {{ page.content }}
-  
+  </div>
 </section>
 
 

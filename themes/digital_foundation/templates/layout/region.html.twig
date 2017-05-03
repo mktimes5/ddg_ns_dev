@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Default theme implementation to display a region.
+ * Theme override to display a region.
  *
  * Available variables:
  * - content: The content for this region, typically blocks.
@@ -10,12 +10,16 @@
  *   .info.yml file.
  *
  * @see template_preprocess_region()
- *
- * @ingroup themeable
  */
 #}
+{%
+  set classes = [
+    'region',
+    'region-' ~ region|clean_class,
+  ]
+%}
 {% if content %}
-  <region>
+  <div{{ attributes.addClass(classes) }}>
     {{ content }}
-  </region>
+  </div>
 {% endif %}
