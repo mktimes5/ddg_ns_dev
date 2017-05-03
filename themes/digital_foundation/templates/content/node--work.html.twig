@@ -81,6 +81,8 @@
 	{{ content.field_platform }}
 	{{ content.field_techniques }}
 	{{ content.field_work_url }}
+	{{ content.field_work_year }}
+
 
 	{{ content.field_mobile_script }}
 	{{ content.field_mobile_image }}
@@ -110,6 +112,7 @@
 	  			<ul>
 		  			<li>{{ content.field_platform }}</li>
 					<li>{{ content.field_techniques }}</li>
+					<li>{{ content.field_work_year }}</li>
 					<li>{{ content.field_work_url }}</li>
 				</ul>
 	  		</div>
@@ -146,11 +149,10 @@
 	  		<h2>{{ content.field_desktop_title }}</h2>
 	  	</div>
 
-	  	<div>
-	  		<div class="large-8 columns desktop-image large-offset-2">
-	  			{{ content.field_desktop_image }}
-	  		</div> 
-	  	</div>
+  		<div class="large-12 columns desktop-image">
+  			{{ content.field_desktop_image }}
+  		</div> 
+	  	
 
 	</section>
 

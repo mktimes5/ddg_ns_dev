@@ -25,6 +25,7 @@
 			margin-left: 30%;
 			padding: 28px 0px;
 			width: 70%;
+			min-height: 470px;
 		}
 		
 	}
@@ -41,7 +42,7 @@
 		}
 		.techs {
 			// 86% width total
-			padding: 55px 10% 5px 15%;
+			padding: 10px 10% 5px 15%;
 			width: 100%;
 			background-color: $light-blue-op;
 			position: relative;
@@ -49,17 +50,19 @@
 			margin-top: 105px;
 			margin-left: 10%;
 			border: 1px solid $lt-blue-grey;
-
+			display: flex;
 			.field__label {
 				font-weight: bold;
 			}
 
 			ul {
 				@include clean-list;
-
+				align-self: flex-end;
 				li {
 					font-size: rem-calc(20);
+					margin-bottom: rem-calc(10);
 				}
+
 			}
 		}
 		
@@ -68,6 +71,10 @@
 	.work-mobile-section {
 		@include dark-bg;
 		padding: 31px 9%;
+
+		h1,h2,h3,h4,h5 {
+			font-family: $avenir;
+		}
 	}
 
 	.work-desktop {
@@ -77,7 +84,11 @@
 		}
 
 		.desktop-left-col {
-			
+			padding: 44px 30px 22px 0px;
+
+			.field--name-field-descktop-description {
+				padding-bottom: 22px;
+			}
 		}
 
 		.desktop-right-col {
@@ -87,8 +98,15 @@
 		}
 
 		.desktop-image {
-			image {
-				width: 100%;
+			display: flex;
+			justify-content: center;
+			margin-bottom: 31px;
+
+			.field--name-field-desktop-image {
+				width: 70%;
+				img {
+					width: 100%;
+				}
 			}
 		}
 	}
