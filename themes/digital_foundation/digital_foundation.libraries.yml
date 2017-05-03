@@ -5,3 +5,7 @@ global-styling:
       css/app.css: {}
   js:
     js/app.js: {}
+
+rellax-lib:
+  js:
+    js/rellax.min.js: {}
