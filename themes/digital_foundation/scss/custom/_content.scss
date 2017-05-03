@@ -7,20 +7,6 @@
 	padding: 0px;
 	overflow: hidden;
 	position: relative;
-	/*
-	&:after {
-		border-right: 1px solid $dark-grey;
-		border-top: 1px solid $dark-grey;
-		border-bottom: 1px solid $dark-grey;
-		width: 20px;
-		height: 951px;
-		position: absolute;
-		top: -1px;
-		right: -20px;
-		background-color: $light-grey;
-		content: ' ';
-	}
-	*/
 
 	.slogan {
 		@include clean-list;

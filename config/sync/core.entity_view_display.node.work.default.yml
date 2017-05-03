@@ -35,14 +35,14 @@ content:
     region: content
   field_descktop_description:
     weight: 13
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_desktop_image:
     weight: 14
-    label: above
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
@@ -58,7 +58,7 @@ content:
     region: content
   field_desktop_title:
     weight: 15
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
