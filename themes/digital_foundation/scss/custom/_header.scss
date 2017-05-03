@@ -1,5 +1,5 @@
 #page-header {
-
+	background-color: $white;
 }
 // logo
 .site-logo {
@@ -9,6 +9,7 @@
 		font-size: rem-calc(48);
 		display: block;
 		transition: all .5s ease-out;
+
 		&:before {
 		content: 'D|D';
 		transition: all .5s ease-out;
