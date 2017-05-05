@@ -77,6 +77,14 @@ $white-op: rgba(253,247,246, 0.1);
 }
 
 
+@mixin black-link {
+	color: $c-black;
+
+	&:hover {
+		color: $c-black;
+	}
+}
+
 
 // Style classes
 .grey-bg {
