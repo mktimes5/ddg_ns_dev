@@ -1,0 +1,16 @@
+df_splash_page:
+  label: digital foudnation splash page
+  category: Digtial Foundation
+  type: partial
+  template: layouts/df-splash
+  css: layouts/df-splash.css
+  icon: layouts/df-splash.png
+  regions:
+    splash_left:
+      label: Splash Left
+    splash_right:
+      label: Splash Right
+    mid:
+      label: Mid
+    footer:
+      label: Footer

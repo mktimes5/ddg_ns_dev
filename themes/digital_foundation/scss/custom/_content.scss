@@ -1,12 +1,5 @@
 #home-splash {
-	height: 951px;
-	border: 1px solid $dark-grey;
-	position: relative;
-	background-color: $light-grey;
-	width: 115%;
-	padding: 0px;
-	overflow: hidden;
-	position: relative;
+	@include splash-container;
 
 	.slogan {
 		@include clean-list;

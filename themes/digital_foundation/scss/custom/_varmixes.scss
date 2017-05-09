@@ -29,6 +29,17 @@ $white-op: rgba(253,247,246, 0.1);
 	margin:0;
 }
 
+@mixin splash-container {
+	height: 951px;
+	border: 1px solid $dark-grey;
+	position: relative;
+	background-color: $light-grey;
+	width: 115%;
+	padding: 0px;
+	overflow: hidden;
+	position: relative;
+}
+
 @mixin step-ladder {
 	$margin: 0px;
 	@for $i from 1 through 20 {
