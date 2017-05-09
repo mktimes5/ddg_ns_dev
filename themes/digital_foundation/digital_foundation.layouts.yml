@@ -14,3 +14,17 @@ df_splash_page:
       label: Mid
     footer:
       label: Footer
+df_title_page:
+  label: digital foudnation title page
+  category: Digtial Foundation
+  type: partial
+  template: layouts/df-title
+  css: layouts/df-title.css
+  icon: layouts/df-title.png
+  regions:
+    title:
+      label: Title
+    mid:
+      label: Mid
+    footer:
+      label: Footer
