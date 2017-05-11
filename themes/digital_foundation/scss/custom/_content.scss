@@ -87,6 +87,41 @@
 }
 
 
+// Splash Page Layout 
+
+#page-splash {
+	@include splash-container;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+
+	.splash-left {
+		align-self: flex-end;
+		width: 40%;
+		border: 1px solid $dark-grey;
+		color: $orange;
+		padding: 62px 27px 62px 45px;
+		min-height: 685px;
+		background-color: rgba(255, 255, 255, 0.9);
+		font-size: rem-calc(25);
+	}
+
+	.splash-right {
+		align-self: flex-end;
+		width: 40%;
+		min-height: 800px;
+		border: 1px solid $dark-grey;
+
+		//view title element
+		.views-element-container {
+
+			h2 {
+				display: inline-block;
+				
+			}
+		}
+	}
+}
 
 
 
