@@ -1,5 +1,6 @@
 #home-splash {
 	@include splash-container;
+	overflow: hidden;
 
 	.slogan {
 		@include clean-list;
@@ -97,7 +98,8 @@
 
 	.splash-left {
 		align-self: flex-end;
-		width: 40%;
+		margin-left: -30px;
+		width: 38%;
 		border: 1px solid $dark-grey;
 		color: $orange;
 		padding: 62px 27px 62px 45px;
@@ -108,7 +110,7 @@
 
 	.splash-right {
 		align-self: flex-end;
-		width: 40%;
+		width: 46%;
 		min-height: 800px;
 		border: 1px solid $dark-grey;
 
@@ -117,7 +119,15 @@
 
 			h2 {
 				display: inline-block;
-				
+				width: 100%;
+				text-align: center;
+				color: $light-blue;
+				font-size: rem-calc(90);
+				text-transform: uppercase;
+
+				background-color: $dark-grey-op;
+				padding: 32px 10px;
+				margin: 0;
 			}
 		}
 	}

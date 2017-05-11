@@ -115,7 +115,49 @@
 }
 
 
+// work view
 
+.work-view {
+
+	ul {
+		@include clean-list;
+
+		li {
+			display: inline-block;
+			width: 100%;
+			padding: 32px;
+			border-top: 1px solid $dark-grey;
+		}
+
+		li:last-child {
+			border-bottom: 1px solid $dark-grey;
+		}
+	}
+
+	.case-button {
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+		margin: 10px 0px;
+		a {
+			@include round-button;
+		}
+	}
+
+	.work-title {
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+		margin: 10px 0px;
+		color: $c-black;
+		font-size: rem-calc(34);
+
+		a {
+			color: $c-black;
+		}
+	}
+	
+}
 
 
 

@@ -7,6 +7,7 @@ $orage-hex: 219,173,134;
 $c-black: #3B3A37;
 $light-grey: #F4F4F4;
 $dark-grey: #979797;
+$dark-grey-op: rgba(020, 020, 020 , 0.7);
 $lt-blue-grey: #F1F4FB;
 $white: #FDF7F6;
 $white-op: rgba(253,247,246, 0.1);
@@ -36,7 +37,6 @@ $white-op: rgba(253,247,246, 0.1);
 	background-color: $light-grey;
 	width: 115%;
 	padding: 0px;
-	overflow: hidden;
 	position: relative;
 }
 
@@ -62,6 +62,30 @@ $white-op: rgba(253,247,246, 0.1);
 	background: linear-gradient( 100deg, $color 86%, rgba(255, 255, 255, 0.0) 14%);
 	
 	//padding-right: 10%;
+}
+
+@mixin round-button {
+	background-color: $dark-grey-op;
+	text-transform: uppercase;
+	text-align: center;
+	color: $light-blue;
+	font-family: $bebas;
+	font-size: rem-calc(20);
+	border-radius: 20px;
+	padding: 10px 15px;
+	transition: all 0.1s;
+	border-radius: 1px solid $dark-grey;
+	box-shadow: -6px 10px 0px 0px rgba(155,155,155,0.3);
+	
+	&:hover {
+		box-shadow: -3px 3px 0px 0px rgba(155,155,155,0.3);
+		
+	}
+
+	a {
+		color: $light-blue;
+		font-family: $bebas;
+	}
 }
 
 
