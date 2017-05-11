@@ -4,8 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.blog.body
+    - field.field.node.blog.field_hero_image
+    - field.field.node.blog.field_tags
+    - image.style.thumbnail
     - node.type.blog
   module:
+    - image
     - path
     - text
 id: node.blog.default
@@ -28,6 +32,23 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_hero_image:
+    weight: 32
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_tags:
+    weight: 33
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   path:
     type: path
     weight: 30

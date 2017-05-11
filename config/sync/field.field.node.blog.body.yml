@@ -12,7 +12,7 @@ field_name: body
 entity_type: node
 bundle: blog
 label: Body
-description: ''
+description: 'Summary is required for display on view'
 required: false
 translatable: true
 default_value: {  }

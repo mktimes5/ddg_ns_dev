@@ -1,0 +1,30 @@
+uuid: 68390ee9-b4cf-4dcf-b918-605c3ea7cb9f
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.blog
+  module:
+    - system
+    - views
+  theme:
+    - digital_foundation
+id: views_block__blog_work_view_block
+theme: digital_foundation
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:blog-work_view_block'
+settings:
+  id: 'views_block:blog-work_view_block'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /blog
+    negate: false
+    context_mapping: {  }
