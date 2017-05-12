@@ -1,0 +1,14 @@
+uuid: 0cfbba56-037d-4412-80c1-887fba5dde62
+langcode: en
+status: true
+dependencies: {  }
+name: work_tablet
+label: work-tablet
+effects:
+  c893590f-9f3a-4482-86f1-f86f383f4ceb:
+    uuid: c893590f-9f3a-4482-86f1-f86f383f4ceb
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 245
+      height: 173

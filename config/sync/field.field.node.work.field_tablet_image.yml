@@ -1,18 +1,18 @@
-uuid: 0b55aeab-aa8d-4a80-986a-9feb4a543021
+uuid: 6d345180-cf86-4550-8271-f1a1216d1aa3
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_mobile_image
+    - field.storage.node.field_tablet_image
     - node.type.work
   module:
     - image
-id: node.work.field_mobile_image
-field_name: field_mobile_image
+id: node.work.field_tablet_image
+field_name: field_tablet_image
 entity_type: node
 bundle: work
-label: 'Mobile Image'
-description: 'upload an image size 78x132'
+label: 'Tablet Image'
+description: 'Upload an image of size 245×173px'
 required: false
 translatable: false
 default_value: {  }

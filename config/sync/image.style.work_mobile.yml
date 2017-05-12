@@ -1,0 +1,14 @@
+uuid: 75f0616d-af1e-47c2-8aac-051a8fe83a72
+langcode: en
+status: true
+dependencies: {  }
+name: work_mobile
+label: work-mobile
+effects:
+  49feb283-d87c-4ca6-831e-6fc492c9312e:
+    uuid: 49feb283-d87c-4ca6-831e-6fc492c9312e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 78
+      height: 132
