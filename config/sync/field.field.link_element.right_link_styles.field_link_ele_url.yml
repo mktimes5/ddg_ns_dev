@@ -1,0 +1,23 @@
+uuid: 7c9caf82-67d3-4ee9-9f06-86c01260b6f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.link_element.field_link_ele_url
+    - link_block_element.link_element_type.right_link_styles
+  module:
+    - link
+id: link_element.right_link_styles.field_link_ele_url
+field_name: field_link_ele_url
+entity_type: link_element
+bundle: right_link_styles
+label: 'Link Url'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

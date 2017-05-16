@@ -4,6 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_foo_ent_ref
+    - field.field.node.page.field_link_element_bp
+    - field.field.node.page.field_what_evs
+    - field.field.node.page.panelizer
     - node.type.page
   module:
     - path
@@ -29,6 +33,33 @@ content:
     weight: 10
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_foo_ent_ref:
+    weight: 32
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_link_element_bp:
+    weight: 34
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_what_evs:
+    weight: 33
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   path:
     type: path
@@ -67,4 +98,5 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  panelizer: true

@@ -14,6 +14,7 @@ module:
   ctools_block: 0
   datetime: 0
   dblog: 0
+  devel: 0
   dynamic_page_cache: 0
   editor: 0
   entity_reference_revisions: 0
@@ -26,8 +27,10 @@ module:
   help: 0
   history: 0
   image: 0
+  kint: 0
   layout_discovery: 0
   link: 0
+  link_block_element: 0
   menu_ui: 0
   module_filter: 0
   node: 0

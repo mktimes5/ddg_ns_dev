@@ -1,0 +1,30 @@
+uuid: e0c1bd15-5810-47df-9e25-0ede30eb81f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_element_bp
+    - link_block_element.link_element_type.left_link_style
+    - link_block_element.link_element_type.right_link_styles
+    - node.type.page
+id: node.page.field_link_element_bp
+field_name: field_link_element_bp
+entity_type: node
+bundle: page
+label: 'Link Element'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:link_element'
+  handler_settings:
+    target_bundles:
+      left_link_style: left_link_style
+      right_link_styles: right_link_styles
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: left_link_style
+field_type: entity_reference

@@ -4,6 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_foo_ent_ref
+    - field.field.node.page.field_link_element_bp
+    - field.field.node.page.field_what_evs
     - field.field.node.page.panelizer
     - node.type.page
   module:
@@ -61,6 +64,30 @@ content:
     weight: 100
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_foo_ent_ref:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_link_element_bp:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_what_evs:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   links:
     weight: 101

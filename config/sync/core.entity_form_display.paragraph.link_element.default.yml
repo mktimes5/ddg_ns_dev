@@ -1,0 +1,24 @@
+uuid: b97549c6-e760-4a65-89b4-a8d0e956ba93
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.link_element.field_link_ent_script
+    - paragraphs.paragraphs_type.link_element
+id: paragraph.link_element.default
+targetEntityType: paragraph
+bundle: link_element
+mode: default
+content:
+  field_link_ent_script:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

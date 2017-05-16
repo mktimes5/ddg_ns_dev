@@ -1,0 +1,58 @@
+uuid: f3679ee7-f1b1-4a84-99c2-67bbe7a94fa7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.link_element.right_link_styles.field_link_ele_script
+    - field.field.link_element.right_link_styles.field_link_ele_title
+    - field.field.link_element.right_link_styles.field_link_ele_url
+    - link_block_element.link_element_type.right_link_styles
+  module:
+    - link
+id: link_element.right_link_styles.default
+targetEntityType: link_element
+bundle: right_link_styles
+mode: default
+content:
+  field_link_ele_script:
+    weight: 27
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_link_ele_title:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_link_ele_url:
+    weight: 28
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  name:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  user_id:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

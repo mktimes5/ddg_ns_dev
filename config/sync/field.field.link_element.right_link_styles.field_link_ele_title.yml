@@ -1,0 +1,19 @@
+uuid: 43f9c3cc-03db-4870-b926-c5c692195963
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.link_element.field_link_ele_title
+    - link_block_element.link_element_type.right_link_styles
+id: link_element.right_link_styles.field_link_ele_title
+field_name: field_link_ele_title
+entity_type: link_element
+bundle: right_link_styles
+label: 'Link Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

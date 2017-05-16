@@ -1,0 +1,23 @@
+uuid: 00479bbe-a954-4b9e-935e-5a4c1c0d077b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_what_evs
+    - node.type.page
+id: node.page.field_what_evs
+field_name: field_what_evs
+entity_type: node
+bundle: page
+label: 'what evs'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraphs_type'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

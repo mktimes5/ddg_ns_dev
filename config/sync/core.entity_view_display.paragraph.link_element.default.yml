@@ -1,0 +1,20 @@
+uuid: 109c81c9-c1f3-4f93-8482-683361ed8ae5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.link_element.field_link_ent_script
+    - paragraphs.paragraphs_type.link_element
+id: paragraph.link_element.default
+targetEntityType: paragraph
+bundle: link_element
+mode: default
+content:
+  field_link_ent_script:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden: {  }

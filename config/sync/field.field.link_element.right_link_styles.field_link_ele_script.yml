@@ -1,0 +1,19 @@
+uuid: 06370119-72c0-43e9-a9e3-6d15a92ecdb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.link_element.field_link_ele_script
+    - link_block_element.link_element_type.right_link_styles
+id: link_element.right_link_styles.field_link_ele_script
+field_name: field_link_ele_script
+entity_type: link_element
+bundle: right_link_styles
+label: 'Link Description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

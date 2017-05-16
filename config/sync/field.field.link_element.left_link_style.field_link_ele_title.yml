@@ -1,0 +1,19 @@
+uuid: 483e4eef-4cd0-4493-b5f7-af9754d8a8c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.link_element.field_link_ele_title
+    - link_block_element.link_element_type.left_link_style
+id: link_element.left_link_style.field_link_ele_title
+field_name: field_link_ele_title
+entity_type: link_element
+bundle: left_link_style
+label: 'Link Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

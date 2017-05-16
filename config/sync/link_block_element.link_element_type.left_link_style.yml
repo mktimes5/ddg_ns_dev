@@ -1,0 +1,6 @@
+uuid: 7e4e5dce-62f2-4127-9e59-299f5fbc4370
+langcode: en
+status: true
+dependencies: {  }
+id: left_link_style
+label: 'Left Link Styles'

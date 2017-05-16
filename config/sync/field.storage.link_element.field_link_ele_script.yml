@@ -1,0 +1,19 @@
+uuid: daf9d34e-b6a7-4b89-be40-10d5d230dce6
+langcode: en
+status: true
+dependencies:
+  module:
+    - link_block_element
+id: link_element.field_link_ele_script
+field_name: field_link_ele_script
+entity_type: link_element
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

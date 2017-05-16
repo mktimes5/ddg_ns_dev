@@ -1,0 +1,21 @@
+uuid: 677eca09-8942-418e-9442-a1572783d071
+langcode: en
+status: true
+dependencies:
+  module:
+    - link_block_element
+id: link_element.field_link_ele_title
+field_name: field_link_ele_title
+entity_type: link_element
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

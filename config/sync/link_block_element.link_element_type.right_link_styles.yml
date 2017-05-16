@@ -1,0 +1,6 @@
+uuid: d8200da1-be0f-4cff-abf6-71bdb2d6ef35
+langcode: en
+status: true
+dependencies: {  }
+id: right_link_styles
+label: 'Right Link Styles'
