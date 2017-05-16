@@ -1,0 +1,40 @@
+{#
+/**
+ * @file link_element.html.twig
+ * Default theme implementation to present Link element data.
+ *
+ * This template is used when viewing Link element pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_link_element()
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+  set classes = [
+    'link_element-left',
+    'columns',
+    'large-12'
+  ]
+%}
+
+<aside{{ attributes.addClass(classes) }}>
+	<div class ="link-ele-title">
+		{{ content.field_link_ele_title }}
+	</div>
+	<div class="link-box">
+		<div class="link-ele-script">
+			{{ content.field_link_ele_script }}
+		</div>
+
+		<div class="line-ele-url">
+			<a href="{{ content.field_link_ele_url.0['#url'] }}"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+		</div>
+	</div>
+</aside>
+

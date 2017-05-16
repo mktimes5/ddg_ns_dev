@@ -1,0 +1,12 @@
+link_block_element.link_element_type.*:
+  type: config_entity
+  label: 'Link element type config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string

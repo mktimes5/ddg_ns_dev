@@ -1,0 +1,23 @@
+# Link element routing definition
+
+entity.link_element.canonical:
+  route_name: entity.link_element.canonical
+  base_route: entity.link_element.canonical
+  title: 'View'
+
+entity.link_element.edit_form:
+  route_name: entity.link_element.edit_form
+  base_route: entity.link_element.canonical
+  title: 'Edit'
+
+entity.link_element.version_history:
+  route_name: entity.link_element.version_history
+  base_route: entity.link_element.canonical
+  title: 'Revisions'
+
+entity.link_element.delete_form:
+  route_name:  entity.link_element.delete_form
+  base_route:  entity.link_element.canonical
+  title: Delete
+  weight: 10
+

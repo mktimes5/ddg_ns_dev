@@ -133,7 +133,30 @@
 	}
 }
 
+// Link elements
 
+.link_element-left {
+	display: flex;
+	.link-ele-title {
+		flex: 1 1;
+		h2 {
+			text-transform: uppercase;
+			//transform: rotate(90deg);
+			writing-mode: vertical-rl;
+			transform: rotate(180deg);
+			float: right;
+		}
+
+		.field--name-field-link-ele-title {
+			
+		}
+	}
+
+	.link-box {
+		flex: 6 6;
+	}
+
+}
 
 
 

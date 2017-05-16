@@ -1,0 +1,33 @@
+add link element entities:
+  title: 'Create new Link element entities'
+
+administer link element entities:
+  title: 'Administer Link element entities'
+  description: 'Allow to access the administration form to configure Link element entities.'
+  restrict access: true
+
+delete link element entities:
+  title: 'Delete Link element entities'
+
+edit link element entities:
+  title: 'Edit Link element entities'
+
+access link element overview:
+  title: 'Access the Link element overview page'
+
+view published link element entities:
+  title: 'View published Link element entities'
+
+view unpublished link element entities:
+  title: 'View unpublished Link element entities'
+
+view all link element revisions:
+  title: 'View all Link element revisions'
+
+revert all link element revisions:
+  title: 'Revert all Link element revisions'
+  description: 'Role requires permission <em>view Link element revisions</em> and <em>edit rights</em> for link element entities in question or <em>administer link element entities</em>.'
+
+delete all link element revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Link element revisions</em> and <em>delete rights</em> for link element entities in question or <em>administer link element entities</em>.'

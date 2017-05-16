@@ -1,0 +1,18 @@
+
+# Link element menu items definition
+entity.link_element.collection:
+  title: 'Link element list'
+  route_name: entity.link_element.collection
+  description: 'List Link element entities'
+  parent: system.admin_structure
+  weight: 100
+
+
+# Link element type menu items definition
+entity.link_element_type.collection:
+  title: 'Link element type'
+  route_name: entity.link_element_type.collection
+  description: 'List Link element type (bundles)'
+  parent: system.admin_structure
+  weight: 99
+

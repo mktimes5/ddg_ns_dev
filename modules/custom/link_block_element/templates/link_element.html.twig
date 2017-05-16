@@ -1,0 +1,22 @@
+{#
+/**
+ * @file link_element.html.twig
+ * Default theme implementation to present Link element data.
+ *
+ * This template is used when viewing Link element pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_link_element()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('link_element') }}>
+  {% if content %}
+    {{- content -}}
+  {% endif %}
+</div>
