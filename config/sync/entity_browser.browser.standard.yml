@@ -1,0 +1,32 @@
+uuid: d66bd2b5-bd41-4297-b800-35f67e1b48ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.link_elements
+  module:
+    - views
+name: standard
+label: standard
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: false
+  path: ''
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  a7305fb3-6102-474f-a3d6-216cffe590aa:
+    settings:
+      view: link_elements
+      view_display: entity_browser_1
+      submit_text: 'View these things'
+      auto_select: false
+    uuid: a7305fb3-6102-474f-a3d6-216cffe590aa
+    weight: 3
+    label: view
+    id: view

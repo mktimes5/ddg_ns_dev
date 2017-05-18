@@ -1,0 +1,20 @@
+uuid: ef6b9501-06bb-4272-8da6-faead3dda66a
+langcode: en
+status: true
+dependencies:
+  module:
+    - link_block_element
+    - node
+id: node.field_test
+field_name: field_test
+entity_type: node
+type: entity_reference
+settings:
+  target_type: link_element
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

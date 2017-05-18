@@ -1,0 +1,21 @@
+uuid: 5e00a51f-1c03-4a47-8d05-c7e85bbcf332
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.panelizer
+    - node.type.test_page
+  module:
+    - panelizer
+id: node.test_page.panelizer
+field_name: panelizer
+entity_type: node
+bundle: test_page
+label: Panelizer
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: panelizer

@@ -1,0 +1,31 @@
+uuid: ed46f7bc-ad4b-4425-b24a-c2c67bf40685
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.link_elements
+  module:
+    - views
+name: link_elements_entb
+label: 'Link Elements'
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Browse Link Elements'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  1a16cb1a-0dd4-460a-8f93-0d158dc03e0c:
+    settings:
+      view: link_elements
+      view_display: entity_browser_1
+      submit_text: 'Browse Link Elements'
+      auto_select: false
+    uuid: 1a16cb1a-0dd4-460a-8f93-0d158dc03e0c
+    weight: 1
+    label: view
+    id: view
