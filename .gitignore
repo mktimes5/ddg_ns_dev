@@ -62,3 +62,7 @@ Thumbs.db
 # SASS #
 ##########
 .sass-cache
+
+#ignore devel setting files
+devel.settings.yml
+devel.toolbar.settings.yml
