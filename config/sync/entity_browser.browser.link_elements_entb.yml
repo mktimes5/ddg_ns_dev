@@ -23,7 +23,7 @@ widgets:
     settings:
       view: link_elements
       view_display: entity_browser_1
-      submit_text: 'Browse Link Elements'
+      submit_text: 'Add Link Elements'
       auto_select: false
     uuid: 1a16cb1a-0dd4-460a-8f93-0d158dc03e0c
     weight: 1
