@@ -1,38 +1,51 @@
-#page-header {
-	background-color: $white;
+.region-header {
+	.row {
+		background-color: $white;
+		height: 120px;
+		position: fixed;
+		width: 100%;
+		top: 0px;
+		z-index: 90;
+		transition: all 0.5s;
+		flex-wrap: no-wrap;
+	}
+}
+
+.region-header.header-scroll {
+	.row {
+		height: 84px;
+		top: 0px;
+		//box-shadow: 1px 1px 1px $primary-color;
+		transition: all 0.4s;
+	}
 }
 // logo
 .site-logo {
-	position: relative;
+	font-size: rem-calc(48);
+	display: block;
+	transition: all .5s ease-out;
+	width: 350px !important;
 	
-	a {
-		font-size: rem-calc(48);
-		display: block;
-		transition: all .5s ease-out;
+}
 
-		&:before {
-		content: 'D|D';
-		transition: all .5s ease-out;
-		color: $white;
-		position: absolute;
-		left: -30%;
-		transition: all .5s ease-out;
-		}
-
-		&:hover {
+.site-logo.logo-scroll {
 			color: $white;
-			width: 50%;
+			width: 100px !important;;
 			transition: all .5s ease-out;
 			&:before {
 				left: 0;
 				transition: all .5s ease-out;
 				color: $primary-color;
+				content: 'D|D';
 			}
-		}
-	}
 }
 
 // main menu
+
+.header-menu {
+	flex: 7 7 auto;
+}
+
 #block-digital-foundation-main-menu {
 	ul {
 		@include clean-list;
@@ -81,10 +94,16 @@
 
 .header-end {
 	border-left: 2px solid $dark-grey;
-	padding-bottom: 20px;
+	//padding-bottom: 20px;
+	align-self: stretch;
+	flex: 2 2 auto;
+	display: flex;
+	padding-left: 20px;
 }
 .news-letter {
 	font-family: $euphemia;
+	align-self: center;
+	//margin-top: 20px;
 
 	.fa {
 		font-size: rem-calc(30);
