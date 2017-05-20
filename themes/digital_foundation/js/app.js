@@ -16,7 +16,7 @@ function headerToggle( sPosition ) {
 	} else if (sPosition < 500) {
 		if (headerEle.classList.contains('header-scroll')) {
 			headerEle.classList.remove('header-scroll');
-			contentEle.classList.add('content-scroll');
+			contentEle.classList.remove('content-scroll');
 		}
 	}
 	
