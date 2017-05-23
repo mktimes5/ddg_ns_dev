@@ -2,6 +2,8 @@ uuid: a52bd25b-06ee-4618-9c4f-c2f1b311e859
 langcode: en
 status: true
 dependencies:
+  module:
+    - user
   theme:
     - digital_foundation
 _core:
@@ -9,7 +11,7 @@ _core:
 id: digital_foundation_local_tasks
 theme: digital_foundation
 region: utils
-weight: 1
+weight: -7
 provider: null
 plugin: local_tasks_block
 settings:
@@ -19,4 +21,11 @@ settings:
   label_display: '0'
   primary: true
   secondary: true
-visibility: {  }
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

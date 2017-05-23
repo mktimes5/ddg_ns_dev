@@ -62,4 +62,40 @@ body.toolbar-fixed {
 	}
 }
 
+#user-login-form {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: $light-grey;
+	justify-content: center;
+	padding: 40px 10px;
+
+	.form-item {
+		width: 100%;
+	}
+
+	#edit-submit {
+		align-self: flex-start;
+	}
+
+	#edit-actions {
+			width: 100%;
+		}
+
+	@media screen and (min-width: 40em) {
+		display: flex;
+		flex-wrap: wrap;
+		background-color: $light-grey;
+		justify-content: center;
+		padding: 40px 100px;
+
+		.form-item {
+			width: 100%;
+		}
+
+		#edit-actions {
+			width: 100%;
+		}
+	}
+}
+
 

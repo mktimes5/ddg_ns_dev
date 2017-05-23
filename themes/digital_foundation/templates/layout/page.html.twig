@@ -38,20 +38,26 @@
   {{ page.header }}
 </header>
 
+{% if page.utils %}
 <section id="utils">
   {{ page.utils }}
 </section>
+{% endif %}
+
+{% if page.splash %}
+<section id="splash">
+	{{ page.splash }}
+</section>	
+{% endif %}
 
 <section id="content">
-  
 	 {{ page.content }}
-  
 </section>
 
-
+{% if page.footer %}
 <footer id="footer">
   <div class="row">
 	 {{ page.footer }}
   </div>
 </footer>
-
+{% endif %}

@@ -2,6 +2,8 @@ uuid: b9f9fe1b-387f-4763-a998-ee7b25d17175
 langcode: en
 status: true
 dependencies:
+  module:
+    - user
   theme:
     - digital_foundation
 _core:
@@ -17,4 +19,11 @@ settings:
   label: 'Primary admin actions'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

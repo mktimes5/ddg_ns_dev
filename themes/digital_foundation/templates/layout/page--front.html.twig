@@ -38,9 +38,11 @@
   {{ page.header }}
 </header>
 
+{% if page.utils %}
 <section id="utils">
   {{ page.utils }}
 </section>
+{% endif %}
 
 <section id="content">
   
@@ -69,9 +71,11 @@
 </section>
 
 
+{% if page.footer %}
 <footer id="footer">
   <div class="row">
-	 {{ page.footer }}
+   {{ page.footer }}
   </div>
 </footer>
+{% endif %}
 
