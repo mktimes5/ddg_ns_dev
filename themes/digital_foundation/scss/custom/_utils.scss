@@ -1,0 +1,65 @@
+// admin toolbar
+body.toolbar-fixed {
+
+	.region-header {
+
+		.row {
+			top: 65px;
+		}
+	}
+}
+
+body.toolbar-fixed {
+	#utils {
+		margin-top: 180px;
+	}
+
+	#content {
+		margin-top: 180px;
+	}
+}
+
+
+// content admin tab menu
+#utils {
+	padding: 10px 30px;
+	//background-color: $light-grey;
+	//background: linear-gradient( 180deg, $light-grey 30%, $light-grey 60% );
+	background: linear-gradient( to bottom, $white 40%, $light-blue 40%, $light-blue 60%, $white 60% ); 
+
+	#block-digital-foundation-local-tasks {
+
+		ul.node-links {
+			@include clean-list;
+			display: flex;
+
+			li {
+				width: 98%;
+    			margin-right: 2%;
+    			background-color: $orange;
+    			position: relative;
+    			z-index: 10;
+    			transform: skew(-20deg);
+    			border-left: 10px solid $dark-grey;
+    			transition: all 1.0s;
+    			padding-left: 20px;
+
+    			&:hover {
+    				background-color: $light-blue;
+    				border-left: 10px solid $c-black;
+    			}
+				
+				a {
+					color: $white;
+					padding: 20px 30px;
+					display: block;
+					transform: skew(20deg);
+					width: 100%;
+				}
+			}
+
+		}
+	}
+}
+
+
