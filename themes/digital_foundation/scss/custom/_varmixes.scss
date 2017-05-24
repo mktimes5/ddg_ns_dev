@@ -128,7 +128,45 @@ $white-op: rgba(253,247,246, 0.1);
 }
 
 
+@mixin header-pack {
+	h1 {
+		font-size: rem-calc(60);
+		font-weight: bold;
+		font-family: $euphemia;
+	}
 
+	h2 {
+		font-size: rem-calc(60);
+		font-family: $euphemia;
+	}
+
+	h3 {
+		font-size: rem-calc(40);
+		font-family: $bebas;
+	}
+
+	h4 {
+		font-size: rem-calc(25);
+		font-family: $lora;
+		font-style: italic;
+	}
+
+	h5 {
+		font-size: rem-calc(25);
+		font-family: $bebas;
+		font-weight: bold;
+	}
+
+	h6 {
+		font-size: rem-calc(17);
+		font-family: $euphemia;
+	}
+
+	h7 {
+		font-size: rem-calc(17);
+		font-family: $lora;
+	}
+}
 
 
 

@@ -175,6 +175,7 @@
 
 	.link-ele-script {
 		font-size: rem-calc(30);
+		font-family: $lora;
 		color: $light-blue;
 	}
 
@@ -193,10 +194,11 @@
 	display: flex;
 	.link-ele-script {
 		font-size: rem-calc(30);
-		color: $orange;
+		font-family: $lora;
+		color: $c-black;
 		border: 1px solid $dark-grey;
 		border-right: none;
-		background-color: rgba(253,247,246, 0.7);
+		background-color: rgba(219,173,134, 0.6);
 		flex: 6 6;
 		align-self: center;
 		padding: 92px 10px 100px 10px;
@@ -249,7 +251,14 @@
 		}
 	}
 
-
+// text-field styles 
+.field--type-text-with-summary {
+	@include header-pack;
+	p {
+		font-size: rem-calc(14);
+		font-family: $lora;
+	}
+}
 
 
 
