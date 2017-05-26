@@ -7,6 +7,17 @@ var sassPaths = [
   'bower_components/motion-ui/src'
 ];
 
+gulp.task('javascript', function() {
+  return gulp.src(PATHS.javascript)
+    .pipe($.sourcemaps.init())
+    .pipe($.babel()) // <-- There it is!
+    .pipe($.concat('app.js'))
+    .pipe(uglify)
+    .pipe($.if(!isProduction, $.sourcemaps.write()))
+    .pipe(gulp.dest('dist/assets/js'))
+    .on('finish', browser.reload);
+});
+
 gulp.task('sass', function() {
   return gulp.src('scss/app.scss')
     .pipe($.sass({
