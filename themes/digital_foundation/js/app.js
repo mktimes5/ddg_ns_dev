@@ -1,6 +1,7 @@
 //$(document).foundation();
 
 /// header effect ////
+alert('foo');
 
 let last_scroll_pos = 0;
 let scrolling = false;
