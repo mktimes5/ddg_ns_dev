@@ -92,7 +92,7 @@
 				
 
 				.blog-view-hero {
-					//display: flex;
+					display: flex;
 					flex: 1 1 50%;
 					img {
 						width: 100%;
@@ -108,15 +108,32 @@
 					margin-right: 100px;
 					background-color: rgba(29, 38, 43, 0.9);
 					color: $white;
-					padding: 31px;
 					z-index: 20;
 
 					h3 {
 						text-align: center;
 						text-decoration: underline;
+						//ie 10 flexbox overlap fix
+						background-color: rgba(29, 38, 43, 0.9);
+						position: absolute;
+						display:block;
+						width: 100%;
+						padding: 31px;
 						a {
-							color: $white;
+							color: $white;//ie 10 flexbox overlap fix
+							background-color: rgba(29, 38, 43, 0.9);
+							position: absolute;
+							display:block;
+							padding: 31px;
 						}
+					}
+
+					p {
+						//ie 10 flexbox overlap fix
+						background-color: rgba(29, 38, 43, 0.9);
+						position: absolute;
+						display:block;
+						padding: 31px;
 					}
 				}
 			}
