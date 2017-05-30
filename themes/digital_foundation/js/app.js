@@ -1,7 +1,8 @@
 //$(document).foundation();
 
 /// header effect ////
-alert('foo');
+let babelTest = "this is a let variable"
+console.log(babelTest);
 
 let last_scroll_pos = 0;
 let scrolling = false;
