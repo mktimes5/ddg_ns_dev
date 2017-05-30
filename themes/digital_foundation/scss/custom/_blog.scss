@@ -111,6 +111,11 @@
 					padding: 31px;
 					z-index: 20;
 
+					p {
+						display: block;
+						background-color: blue;
+					}
+
 					h3 {
 						text-align: center;
 						text-decoration: underline;
