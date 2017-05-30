@@ -92,7 +92,7 @@
 				
 
 				.blog-view-hero {
-					display: flex;
+					//display: flex;
 					flex: 1 1 50%;
 					img {
 						width: 100%;
@@ -110,11 +110,6 @@
 					color: $white;
 					padding: 31px;
 					z-index: 20;
-
-					p {
-						display: block;
-						background-color: blue;
-					}
 
 					h3 {
 						text-align: center;
