@@ -98,6 +98,7 @@
 						width: 100%;
 						flex: 1 1 auto;
 						z-index: 10;
+						opacity: .98;
 					}
 				}
 
@@ -106,34 +107,27 @@
 					flex: 1 1 35%;
 					margin-left: -100px;
 					margin-right: 100px;
-					background-color: rgba(29, 38, 43, 0.9);
+					background-color: rgba(29, 38, 43, 0.99);
 					color: $white;
 					z-index: 20;
+
+					.summary { 
+						background-color: rgba(29, 38, 43, 0.99);
+						padding: 31px;
+						z-index: 20;
+					 }
 
 					h3 {
 						text-align: center;
 						text-decoration: underline;
-						//ie 10 flexbox overlap fix
-						background-color: rgba(29, 38, 43, 0.9);
-						position: absolute;
-						display:block;
 						width: 100%;
-						padding: 31px;
 						a {
-							color: $white;//ie 10 flexbox overlap fix
-							background-color: rgba(29, 38, 43, 0.9);
-							position: absolute;
-							display:block;
-							padding: 31px;
+							color: $white;
 						}
 					}
 
 					p {
-						//ie 10 flexbox overlap fix
-						background-color: rgba(29, 38, 43, 0.9);
-						position: absolute;
-						display:block;
-						padding: 31px;
+						
 					}
 				}
 			}
