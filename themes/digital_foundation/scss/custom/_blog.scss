@@ -99,7 +99,7 @@
 		position: relative;
 		float: left;
 		height: 190px;
-		@media screen and (min-width: 40em) {
+		@media screen and (min-width: 60em) {
 			position: relative;
 			float: left;
 			width: 50%; 
@@ -109,24 +109,35 @@
 		}
 	}
 
-		.blog-view-text {
+	.blog-view-text {
+		position: relative;
+		float: left;
+		width: 100%;
+		height: 190px;
+		@media screen and (min-width: 60em) {
+			position: relative;
+			float: left;
+			width: 45%;
+			height: 290px;
+		}
+
+		.summary {	
 			position: relative;
 			float: left;
 			width: 100%;
 			margin-left:0px;
-			margin-top: -100px;
 			background-color: rgba(29, 38, 43, 0.99);
 			color: $white;
 			z-index: 20;
 			padding: 21px 10px 21px 31px;
 			font-family: $avenir;
 			font-size: rem-calc(15);
-			@media screen and (min-width: 40em) {
+			@media screen and (min-width: 60em) {
+				@include vert-align;
 				position: relative;
 				float: left;
-				width: 45%;
+				width: 100%;
 				margin-left: -100px;
-				margin-top: 39px;
 				background-color: rgba(29, 38, 43, 0.99);
 				color: $white;
 				z-index: 20;
@@ -140,7 +151,7 @@
 				text-decoration: underline;
 				width: 100%;
 				font-size: rem-calc(30);
-				@media screen and (min-width: 40em) {
+				@media screen and (min-width: 60em) {
 					text-align: center;
 					text-decoration: underline;
 					width: 100%;
@@ -150,9 +161,9 @@
 					color: $white;
 				}
 			}
-
 		}
-}
+	}
+}  // end view-mode 1
 
 .blog-vmode-2 {
 	.blog-view-hero {
@@ -162,7 +173,7 @@
 		height: 100px;
 		background-size: cover;
 		background-position: center center;
-		@media screen and (min-width: 40em) {
+		@media screen and (min-width: 60em) {
 			position: relative;
 			float: left;
 			width: 60%; 
@@ -172,45 +183,56 @@
 		}
 	}
 
+
 	.blog-view-text {
 		position: relative;
 		float: left;
 		width: 100%;
-		margin-top: 0px;
-		background-color: $orange;
-		color: $c-black;
-		padding: 21px 10px 21px 31px;
-		overflow: hidden;
-		font-family: $avenir;
-		font-size: rem-calc(15);
-
-		@media screen and (min-width: 40em) {
+		height: 100px;
+		@media screen and (min-width: 60em) {
 			position: relative;
 			float: left;
-			width: 40%;
-			margin-top: 37px;
+			width: 40%; 
+			height: 349px;
+		}
+
+			.summary {
+
+			position: relative;
+			float: left;
+			width: 100%;
 			background-color: $orange;
 			color: $c-black;
-			padding: 31px 31px 31px 5px;
+			padding: 21px 10px 21px 31px;
 			font-family: $avenir;
-			font-size: rem-calc(20);
-		}
+			font-size: rem-calc(15);
 
-		h3 {
-			text-align: center;
-			text-decoration: underline;
-			font-size: rem-calc(30);
-			@media screen and (min-width: 40em) {
-				font-size: rem-calc(25);
-			}
-			a {
+			@media screen and (min-width: 60em) {
+				@include vert-align;
+				float: left;
+				width: 100%;
+				background-color: $orange;
 				color: $c-black;
+				padding: 31px 31px 31px 5px;
+				font-family: $avenir;
+				font-size: rem-calc(20);
 			}
 
+			h3 {
+				text-align: center;
+				text-decoration: underline;
+				font-size: rem-calc(30);
+				@media screen and (min-width: 60em) {
+					font-size: rem-calc(25);
+				}
+				a {
+					color: $c-black;
+				}
+
+			}
 		}
 	}
-
-}
+}// end view-mode 2
 
 // Blog view
 /* DEV Flex - -  - - - -  -  -  - -  - -  -  - - - - - - /

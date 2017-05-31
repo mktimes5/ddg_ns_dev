@@ -86,9 +86,11 @@
 	<div class="blog-view-hero" style="background-image:url('{{ file_url(node.field_hero_image.entity.fileuri) }}')">
 	</div>
 	<div class="blog-view-text">
-		<h3>{{ label }}</h3>
-		{% set text = content.body|render|striptags %}
-		{{ text|length > 200 ? text|slice(0, 200) ~ '...' : text }}
+		<div class="summary">
+			<h3>{{ label }}</h3>
+			{% set text = content.body|render|striptags %}
+			{{ text|length > 200 ? text|slice(0, 200) ~ '...' : text }}
+		</div>
 	</div>
 </article>
 
