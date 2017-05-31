@@ -73,8 +73,148 @@
 	}
 }
 
-// Blog view
+.blog-view {
+	.item-list {
+		ul {
+			@include clean-list;
+			position: realtive;
+			float: left;
+			width: 100%;
 
+			li {
+				margin-bottom: 15px;
+				position: realtive;
+				float: left;
+				width: 100%;
+			}
+		}
+	}
+}
+
+.blog-vmode-1 {
+	width: 100%;
+
+	.blog-view-hero {
+		width: 100%;
+		position: relative;
+		float: left;
+		height: 190px;
+		@media screen and (min-width: 40em) {
+			position: relative;
+			float: left;
+			width: 50%; 
+			height: 290px;
+			background-size: cover;
+			background-position: center center;
+		}
+	}
+
+		.blog-view-text {
+			position: relative;
+			float: left;
+			width: 100%;
+			margin-left:0px;
+			margin-top: -100px;
+			background-color: rgba(29, 38, 43, 0.99);
+			color: $white;
+			z-index: 20;
+			padding: 21px 10px 21px 31px;
+			font-family: $avenir;
+			font-size: rem-calc(15);
+			@media screen and (min-width: 40em) {
+				position: relative;
+				float: left;
+				width: 45%;
+				margin-left: -100px;
+				margin-top: 39px;
+				background-color: rgba(29, 38, 43, 0.99);
+				color: $white;
+				z-index: 20;
+				padding: 21px 10px 21px 31px;
+				font-family: $avenir;
+				font-size: rem-calc(20);
+			}
+
+			h3 {
+				text-align: center;
+				text-decoration: underline;
+				width: 100%;
+				font-size: rem-calc(30);
+				@media screen and (min-width: 40em) {
+					text-align: center;
+					text-decoration: underline;
+					width: 100%;
+					font-size: rem-calc(25);
+				}
+				a {
+					color: $white;
+				}
+			}
+
+		}
+}
+
+.blog-vmode-2 {
+	.blog-view-hero {
+		position: relative;
+		float: left;
+		width: 100%; 
+		height: 100px;
+		background-size: cover;
+		background-position: center center;
+		@media screen and (min-width: 40em) {
+			position: relative;
+			float: left;
+			width: 60%; 
+			height: 349px;
+			background-size: cover;
+			background-position: center center;
+		}
+	}
+
+	.blog-view-text {
+		position: relative;
+		float: left;
+		width: 100%;
+		margin-top: 0px;
+		background-color: $orange;
+		color: $c-black;
+		padding: 21px 10px 21px 31px;
+		overflow: hidden;
+		font-family: $avenir;
+		font-size: rem-calc(15);
+
+		@media screen and (min-width: 40em) {
+			position: relative;
+			float: left;
+			width: 40%;
+			margin-top: 37px;
+			background-color: $orange;
+			color: $c-black;
+			padding: 31px 31px 31px 5px;
+			font-family: $avenir;
+			font-size: rem-calc(20);
+		}
+
+		h3 {
+			text-align: center;
+			text-decoration: underline;
+			font-size: rem-calc(30);
+			@media screen and (min-width: 40em) {
+				font-size: rem-calc(25);
+			}
+			a {
+				color: $c-black;
+			}
+
+		}
+	}
+
+}
+
+// Blog view
+/* DEV Flex - -  - - - -  -  -  - -  - -  -  - - - - - - /
+// -- bug in overlay in ie10
 .blog-view {
 	.item-list {
 		ul {
@@ -176,7 +316,7 @@
 
 
 }
-
+-      -- -- - - - -- - - - - - -  - */
 /* DEV Grid - -  - - - -  -  -  - -  - -  -  - - - - - - /
 .blog-view {
 	.item-list {
