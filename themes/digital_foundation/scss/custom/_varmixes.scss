@@ -173,6 +173,8 @@ $white-op: rgba(253,247,246, 0.1);
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
 }
 
 
