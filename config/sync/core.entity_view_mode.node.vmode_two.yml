@@ -1,0 +1,10 @@
+uuid: 1f137aa1-f5a1-4722-b9ea-34e1b5e4871c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.vmode_two
+label: Vmode_two
+targetEntityType: node
+cache: true

@@ -1,0 +1,10 @@
+uuid: 12c9fbd7-d119-4919-955e-af779db9f413
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.vmode_one
+label: 'Vmode one'
+targetEntityType: node
+cache: true

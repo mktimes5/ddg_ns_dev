@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.vmode_two
     - field.storage.node.body
     - field.storage.node.field_hero_image
     - image.style.large
@@ -12,6 +13,7 @@ dependencies:
     - node
     - text
     - user
+    - views_parity_row
 id: blog
 label: Blog
 module: views
@@ -246,7 +248,7 @@ display:
           click_sort_column: value
           type: text_summary_or_trimmed
           settings:
-            trim_length: 285
+            trim_length: 200
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -269,7 +271,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"blog-view-hero\">\n{{ field_hero_image }} \n</div>\n<div class=\"blog-view-text\">\n<h3>{{ title }}</h3>\n<div class=\"summary\">\n{{ body }}\n</div>\n</div>"
+            text: "<div class=\"blog-view-hero\">\n{{ field_hero_image }} \n</div>\n<div class=\"blog-view-text\">\n<div class=\"summary\">\n<h3>{{ title }}</h3>\n{{ body }}\n</div>\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -352,6 +354,47 @@ display:
       arguments: {  }
       display_extenders: {  }
       css_class: blog-view
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_hero_image'
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: 'Blog - Alt row styles'
+    position: 2
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      style:
+        type: html_list
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          type: ul
+          wrapper_class: item-list
+          class: ''
+      defaults:
+        style: false
+        row: false
+      row:
+        type: 'views_parity_row_entity:node'
+        options:
+          relationship: none
+          view_mode: vmode_two
+          views_parity_row_enable: 1
+          views_parity_row:
+            frequency: '2'
+            start: '0'
+            end: '0'
+            view_mode: vmode_one
     cache_metadata:
       max-age: -1
       contexts:
