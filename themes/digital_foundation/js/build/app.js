@@ -49,5 +49,5 @@ window.onscroll = function (){
 	scrolling = true;
 }
 
-var testScroll = window.scrollY;
+var testScroll = window.pageYOffset;
 console.log('scroll y : ' + testScroll);
