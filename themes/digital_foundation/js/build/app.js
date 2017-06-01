@@ -36,7 +36,7 @@ function logoToggle( sPosition ) {
 }
 
 window.onscroll = function (){
-	last_scroll_pos = window.scrollY;
+	last_scroll_pos = window.pageYOffset;
 	if ( !scrolling ) {
 		
 		window.requestAnimationFrame(function() {
