@@ -177,7 +177,9 @@ $white-op: rgba(253,247,246, 0.1);
     -ms-transform: translateY(-50%);
 }
 
-
+@mixin mobile-transform {
+  transform: rotate(341deg) rotateX(32deg) rotateY(10deg);
+}
 
 
 

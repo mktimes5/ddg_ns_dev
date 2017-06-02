@@ -70,11 +70,91 @@
 	}
 
 	.work-mobile-section {
-		@include dark-bg;
-		padding: 31px 9%;
+		background-color: #111;
+		color: $white;
+		padding: 27px 19px 125px 27px;
+		width: 100%;
+		position: relative;
 
-		h1,h2,h3,h4,h5 {
-			font-family: $avenir;
+
+		.mobile-script{
+			position: relative;
+			float: left;
+			width: 40%;
+			margin: 0 auto;
+
+			h2 {
+				font-family: $euphemia;
+				font-size: rem-calc(60);
+				text-align: center;
+				position: relative;
+
+				&:after {
+					content: ' ';
+					height: 3px;
+					width: 36%;
+					background-color: $light-blue;
+					position: absolute;
+					bottom: 0;
+					right: 33%;
+				}
+			}
+
+			.field--name-field-mobile-script {
+				font-family: $lora;
+				font-size: rem-calc(25);
+				font-style: italic;
+			}
+
+		} //<! --mobile-script -->
+
+		.mobile-image {
+			position: relative;
+			float: left;
+			width: 100%;
+			height: 600px;
+			perspective: 3000px;
+			perspective-origin: 0% 50%;
+		}
+
+		.field--name-field-desktop-image {
+			position: absolute;
+			top: -71px;
+			right: 0;
+			@include mobile-transform;
+			img {
+				
+			}
+
+		}
+
+		.field--name-field-tablet-image {
+			position: absolute;
+			top: 100px;
+			left: 20%;
+			
+			@include mobile-transform;
+			img {
+				
+			}
+
+		}
+
+		.field--name-field-mobile-image {
+			position: absolute;
+			bottom: 29px;
+			left: 37%;
+			@include mobile-transform;
+			img {
+				
+			}
+		}
+
+		.column-wrap {
+			position: relative;
+			float:left;
+			width: 29%;
+			margin-right: 2%;
 		}
 	}
 
@@ -159,8 +239,78 @@
 	
 }
 
+//mac book http://purecssapple.com/ -->
 
-
+.mac-wrap {
+	position: relative;
+	float:left;
+	width: 100%;
+	.pca-hold {
+	  width: 300px;
+	  margin: 0 37.5px;
+	}
+	.pca-hold .pca-main {
+	  display: block;
+	  position: relative;
+	  background-color: #c8c8c8;
+	  border: 9px solid #2d2d2d;
+	  height: 192px;
+	  border-top-left-radius: 9px;
+	  border-top-right-radius: 9px;
+	}
+	.pca-hold .pca-main:after {
+	  content: '';
+	  position: absolute;
+	  top: -8px;
+	  left: 50%;
+	  -webkit-transform: translate(-50%,0);
+	  -ms-transform: translate(-50%,0);
+	  -o-transform: translate(-50%,0);
+	  transform: translate(-50%,0);
+	  width: 3px;
+	  height: 3px;
+	  background-color: #959595;
+	  border-radius: 100%;
+	}
+	.pca-hold .pca-inner {
+	  display: block;
+	}
+	.pca-hold .pca-sub {
+	  display: block;
+	  text-align: center;
+	  position: relative;
+	  height: 15px;
+	}
+	.pca-hold .pca-sub .pca-top {
+	  position: absolute;
+	  bottom: 0;
+	  left: -37.5px;
+	  display: block;
+	  width: 375px;
+	  height: 15px;
+	  border-bottom-left-radius: 33px;
+	  border-bottom-right-radius: 33px;
+	  background-color: #e8e8e8;
+	  opacity: 1;
+	  z-index: 2;
+	}
+	.pca-hold .pca-sub .pca-bot {
+	  display: block;
+	  width: 120px;
+	  height: 9px;
+	  position: absolute;
+	  top: 0;
+	  left: 50%;
+	  background-color: #B1B1B1;
+	  border-radius: 0 0 135px 135px;
+	  opacity: 1;
+	  z-index: 2;
+	  -webkit-transform: translate(-50%,0);
+	  -ms-transform: translate(-50%,0);
+	  -o-transform: translate(-50%,0);
+	  transform: translate(-50%,0);
+	}
+}
 
 
 

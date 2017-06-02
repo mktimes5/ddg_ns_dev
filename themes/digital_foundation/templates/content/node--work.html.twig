@@ -76,6 +76,7 @@
 {#
 	work content fields
 	{{ label }}
+	{{ content.field_sub_title }}
 	{{ content.field_hero_image }}
 	{{ content.body }}
 	{{ content.field_platform }}
@@ -88,7 +89,7 @@
 	{{ content.field_tablet_image }}
 	{{ content.field_mobile_image }}
 
-	{{ contnet.field_desktop_title }}
+	{{ content.field_desktop_title }}
   	{{ content.field_desktop_image }}
   	{{ content.field_descktop_description }}
 
@@ -103,6 +104,9 @@
 	<section class="row rellax" data-rellax-speed="7">
 
 	  	<div class="large-9 columns blue-col-work-left-script">
+	  		<div class="sub-title">
+	  			{{ content.field_sub_title }}
+	  		</div>
 	  		<div class="work-body">
 	  			{{ content.body }}
 	  		</div>
@@ -114,7 +118,6 @@
 		  			<li>{{ content.field_platform }}</li>
 					<li>{{ content.field_techniques }}</li>
 					<li>{{ content.field_work_year }}</li>
-					<li>{{ content.field_work_url }}</li>
 				</ul>
 	  		</div>
 	  	</div>
@@ -127,14 +130,20 @@
 			<div class="large-12 columns work-mobile-section">
 				<div class="row">
 
-					<div class="large-6 columns mobile-image">
-						{{ content.field_tablet_image }}
-						{{ content.field_mobile_image }}
-					</div>
 
-					<div class="large-6 columns mobile-script">
+					<div class="mobile-script">
 						<h2>Mobile Design</h2>
 						{{ content.field_mobile_script }}
+
+					</div>
+
+					<div class="mobile-image">
+						{{ content.field_desktop_image }}
+						<!-- <div class="column-wrap"> -->
+							{{ content.field_tablet_image }}
+							{{ content.field_mobile_image }}
+						<!-- </div> -->
+						
 					</div>
 
 				</div>
@@ -142,18 +151,33 @@
 		{% endif %}
   	</section>
 
-	<section class="row work-desktop">
+	<section class="row work-visit">
 	  	
-	  	<div class="large-6 columns desktop-left-col">
-	  		{{ content.field_descktop_description }}
+	  	<div class="large-6 columns desktop-left-col align-self-middle">
+	  		<!-- css macbook -->
+	  		<div class="mac-wrap">
+
+	  			<div class='pca-hold'>
+					<div class='pca-main'>
+						<div class='pca-inner'>
+						</div>
+					</div>
+					<div class='pca-sub'>
+						<div class='pca-top'></div>
+						<div class='pca-mid'>
+							<div class='pca-part'></div>
+						</div>
+						<div class='pca-bot'></div>
+					</div>
+				</div>
+
+			</div>
+
 	  	</div>
 	  	<div class="large-6 columns desktop-right-col align-self-middle">
-	  		<h2>{{ content.field_desktop_title }}</h2>
+	  		<h3>Vist {{ label }}</h3>
+	  		{{ content.field_work_url }}
 	  	</div>
-
-  		<div class="large-12 columns desktop-image">
-  			{{ content.field_desktop_image }}
-  		</div> 
 	  	
 
 	</section>
