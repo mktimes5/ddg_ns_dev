@@ -118,43 +118,64 @@
 		}
 
 		.field--name-field-desktop-image {
-			position: absolute;
-			top: -71px;
-			right: 0;
+			//position: absolute;
+			//top: -71px;
+			//right: 0;
+			position: relative;
+			float: left;
+			width: 100%;
 			@include mobile-transform;
 			img {
-				
+				width: 100%;
 			}
 
 		}
 
 		.field--name-field-tablet-image {
-			position: absolute;
-			top: 100px;
-			left: 20%;
-			
+			//position: absolute;
+			//top: 100px;
+			//left: 20%;
+			position: relative;
+			float:right;
+			width: 100%;
 			@include mobile-transform;
 			img {
-				
+				position: relative;
+				float:right;
+				maring-right: -50px;
 			}
 
 		}
 
 		.field--name-field-mobile-image {
-			position: absolute;
-			bottom: 29px;
-			left: 37%;
+			//position: absolute;
+			//bottom: 29px;
+			//left: 37%;
+			position: relative;
+			float:right;
+			width: 100%;
 			@include mobile-transform;
 			img {
-				
+				position: relative;
+				float:right;
 			}
 		}
 
-		.column-wrap {
+		.mob-col-1 {
 			position: relative;
 			float:left;
-			width: 29%;
-			margin-right: 2%;
+			width: 42%;
+			margin-right: 3%;
+			height: 387px;
+			padding-top: 213px
+		}
+
+		.mob-col-2 {
+			position: relative;
+			float:left;
+			width: 55%;
+			margin-right: -100px;
+			height: 600px;
 		}
 	}
 
