@@ -12,7 +12,7 @@ field_name: field_desktop_image
 entity_type: node
 bundle: work
 label: 'Desktop Image'
-description: ''
+description: 'Image will Scale and crop to 672×596'
 required: false
 translatable: false
 default_value: {  }

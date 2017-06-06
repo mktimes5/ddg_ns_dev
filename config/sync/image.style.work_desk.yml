@@ -1,0 +1,14 @@
+uuid: 880c14a7-ced5-49ab-9645-9c9a87f993dc
+langcode: en
+status: true
+dependencies: {  }
+name: work_desk
+label: work-desk
+effects:
+  1915024b-4246-4820-9cd3-1cf46ca8f324:
+    uuid: 1915024b-4246-4820-9cd3-1cf46ca8f324
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 672
+      height: 596

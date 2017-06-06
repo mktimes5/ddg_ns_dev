@@ -96,18 +96,53 @@ $white-op: rgba(253,247,246, 0.1);
 	background-color: $white-op;
 	//border: 1px solid $dark-grey;
 	box-shadow: inset 0 0 0 1px $dark-grey;
-	color: $c-black;
+	color: $white;
 	text-align: center;
 	transition: all, 0.5s;
 	box-sizing: border-box;
 	a {
 		color: $c-black;
 		text-align: center;
+		font-family: $bebas;
+		text-transform: uppercase;
+		width: 100%;
 	}
 
 	&:hover {
 		background-color: rgba(253,247,246, 0.5);
 		box-shadow: inset 0 0 0 1px $white;
+	}	
+}
+
+@mixin blue-button {
+	
+	background-color: $light-blue;
+	//border: 1px solid $dark-grey;
+	box-shadow: inset 0 0 0 1px $dark-grey;
+	color: $white;
+	text-align: center;
+	transition: all, 0.5s;
+	box-sizing: border-box;
+	a {
+		color: $white;
+		text-align: center;
+		text-align: center;
+		font-family: $bebas;
+		font-size: rem-cacl(25); 
+		text-transform: uppercase;
+		width: 100%;
+		display: inline-block;
+		padding: 10px 22px 11px 22px;
+		transition: all, 0.5s;
+		&:hover {
+			color: $c-black;
+		}
+	}
+
+	&:hover {
+		background-color: rgba(253,247,246, 0.5);
+		box-shadow: inset 0 0 0 1px rgba(100,100,100, 0.1);
+		color: $c-black;
 	}	
 }
 
@@ -178,7 +213,7 @@ $white-op: rgba(253,247,246, 0.1);
 }
 
 @mixin mobile-transform {
-  transform: rotate(341deg) rotateX(32deg) rotateY(10deg);
+  transform: rotate(341deg) rotateX(15deg) rotateY(10deg);
 }
 
 

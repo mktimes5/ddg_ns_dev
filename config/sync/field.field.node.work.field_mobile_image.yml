@@ -12,7 +12,7 @@ field_name: field_mobile_image
 entity_type: node
 bundle: work
 label: 'Mobile Image'
-description: 'upload an image size 78x132'
+description: 'Image will Scale and crop to 192×255'
 required: false
 translatable: false
 default_value: {  }

@@ -12,7 +12,7 @@ field_name: field_tablet_image
 entity_type: node
 bundle: work
 label: 'Tablet Image'
-description: 'Upload an image of size 245×173px'
+description: 'Image will Scale and crop to 343×262'
 required: false
 translatable: false
 default_value: {  }

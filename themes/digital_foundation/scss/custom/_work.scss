@@ -22,6 +22,31 @@
 	.blue-col-work-left-script {
 		@include off-col-right($light-blue-op, 27.28%);
 
+		.sub-title {
+			margin-left: 30%;
+			padding-bottom: 5px;
+			width: 70%;
+			position: relative;
+			margin-top: 21px;
+			h2 {
+				text-align: center;
+				font-size: rem-calc(40);
+				font-family: $bebas;
+				text-transform: uppercase;
+			}
+			&:after {
+					content: ' ';
+					height: 3px;
+					width: 30%;
+					background-color: $light-blue;
+					position: absolute;
+					bottom: 0;
+					right: 36%;
+				}
+		}
+
+		
+
 		.work-body {
 			margin-left: 30%;
 			padding: 28px 0px;
@@ -31,9 +56,6 @@
 		
 	}
 
-	.field--name-field-work-url {
-		@include white-button;
-	}
 
 	.blue-col-work-right-script {
 		display:flex;
@@ -75,7 +97,7 @@
 		padding: 27px 19px 125px 27px;
 		width: 100%;
 		position: relative;
-
+		overflow: hidden;
 
 		.mobile-script{
 			position: relative;
@@ -88,7 +110,7 @@
 				font-size: rem-calc(60);
 				text-align: center;
 				position: relative;
-
+				text-transform: uppercase;
 				&:after {
 					content: ' ';
 					height: 3px;
@@ -154,6 +176,7 @@
 			position: relative;
 			float:right;
 			width: 100%;
+			margin-right: -81px;
 			@include mobile-transform;
 			img {
 				position: relative;
@@ -177,41 +200,31 @@
 			margin-right: -100px;
 			height: 600px;
 		}
-	}
+	} // <!  work-mobile section -->
 
-	.work-desktop {
-		@include off-col-right($light-blue-op, 50%);
-		h1,h2,h3,h4,h5 {
-			font-family: $avenir;
-		}
+	.work-visit {
+		padding: 100px 0px;
 
 		.desktop-left-col {
-			padding: 44px 30px 22px 46px;
 
-			.field--name-field-descktop-description {
-				padding-bottom: 22px;
-			}
 		}
 
 		.desktop-right-col {
-			h2 {
+			h3 {
 				text-align: center;
+				margin-top: -46px;
+				margin-bottom: 30px;
 			}
-		}
 
-		.desktop-image {
-			display: flex;
-			justify-content: center;
-			margin-bottom: 31px;
 
-			.field--name-field-desktop-image {
-				width: 70%;
-				img {
-					width: 100%;
-				}
+			.field--name-field-work-url {
+				@include blue-button;
+				width: 250px;
+				margin: 0 auto;
 			}
 		}
 	}
+
 
 }
 
@@ -260,12 +273,13 @@
 	
 }
 
+
 //mac book http://purecssapple.com/ -->
 
 .mac-wrap {
 	position: relative;
-	float:left;
-	width: 100%;
+	width: 320px;
+	margin: 0 auto;
 	.pca-hold {
 	  width: 300px;
 	  margin: 0 37.5px;
@@ -273,11 +287,12 @@
 	.pca-hold .pca-main {
 	  display: block;
 	  position: relative;
-	  background-color: #c8c8c8;
+	  background-color: $light-blue;
 	  border: 9px solid #2d2d2d;
 	  height: 192px;
 	  border-top-left-radius: 9px;
 	  border-top-right-radius: 9px;
+
 	}
 	.pca-hold .pca-main:after {
 	  content: '';
@@ -295,6 +310,18 @@
 	}
 	.pca-hold .pca-inner {
 	  display: block;
+
+	    &:after {
+	  	content: "";
+	    position: absolute;
+	    bottom: 83px;
+	    right: -91px;
+	    width: 211px;
+	    height: 102px;
+	    background-color: rgba(255, 255, 255, 0.2);
+	    -webkit-transform: rotate(145deg);
+	    transform: rotate(232deg);
+	  }
 	}
 	.pca-hold .pca-sub {
 	  display: block;
@@ -314,6 +341,7 @@
 	  background-color: #e8e8e8;
 	  opacity: 1;
 	  z-index: 2;
+	  box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.5 );
 	}
 	.pca-hold .pca-sub .pca-bot {
 	  display: block;
@@ -331,7 +359,7 @@
 	  -o-transform: translate(-50%,0);
 	  transform: translate(-50%,0);
 	}
-}
+} //</ -- mac-wrpa -->
 
 
 
