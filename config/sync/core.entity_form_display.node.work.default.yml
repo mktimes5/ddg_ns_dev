@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.browse_files_modal
     - field.field.node.work.body
     - field.field.node.work.field_descktop_description
     - field.field.node.work.field_desktop_image
@@ -16,11 +17,10 @@ dependencies:
     - field.field.node.work.field_techniques
     - field.field.node.work.field_work_url
     - field.field.node.work.field_work_year
-    - image.style.thumbnail
     - node.type.work
   module:
+    - entity_browser
     - field_group
-    - image
     - link
     - path
     - text
@@ -110,10 +110,15 @@ content:
   field_desktop_image:
     weight: 13
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      entity_browser: browse_files_modal
+      field_widget_remove: true
+      selection_mode: selection_append
+      preview_image_style: medium
+      field_widget_edit: true
+      open: false
+      view_mode: default
     third_party_settings: {  }
-    type: image_image
+    type: entity_browser_file
     region: content
   field_desktop_script:
     weight: 10
@@ -126,18 +131,28 @@ content:
   field_hero_image:
     weight: 4
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      entity_browser: browse_files_modal
+      field_widget_remove: true
+      selection_mode: selection_append
+      preview_image_style: medium
+      field_widget_edit: true
+      open: false
+      view_mode: default
     third_party_settings: {  }
-    type: image_image
+    type: entity_browser_file
     region: content
   field_mobile_image:
     weight: 12
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      entity_browser: browse_files_modal
+      field_widget_remove: true
+      selection_mode: selection_append
+      preview_image_style: medium
+      field_widget_edit: true
+      open: false
+      view_mode: default
     third_party_settings: {  }
-    type: image_image
+    type: entity_browser_file
     region: content
   field_mobile_script:
     weight: 9
@@ -164,10 +179,15 @@ content:
   field_tablet_image:
     weight: 10
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      entity_browser: browse_files_modal
+      field_widget_remove: true
+      selection_mode: selection_append
+      preview_image_style: medium
+      field_widget_edit: true
+      open: false
+      view_mode: default
     third_party_settings: {  }
-    type: image_image
+    type: entity_browser_file
     region: content
   field_techniques:
     weight: 7

@@ -13,15 +13,21 @@ module:
   ctools_block: 0
   datetime: 0
   dblog: 0
+  dropzonejs: 0
+  dropzonejs_eb_widget: 0
   dynamic_page_cache: 0
   editor: 0
+  embed: 0
+  entity: 0
   entity_browser: 0
   entity_browser_entity_form: 0
+  entity_embed: 0
   entity_reference_revisions: 0
   field: 0
   field_group: 0
   field_ui: 0
   file: 0
+  file_browser: 0
   filter: 0
   foo_wrap: 0
   help: 0
@@ -31,6 +37,8 @@ module:
   layout_discovery: 0
   link: 0
   link_block_element: 0
+  media_entity: 0
+  media_entity_image: 0
   menu_ui: 0
   module_filter: 0
   node: 0
