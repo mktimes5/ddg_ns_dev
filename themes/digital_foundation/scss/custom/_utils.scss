@@ -103,3 +103,7 @@ body.toolbar-fixed {
 }
 
 
+ul.field--type-link {
+	@include clean-list;
+}
+

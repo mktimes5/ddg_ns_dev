@@ -1,6 +1,6 @@
 df_splash_page:
   label: digital foudnation splash page
-  category: Digtial Foundation
+  category: Digital Foundation
   type: partial
   template: layouts/df-splash
   css: layouts/df-splash.css
@@ -16,7 +16,7 @@ df_splash_page:
       label: Footer
 df_title_page:
   label: digital foudnation title page
-  category: Digtial Foundation
+  category: Digital Foundation
   type: partial
   template: layouts/df-title
   css: layouts/df-title.css
@@ -28,3 +28,19 @@ df_title_page:
       label: Mid
     footer:
       label: Footer
+df_sections:
+  label: digital foundaton sections page
+  category: Digital Foundation
+  type: partial
+  template: layouts/sections/df-sections
+  css: layouts/sections/df-sections.css
+  icon: layouts/sections/df-sections.png
+  regions:
+    section_one:
+      label: Section One
+    section_two:
+      label: Section Two
+    section_three:
+      label: Section Three
+    section_four:
+      label: Section Four

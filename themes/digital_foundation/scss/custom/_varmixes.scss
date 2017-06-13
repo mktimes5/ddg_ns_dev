@@ -143,7 +143,8 @@ $white-op: rgba(253,247,246, 0.1);
 		background-color: rgba(253,247,246, 0.5);
 		box-shadow: inset 0 0 0 1px rgba(100,100,100, 0.1);
 		color: $c-black;
-	}	
+	}
+
 }
 
 
@@ -216,6 +217,43 @@ $white-op: rgba(253,247,246, 0.1);
   transform: rotate(341deg) rotateX(15deg) rotateY(10deg);
 }
 
+@mixin header-style($num) {
+	@if $num == 1 {
+		font-size: rem-calc(60);
+		font-weight: bold;
+		font-family: $euphemia;
+	}
+	@if $num == 2 {
+		font-size: rem-calc(60);
+		font-family: $euphemia;
+	}
+	@if $num == 3 {
+		font-size: rem-calc(40);
+		font-family: $bebas;
+	}
+
+	@if $num == 4 {
+		font-size: rem-calc(25);
+		font-family: $lora;
+		font-style: italic;
+	}
+
+	@if $num == 5 {
+		font-size: rem-calc(25);
+		font-family: $bebas;
+		font-weight: bold;
+	}
+
+	@if $num == 6 {
+		font-size: rem-calc(17);
+		font-family: $euphemia;
+	}
+
+	@if $num == 7 {
+		font-size: rem-calc(17);
+		font-family: $lora;
+	}
+}
 
 
 
