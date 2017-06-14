@@ -1,8 +1,7 @@
 //$(document).foundation();
 
-/// header effect ////
-let babelTest = "this is a let variable";
-console.log(babelTest);
+
+
 
 let last_scroll_pos = 0;
 let scrolling = false;
@@ -37,6 +36,24 @@ function logoToggle( sPosition ) {
 	}
 }
 
+function teamBioReveal() {
+	console.log('team reveal loaded');
+	let toggleEle = document.querySelector('.team-Reveal');
+	let revealEle = document.querySelector('.team-model');
+
+	toggleEle.addEventListener("click", teamToggle);
+
+	function teamToggle() {
+		alert('Team Toggle');
+	}
+}
+
+function helloFoo(){
+	console.log('hello');
+}
+
+window.onload = helloFoo;
+
 window.onscroll = function (){
 	last_scroll_pos = window.scrollY;
 	if ( !scrolling ) {
@@ -50,3 +67,24 @@ window.onscroll = function (){
     }
 	scrolling = true;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

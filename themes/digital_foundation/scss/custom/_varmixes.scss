@@ -204,6 +204,11 @@ $white-op: rgba(253,247,246, 0.1);
 	}
 }
 
+@mixin body-font {
+	font-family: $lora;
+	font-size: rem-calc(14);
+}
+
 
 @mixin vert-align {
 	position: relative;

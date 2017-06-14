@@ -1,0 +1,46 @@
+.team-view {
+	background-color: #000;
+	color: $white;
+	transition: all 0.1s;
+	.team-ul {
+		@include clean-list;
+		display: flex;
+		justify-content: space-between;
+		li {
+			flex: 0 1 32.888888%;
+			display: flex;
+			flex-direction: column;
+
+
+			.team-face {
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+
+			.team-modal {
+				transform: rotateX(90deg);
+				height: 0px;
+				background-color: $light-blue;
+				color: #000;
+				transition: all 0.5s;
+				font-family: $lora;
+				font-size: rem-calc(14);
+				text-align: center;
+				padding: 10px;
+				margin-bottom: 0px;
+				//border: 1px solid blue;
+			}
+
+			.team-modal.bio-expanded {
+				transform: rotateX(0deg);
+				//transform:scale(3,3);
+				height: auto;
+				margin-bottom: 79px;
+				background-color: #fff;
+				transition: all 1s;
+			}  
+		}
+	}
+}

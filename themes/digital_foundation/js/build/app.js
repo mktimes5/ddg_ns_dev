@@ -35,6 +35,62 @@ function logoToggle( sPosition ) {
 	}
 }
 
+// </ /// header effect //// 
+
+//  Team toggle
+
+
+function teamBioReveal() {
+	console.log('team bio reveal function on');
+	let toggleEle = document.querySelectorAll('.team-reveal');
+	//let revealEle = document.querySelectorAll('.team-modal');
+	//console.log(toggleEle);
+	toggleEle.forEach(el => {
+		el.addEventListener('click', teamToggle);
+
+		function teamToggle() {
+			let checkToggles = document.querySelectorAll('.bio-expanded');
+			
+			if (checkToggles.length < 1 ) {
+				console.log('Team Toggle');
+				//console.log(checkToggles.length);
+				//console.log(  el.parentNode.parentNode );
+				let elParent = el.parentNode.parentNode;
+				let revealParentNodes = elParent.childNodes;
+				//console.log(revealParentNodes);
+				// <! this will need to change if you are displaying twig template suggestions in theme !>
+				// <! show twig parent index = 8 | Production parent index = 2
+				let revealParent = revealParentNodes[8]; 
+				//console.log(revealParent);
+				revealParent.classList.toggle('bio-expanded');
+				//console.log( document.querySelectorAll('.bio-expanded'))
+			} else if ( checkToggles.length >= 1 ) {
+				
+				var removeExp = document.querySelectorAll('.bio-expanded');
+				//console.log( document.querySelectorAll('.bio-expanded') )
+				removeExp.forEach(el => {
+					el.classList.remove('bio-expanded');
+				});
+				//console.log('Team Toggle');
+				//console.log(checkToggles.length);
+				//console.log(  el.parentNode.parentNode );
+				let elParent = el.parentNode.parentNode;
+				let revealParentNodes = elParent.childNodes;
+				//console.log(revealParentNodes);
+				// <! this will need to change if you are displaying twig template suggestions in theme !>
+				// <! show twig parent index = 8 | Production parent index = 2
+				let revealParent = revealParentNodes[8]; 
+				//console.log(revealParent);
+				revealParent.classList.toggle('bio-expanded');
+			}
+		}
+	})
+	
+
+}
+
+window.onload = teamBioReveal;
+
 window.onscroll = function (){
 	last_scroll_pos = window.pageYOffset;
 	if ( !scrolling ) {
@@ -49,5 +105,5 @@ window.onscroll = function (){
 	scrolling = true;
 }
 
-var testScroll = window.pageYOffset;
-console.log('scroll y : ' + testScroll);
+
+

@@ -69,10 +69,68 @@
 	}
 }
 
+.icon-section {
+	min-height: 517px;
+	width: 100%;
+	background-blend-mode: overlay;
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	h3 {
+		text-align: center;
+		position: relative;
+		text-transform: uppercase;
+
+	&:after {
+				content: ' ';
+				height: 3px;
+				width: 26%;
+				background-color: $light-blue;
+				position: absolute;
+				bottom: -5px;
+				right: 37%;
+			}
+	}
+
+	.icon-title {
+		margin-top: 82px;
+		margin-bottom: 54px;
+	}
+
+}
 
 
+ul.field--name-field-icon-widgets-field {
+	flex: 3 1000 auto;
+	@include clean-list;
+	display: flex;
+	flex-wrap: flex;
+	justify-content: space-around;
+	li {
+		flex-basis: 20%;
+	}
+	.icon-wrap {
+		border: 1px solid $c-black;
+		border-radius: 50%;
+		height: auto;
+		margin-bottom: 20px;
+		img {
+			width: 100%;
+			padding: 20%;
+		}
+	}
 
-
+	h5 {
+		text-align: center;
+		text-transform: uppercase;
+	}
+	p {
+		@include body-font;
+	}
+}
 
 
 
