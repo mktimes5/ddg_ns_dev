@@ -1,0 +1,121 @@
+uuid: 50dcfa70-c12b-4c9a-8661-91dc2e78fb4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_section
+    - entity_browser.browser.browse_files_modal
+    - field.field.block_content.hero_section.field_bg_color
+    - field.field.block_content.hero_section.field_hero_image_block
+    - field.field.block_content.hero_section.field_sub_menu
+    - field.field.block_content.hero_section.field_sub_title_block
+    - field.field.block_content.hero_section.field_text_color
+    - field.field.block_content.hero_section.field_title_block
+  module:
+    - color_field
+    - entity_browser
+    - field_group
+    - link
+third_party_settings:
+  field_group:
+    group_color_tabs:
+      children:
+        - group_background_color_tab
+        - group_text_color_tab
+      parent_name: ''
+      weight: 3
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: 'Color tabs'
+    group_background_color_tab:
+      children:
+        - field_bg_color
+      parent_name: group_color_tabs
+      weight: 20
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Background Color'
+    group_text_color_tab:
+      children:
+        - field_text_color
+      parent_name: group_color_tabs
+      weight: 21
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Text Color'
+id: block_content.hero_section.default
+targetEntityType: block_content
+bundle: hero_section
+mode: default
+content:
+  field_bg_color:
+    weight: 21
+    settings: {  }
+    third_party_settings: {  }
+    type: color_field_widget_html5
+    region: content
+  field_hero_image_block:
+    weight: 0
+    settings:
+      entity_browser: browse_files_modal
+      field_widget_remove: true
+      selection_mode: selection_append
+      preview_image_style: medium
+      field_widget_edit: true
+      open: false
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_browser_file
+    region: content
+  field_sub_menu:
+    weight: 6
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_sub_title_block:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_text_color:
+    weight: 22
+    settings: {  }
+    third_party_settings: {  }
+    type: color_field_widget_html5
+    region: content
+  field_title_block:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

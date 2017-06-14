@@ -1,0 +1,44 @@
+uuid: a7cbbf5d-0f33-402e-b7af-eb1cd18f30a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.icon_widgets.field_icon_para
+    - field.field.paragraph.icon_widgets.field_script_icon
+    - field.field.paragraph.icon_widgets.field_title_icon
+    - paragraphs.paragraphs_type.icon_widgets
+  module:
+    - file
+    - text
+id: paragraph.icon_widgets.default
+targetEntityType: paragraph
+bundle: icon_widgets
+mode: default
+content:
+  field_icon_para:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_script_icon:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_title_icon:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,21 @@
+uuid: aa009ef2-e3c8-4d6d-975d-f7e203a0ead8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_script_icon
+    - paragraphs.paragraphs_type.icon_widgets
+  module:
+    - text
+id: paragraph.icon_widgets.field_script_icon
+field_name: field_script_icon
+entity_type: paragraph
+bundle: icon_widgets
+label: description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,8 @@
+uuid: a60d050d-8bbc-46f1-a844-6f5a8d0b2afa
+langcode: en
+status: true
+dependencies: {  }
+id: hero_section
+label: 'Hero Section'
+revision: 1
+description: 'Section with header / background image / sub menu'

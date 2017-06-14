@@ -1,0 +1,8 @@
+uuid: e569ab52-fbca-4b06-8adb-0a0d081841da
+langcode: en
+status: true
+dependencies: {  }
+id: icon_section
+label: 'Icon Section'
+revision: 1
+description: 'A section containing icons and descriptions'

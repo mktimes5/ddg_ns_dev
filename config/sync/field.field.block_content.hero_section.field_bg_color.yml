@@ -1,0 +1,25 @@
+uuid: 7c84b521-5769-419b-a791-1b86fe0e7fd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_section
+    - field.storage.block_content.field_bg_color
+  module:
+    - color_field
+id: block_content.hero_section.field_bg_color
+field_name: field_bg_color
+entity_type: block_content
+bundle: hero_section
+label: 'Background Color'
+description: "Site Colors\r\n$light-blue: #99DBFC;\r\n$orange: #DBAD86;\r\n$c-black: #3B3A37;\r\n$light-grey: #F4F4F4;\r\n$dark-grey: #979797;\r\n$lt-blue-grey: #F1F4FB;\r\n$white: #FDF7F6;"
+required: true
+translatable: false
+default_value:
+  -
+    color: '#000000'
+    opacity: null
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

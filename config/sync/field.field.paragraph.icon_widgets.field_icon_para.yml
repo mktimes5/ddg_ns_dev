@@ -1,0 +1,27 @@
+uuid: 760a6602-2460-471f-8c65-c468f72c7833
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icon_para
+    - paragraphs.paragraphs_type.icon_widgets
+  module:
+    - file
+id: paragraph.icon_widgets.field_icon_para
+field_name: field_icon_para
+entity_type: paragraph
+bundle: icon_widgets
+label: Icon
+description: 'Up load an icon (SVG format only)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: svg
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

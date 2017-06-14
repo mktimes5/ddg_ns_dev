@@ -1,0 +1,19 @@
+uuid: 2e40199b-2184-45d4-949a-48d354d9fbca
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.icon_section
+    - field.storage.block_content.field_sub_title_block
+id: block_content.icon_section.field_sub_title_block
+field_name: field_sub_title_block
+entity_type: block_content
+bundle: icon_section
+label: 'Sub Title'
+description: "Site Colors\r\n$light-blue: #99DBFC;\r\n$orange: #DBAD86;\r\n$c-black: #3B3A37;\r\n$light-grey: #F4F4F4;\r\n$dark-grey: #979797;\r\n$lt-blue-grey: #F1F4FB;\r\n$white: #FDF7F6;"
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

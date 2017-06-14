@@ -1,0 +1,7 @@
+uuid: 3cd55a17-031c-4c1a-af94-88428f215430
+langcode: en
+status: true
+dependencies: {  }
+id: icon_widgets
+label: 'Icon Widgets'
+behavior_plugins: {  }

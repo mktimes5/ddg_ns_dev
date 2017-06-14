@@ -1,0 +1,19 @@
+uuid: b0bb9a9b-4c89-4298-bfd0-f4c4fd57c81d
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_script_icon
+field_name: field_script_icon
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

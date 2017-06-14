@@ -1,0 +1,23 @@
+uuid: b01f5cb4-3a3a-4097-b01d-9220987f0875
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_section
+    - field.storage.block_content.field_sub_menu
+  module:
+    - link
+id: block_content.hero_section.field_sub_menu
+field_name: field_sub_menu
+entity_type: block_content
+bundle: hero_section
+label: 'sub menu'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

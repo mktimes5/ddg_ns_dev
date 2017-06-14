@@ -1,0 +1,33 @@
+uuid: ccb0df3b-966e-49ba-8def-0131e97a2d10
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.icon_section
+    - field.storage.block_content.field_icon_widgets_field
+    - paragraphs.paragraphs_type.icon_widgets
+  module:
+    - entity_reference_revisions
+id: block_content.icon_section.field_icon_widgets_field
+field_name: field_icon_widgets_field
+entity_type: block_content
+bundle: icon_section
+label: 'Icon Widgets'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      icon_widgets: icon_widgets
+    target_bundles_drag_drop:
+      icon_widgets:
+        enabled: true
+        weight: 3
+      link_element:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions
