@@ -1,0 +1,14 @@
+#footer {
+	background-color: #000;
+	padding: 26px 0px;
+	color: $white;
+	@include body-font;
+	@include header-pack;
+
+	.region-footer {
+		padding: 13px 0px;
+		border-top: 1px solid $dark-grey;
+		border-bottom: 1px solid $dark-grey;
+		display: flex;
+	}
+}

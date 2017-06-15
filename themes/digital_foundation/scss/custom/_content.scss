@@ -104,6 +104,7 @@
 
 #page-splash {
 	@include splash-container;
+	border-bottom: none;
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-between;

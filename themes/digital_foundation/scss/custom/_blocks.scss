@@ -1,0 +1,34 @@
+.location-block {
+	flex: 0 1 40%;
+	padding: 5px 38px 5px 2px;
+	position: relative;
+	&:after {
+		content: ' ';
+		height: 80%;
+		width: 1px;
+		background-color: $dark-grey;
+		position: absolute;
+		right: 0px;
+		top: 10%;
+	}
+	ul.location-list {
+		@include clean-list;
+		display: flex;
+		justify-content: center;
+		li {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			flex: 0 1 45%;
+			p {
+				margin-bottom: 15px;
+				font-size: rem-calc(17);
+				line-height: rem-calc(18);
+			}
+
+			p:nth-child(2) {
+				margin-bottom: 0px;
+			}
+		}
+	}
+}

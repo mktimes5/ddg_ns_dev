@@ -2,16 +2,17 @@
 	background-color: #000;
 	color: $white;
 	transition: all 0.1s;
+	overflow: hidden;
 	.team-ul {
 		@include clean-list;
 		display: flex;
 		justify-content: space-between;
+		flex-wrap:wrap;
 		li {
 			flex: 0 1 32.888888%;
 			display: flex;
 			flex-direction: column;
-
-
+			margin-bottom: 26px;
 			.team-face {
 				img {
 					width: 100%;
@@ -26,20 +27,65 @@
 				color: #000;
 				transition: all 0.5s;
 				font-family: $lora;
-				font-size: rem-calc(14);
+				font-size: rem-calc(4);
 				text-align: center;
 				padding: 10px;
-				margin-bottom: 0px;
+				margin-bottom: 26px;
+				width: 100%;
+				display: flex;
+				justify-content: center;
 				//border: 1px solid blue;
+				p {
+					flex: 0 1 65%;
+					margin-bottom: 0px;
+				}
 			}
 
 			.team-modal.bio-expanded {
 				transform: rotateX(0deg);
 				//transform:scale(3,3);
 				height: auto;
-				margin-bottom: 79px;
+				
 				background-color: #fff;
-				transition: all 1s;
+				transition: transform 1s;
+				transform: scale(3.1, 3.01);
+				//transform: scale(3, 3);
+				margin-top: 55px;
+				postion: relative;
+
+			}  
+		}
+
+		li:nth-child(3n) {
+			.team-modal.bio-expanded {
+				
+				margin-left: -102.333%;
+
+				p {
+					
+				}
+			}  
+		}
+
+		li:nth-child(4n) {
+			.team-modal.bio-expanded {
+				
+				margin-left: 102.333%;
+
+				p {
+					
+				}
+			}  
+		}
+
+		li:first-child {
+			.team-modal.bio-expanded {
+				
+				margin-left: 102.333%;
+
+				p {
+					
+				}
 			}  
 		}
 	}
