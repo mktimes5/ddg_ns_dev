@@ -5,6 +5,7 @@ core: 8.x
 libraries:
   - digital_foundation/rellax-lib
   - digital_foundation/global-styling
+  - digital_foundation/ion-icons
 #base theme: stable
 regions:
   header: Header

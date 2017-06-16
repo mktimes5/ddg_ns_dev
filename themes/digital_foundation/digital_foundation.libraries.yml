@@ -9,3 +9,8 @@ global-styling:
 rellax-lib:
   js:
     js/rellax.min.js: {}
+
+ion-icons:
+  css:
+    theme:
+      css/ionicons.min.css: {}
