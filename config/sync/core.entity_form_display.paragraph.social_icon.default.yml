@@ -1,0 +1,34 @@
+uuid: 3f0ea335-981b-4586-8082-f12d90654e01
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.social_icon.field_gen_icon
+    - field.field.paragraph.social_icon.field_meta_txt
+    - paragraphs.paragraphs_type.social_icon
+  module:
+    - file
+id: paragraph.social_icon.default
+targetEntityType: paragraph
+bundle: social_icon
+mode: default
+content:
+  field_gen_icon:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_meta_txt:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

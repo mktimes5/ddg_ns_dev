@@ -1,0 +1,27 @@
+uuid: 41c0ac91-31a2-4a4f-8f3a-6f925e9afde1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_gen_icon
+    - paragraphs.paragraphs_type.social_icon
+  module:
+    - file
+id: paragraph.social_icon.field_gen_icon
+field_name: field_gen_icon
+entity_type: paragraph
+bundle: social_icon
+label: Icon
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'jpg jpeg png gif svg'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

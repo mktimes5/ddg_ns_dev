@@ -1,0 +1,24 @@
+uuid: deac034e-afef-4c23-bc49-717a46fe2e7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.follow_block
+    - field.storage.block_content.field_social_links
+  module:
+    - link
+id: block_content.follow_block.field_social_links
+field_name: field_social_links
+entity_type: block_content
+bundle: follow_block
+label: 'Social Links'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 5
+  title_predefined: "social-facebook-outline|Facebook\r\nsocial-instagram-outline|Instagram\r\nsocial-linkedin-outline|LinkedIn\r\nsocial-googleplus|Google+"
+field_type: link

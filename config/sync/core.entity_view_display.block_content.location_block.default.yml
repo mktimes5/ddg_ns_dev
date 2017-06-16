@@ -1,0 +1,70 @@
+uuid: d025f317-a6e4-42e5-92f3-9a9c236999da
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.location_block
+    - field.field.block_content.location_block.field_city_state_zip
+    - field.field.block_content.location_block.field_map_address
+    - field.field.block_content.location_block.field_phone
+    - field.field.block_content.location_block.field_street
+    - field.field.block_content.location_block.field_title_block
+  module:
+    - simple_gmap
+id: block_content.location_block.default
+targetEntityType: block_content
+bundle: location_block
+mode: default
+content:
+  field_city_state_zip:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_map_address:
+    weight: 0
+    label: hidden
+    settings:
+      include_map: true
+      apikey: ''
+      iframe_width: 140
+      iframe_height: 142
+      static_scale: 1
+      link_text: 'View larger map'
+      zoom_level: 14
+      map_type: m
+      langcode: en
+      include_static_map: false
+      include_link: false
+      include_text: false
+    third_party_settings: {  }
+    type: simple_gmap
+    region: content
+  field_phone:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_street:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_title_block:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

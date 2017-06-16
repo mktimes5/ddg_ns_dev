@@ -1,0 +1,65 @@
+uuid: ad185b9f-c2f1-425f-975c-ee19cc389394
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.location_block
+    - field.field.block_content.location_block.field_city_state_zip
+    - field.field.block_content.location_block.field_map_address
+    - field.field.block_content.location_block.field_phone
+    - field.field.block_content.location_block.field_street
+    - field.field.block_content.location_block.field_title_block
+id: block_content.location_block.default
+targetEntityType: block_content
+bundle: location_block
+mode: default
+content:
+  field_city_state_zip:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_map_address:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_phone:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_street:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_title_block:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

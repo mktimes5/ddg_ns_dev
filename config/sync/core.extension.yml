@@ -41,6 +41,7 @@ module:
   layout_discovery: 0
   link: 0
   link_block_element: 0
+  linkicon: 0
   media_entity: 0
   media_entity_image: 0
   menu_ui: 0
@@ -58,6 +59,7 @@ module:
   responsive_image: 0
   search: 0
   shortcut: 0
+  simple_gmap: 0
   system: 0
   taxonomy: 0
   text: 0
@@ -69,6 +71,7 @@ module:
   user: 0
   views_parity_row: 0
   views_ui: 0
+  webform: 0
   ds: 1
   menu_link_content: 1
   pathauto: 1

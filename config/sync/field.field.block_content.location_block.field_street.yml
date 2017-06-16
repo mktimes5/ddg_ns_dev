@@ -1,0 +1,19 @@
+uuid: 17a2055e-1e66-4134-82d0-302391e1fe51
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.location_block
+    - field.storage.block_content.field_street
+id: block_content.location_block.field_street
+field_name: field_street
+entity_type: block_content
+bundle: location_block
+label: Street
+description: "2827 NE Alberta St.\r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

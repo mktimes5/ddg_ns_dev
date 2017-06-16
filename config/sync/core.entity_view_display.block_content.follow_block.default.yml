@@ -1,0 +1,44 @@
+uuid: 50ede8b3-562b-4f7e-80b7-d1f2da596347
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.follow_block
+    - field.field.block_content.follow_block.field_social_links
+  module:
+    - ds
+    - linkicon
+id: block_content.follow_block.default
+targetEntityType: block_content
+bundle: follow_block
+mode: default
+content:
+  field_social_links:
+    weight: 0
+    label: hidden
+    settings:
+      target: _blank
+      linkicon_prefix: ion
+      linkicon_wrapper_class: ''
+      linkicon_style: ''
+      linkicon_color: ''
+      linkicon_maxlength: 60
+      linkicon_global_title: ''
+      linkicon_position: ''
+      linkicon_size: small
+      url_only: false
+      url_plain: false
+      rel: '0'
+      linkicon_link: false
+      linkicon_load: false
+      linkicon_vertical: false
+      linkicon_tooltip: false
+      linkicon_no_text: false
+      linkicon_bundle: ''
+      trim_length: 80
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: linkicon
+    region: content
+hidden: {  }

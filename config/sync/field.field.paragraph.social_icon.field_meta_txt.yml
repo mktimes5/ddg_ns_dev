@@ -1,0 +1,19 @@
+uuid: 62da799e-e859-4aa1-b95a-28a05490c124
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_meta_txt
+    - paragraphs.paragraphs_type.social_icon
+id: paragraph.social_icon.field_meta_txt
+field_name: field_meta_txt
+entity_type: paragraph
+bundle: social_icon
+label: Meta
+description: 'Alt Text'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

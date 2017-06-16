@@ -1,0 +1,12 @@
+uuid: f388bc72-71a9-4bce-bba8-fb6e8a002007
+langcode: en
+status: true
+dependencies: {  }
+id: about_us_contact_form
+label: Contact
+recipients:
+  - paul@doreydesigngroup.com
+reply: ''
+weight: 0
+message: 'Thank you for contacting Dorey Digital'
+redirect: ''

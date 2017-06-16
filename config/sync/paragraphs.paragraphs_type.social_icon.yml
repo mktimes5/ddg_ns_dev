@@ -1,0 +1,7 @@
+uuid: 7d5475e6-193a-4b5c-a106-4aca9e27aa0b
+langcode: en
+status: true
+dependencies: {  }
+id: social_icon
+label: 'Social Icon'
+behavior_plugins: {  }

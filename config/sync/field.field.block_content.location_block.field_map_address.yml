@@ -1,0 +1,19 @@
+uuid: 04b20aa8-a974-4b40-9312-258aea1c6700
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.location_block
+    - field.storage.block_content.field_map_address
+id: block_content.location_block.field_map_address
+field_name: field_map_address
+entity_type: block_content
+bundle: location_block
+label: 'Map Address'
+description: 'google maps one line address ex: [ 2827 NE Alberta St, Portland, OR 97211 ]'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

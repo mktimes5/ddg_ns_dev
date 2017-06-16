@@ -1,0 +1,327 @@
+{
+    "name": "drupal/webform",
+    "description": "Enables the creation of webforms and questionnaires.",
+    "type": "drupal-module",
+    "license": "GPL-2.0+",
+    "minimum-stability": "dev",
+    "homepage": "https://drupal.org/project/webform",
+    "authors": [
+        {
+            "name": "Jacob Rockowitz (jrockowitz)",
+            "homepage": "https://www.drupal.org/u/jrockowitz",
+            "role": "Maintainer"
+        }
+    ],
+    "support": {
+        "issues": "https://drupal.org/project/issues/webform",
+        "source": "http://cgit.drupalcode.org/webform"
+    },
+    "repositories": {
+        "ckeditor.autogrow": {
+            "type": "package",
+            "package": {
+                "name": "ckeditor/autogrow",
+                "version": "4.6.2",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "ckeditor.autogrow"
+                },
+                "dist": {
+                    "url": "http://download.ckeditor.com/autogrow/releases/autogrow_4.6.2.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        "ckeditor.fakeobjects": {
+            "type": "package",
+            "package": {
+                "name": "ckeditor/fakeobjects",
+                "version": "4.6.2",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "ckeditor.fakeobjects"
+                },
+                "dist": {
+                    "url": "http://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.6.2.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        "ckeditor.image": {
+            "type": "package",
+            "package": {
+                "name": "ckeditor/image",
+                "version": "4.6.2",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "ckeditor.image"
+                },
+                "dist": {
+                    "url": "http://download.ckeditor.com/image/releases/image_4.6.2.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        "ckeditor.link": {
+            "type": "package",
+            "package": {
+                "name": "ckeditor/link",
+                "version": "4.6.2",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "ckeditor.link"
+                },
+                "dist": {
+                    "url": "http://download.ckeditor.com/link/releases/link_4.6.2.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        "codemirror": {
+            "type": "package",
+            "package": {
+                "name": "codemirror/codemirror",
+                "version": "5.25.2",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "codemirror"
+                },
+                "dist": {
+                    "url": "https://github.com/components/codemirror/archive/5.25.2.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        "jquery.geocomplete": {
+            "type": "package",
+            "package": {
+                "name": "jquery/geocomplete",
+                "version": "1.7.0",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "jquery.geocomplete"
+                },
+                "dist": {
+                    "url": "https://github.com/ubilabs/geocomplete/archive/1.7.0.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        "jquery.icheck": {
+            "type": "package",
+            "package": {
+                "name": "jquery/icheck",
+                "version": "1.0.2 ",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "jquery.icheck"
+                },
+                "dist": {
+                    "url": "https://github.com/fronteed/icheck/archive/1.0.2.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        "jquery.image-picker": {
+            "type": "package",
+            "package": {
+                "name": "jquery/image-picker",
+                "version": "0.3.0",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "jquery.image-picker"
+                },
+                "dist": {
+                    "url": "https://github.com/rvera/image-picker/archive/0.3.0.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        "jquery.inputmask": {
+            "type": "package",
+            "package": {
+                "name": "jquery/inputmask",
+                "version": "3.3.4",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "jquery.inputmask"
+                },
+                "dist": {
+                    "url": "https://github.com/RobinHerbots/jquery.inputmask/archive/3.3.4.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        "jquery.intl-tel-input": {
+            "type": "package",
+            "package": {
+                "name": "jquery/intl-tel-input",
+                "version": "11.0.12",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "jquery.intl-tel-input"
+                },
+                "dist": {
+                    "url": "https://github.com/jackocnr/intl-tel-input/archive/v11.0.12.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        "jquery.rateit": {
+            "type": "package",
+            "package": {
+                "name": "jquery/rateit",
+                "version": "1.1.1",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "jquery.rateit"
+                },
+                "dist": {
+                    "url": "https://github.com/gjunge/rateit.js/archive/1.1.1.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        "jquery.select2": {
+            "type": "package",
+            "package": {
+                "name": "jquery/select2",
+                "version": "4.0.3",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "jquery.select2"
+                },
+                "dist": {
+                    "url": "https://github.com/select2/select2/archive/4.0.3.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        "jquery.timepicker": {
+            "type": "package",
+            "package": {
+                "name": "jquery/timepicker",
+                "version": "1.11.10",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "jquery.timepicker"
+                },
+                "dist": {
+                    "url": "https://github.com/jonthornton/jquery-timepicker/archive/1.11.10.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        "jquery.toggles": {
+            "type": "package",
+            "package": {
+                "name": "jquery/toggles",
+                "version": "4.0.0",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "jquery.toggles"
+                },
+                "dist": {
+                    "url": "https://github.com/simontabor/jquery-toggles/archive/v4.0.0.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        "jquery.word-and-character-counter": {
+            "type": "package",
+            "package": {
+                "name": "jquery/word-and-character-counter",
+                "version": "2.3.5",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "jquery.word-and-character-counter"
+                },
+                "dist": {
+                    "url": "https://github.com/qwertypants/jQuery-Word-and-Character-Counter-Plugin/archive/2.3.5.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        },
+        "signature_pad": {
+            "type": "package",
+            "package": {
+                "name": "signature_pad/signature_pad",
+                "version": "1.5.3",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "signature_pad"
+                },
+                "dist": {
+                    "url": "https://github.com/szimek/signature_pad/archive/v1.5.3.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                }
+            }
+        }
+    },
+    "require": {
+        "ckeditor/autogrow": "4.6.2",
+        "ckeditor/fakeobjects": "4.6.2",
+        "ckeditor/image": "4.6.2",
+        "ckeditor/link": "4.6.2",
+        "codemirror/codemirror": "5.25.2",
+        "jquery/geocomplete": "1.7.0",
+        "jquery/icheck": "1.0.2 ",
+        "jquery/image-picker": "0.3.0",
+        "jquery/inputmask": "3.3.4",
+        "jquery/intl-tel-input": "11.0.12",
+        "jquery/rateit": "1.1.1",
+        "jquery/select2": "4.0.3",
+        "jquery/timepicker": "1.11.10",
+        "jquery/toggles": "4.0.0",
+        "jquery/word-and-character-counter": "2.3.5",
+        "signature_pad/signature_pad": "1.5.3"
+    }
+}

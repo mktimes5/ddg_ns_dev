@@ -1,0 +1,19 @@
+uuid: 414ff0a8-f26a-4c07-840b-ac5690173ad0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.location_block
+    - field.storage.block_content.field_city_state_zip
+id: block_content.location_block.field_city_state_zip
+field_name: field_city_state_zip
+entity_type: block_content
+bundle: location_block
+label: City-State-Zip
+description: 'Portland, OR 97211'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

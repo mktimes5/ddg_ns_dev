@@ -1,0 +1,25 @@
+uuid: 920f83ea-38f8-44d3-966f-de53420d4051
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:f9bda716-5165-43f9-86b6-847f8984ced5'
+  module:
+    - block_content
+  theme:
+    - digital_foundation
+id: fooblock
+theme: digital_foundation
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:f9bda716-5165-43f9-86b6-847f8984ced5'
+settings:
+  id: 'block_content:f9bda716-5165-43f9-86b6-847f8984ced5'
+  label: 'foo block'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
