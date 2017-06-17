@@ -18,6 +18,7 @@
 @import 'custom/team';
 @import 'custom/footer';
 @import 'custom/blocks';
+@import 'custom/forms';
 @import 'font-awesome/font-awesome';
 
 @include foundation-global-styles;
@@ -28,7 +29,7 @@
 
 @include foundation-typography;
 @include foundation-button;
-@include foundation-forms;
+//@include foundation-forms;
 // @include foundation-range-input;
 @include foundation-accordion;
 @include foundation-accordion-menu;

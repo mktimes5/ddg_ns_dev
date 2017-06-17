@@ -1,0 +1,104 @@
+form {
+	@include body-font;
+	@include header-pack;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	//form title
+	h1 {
+		flex: 0 1 100%;
+		text-align: center;
+	}
+	input {
+		padding: 16px 9px 17px 9px;
+		background-color: #d8d8d8;
+		border: 1px solid $dark-grey;
+		color: $c-black;
+		margin-bottom: 22px;
+		font-family: $avenir;
+		font-size: rem-calc(18);
+		display: inline-block;
+	}
+
+	textarea {
+		padding: 16px 9px 17px 9px;
+		background-color: #d8d8d8;
+		border: 1px solid $dark-grey;
+		color: $c-black;
+		margin-bottom: 22px;
+		font-family: $avenir;
+		font-size: rem-calc(18);
+		display: inline-block;
+		resize: none;
+		max-width: 100%;
+		box-sizing: border-box;
+	}
+
+	.form-item {
+		display: flex;
+	}
+
+	#edit-actions {
+		flex: 0 1 100%;
+	}
+
+	#edit-message_counter {
+		display: none;
+	}
+}
+
+#webform-submission-about-contact-form {
+	.form-col1 {
+		flex: 0 1 60%;
+		margin-right: 40px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		.form-item  {
+			flex: 0 1 40%;
+			input {
+				width: 100%;
+			}
+		}
+
+		.js-form-type-textarea {
+			flex: 0 1 100%;
+			display: flex;
+
+			textarea {
+				position: relative;
+				float: left;
+				flex: 1 1 auto;
+			}
+		}
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
