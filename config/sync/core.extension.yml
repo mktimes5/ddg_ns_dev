@@ -72,6 +72,8 @@ module:
   views_parity_row: 0
   views_ui: 0
   webform: 0
+  webform_examples: 0
+  webform_ui: 0
   ds: 1
   menu_link_content: 1
   pathauto: 1

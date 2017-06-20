@@ -1,0 +1,8 @@
+uuid: 9133db2c-40e0-4ea8-a64b-d559c4a6351a
+langcode: en
+status: true
+dependencies: {  }
+id: title_block
+label: 'Title Block'
+revision: 0
+description: 'Big title with subtitle description'
