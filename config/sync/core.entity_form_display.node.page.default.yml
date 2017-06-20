@@ -87,4 +87,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_foo_ent_ref: true
+  field_what_evs: true
   panelizer: true

@@ -94,4 +94,6 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_foo_ent_ref: true
+  field_what_evs: true
   panelizer: true

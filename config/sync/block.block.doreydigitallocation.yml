@@ -1,0 +1,25 @@
+uuid: e2368b9d-6f85-4749-a664-ad7b6020c33c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:location_block:a19b05c0-ceaa-4029-b929-ecd20d807709'
+  module:
+    - block_content
+  theme:
+    - digital_foundation
+id: doreydigitallocation
+theme: digital_foundation
+region: footer
+weight: -8
+provider: null
+plugin: 'block_content:a19b05c0-ceaa-4029-b929-ecd20d807709'
+settings:
+  id: 'block_content:a19b05c0-ceaa-4029-b929-ecd20d807709'
+  label: 'Dorey Digital Location'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

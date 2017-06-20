@@ -1,0 +1,25 @@
+uuid: 106f9bdd-4dfd-42a7-99d8-84ebb8e73733
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:follow_block:dc4eb3f7-2a4a-4543-b33a-233d578e6f2b'
+  module:
+    - block_content
+  theme:
+    - digital_foundation
+id: followusfooter
+theme: digital_foundation
+region: footer
+weight: -7
+provider: null
+plugin: 'block_content:dc4eb3f7-2a4a-4543-b33a-233d578e6f2b'
+settings:
+  id: 'block_content:dc4eb3f7-2a4a-4543-b33a-233d578e6f2b'
+  label: 'follow Us Footer'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
