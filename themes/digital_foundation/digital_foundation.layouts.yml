@@ -44,3 +44,19 @@ df_sections:
       label: Section Three
     section_four:
       label: Section Four
+df_small_aside:
+  label: digital founsation small aside
+  category: Digital Foundation
+  type: partial
+  template: layouts/small-aside/df-small-aside
+  css: layouts/small-aside/df-small-aside.css
+  icon: layouts/small-aside/df-small-aside.png
+  regions:
+    top:
+      label: Top
+    mid:
+      label: Mid
+    aside:
+      label: Side
+    footer:
+      label: footer

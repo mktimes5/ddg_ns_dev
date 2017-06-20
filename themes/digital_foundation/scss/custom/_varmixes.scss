@@ -197,11 +197,12 @@ $white-op: rgba(253,247,246, 0.1);
 		font-size: rem-calc(17);
 		font-family: $euphemia;
 	}
-
+	/* ! does not exist but defined in theme 
 	h7 {
 		font-size: rem-calc(17);
 		font-family: $lora;
 	}
+	*/
 }
 
 @mixin body-font {

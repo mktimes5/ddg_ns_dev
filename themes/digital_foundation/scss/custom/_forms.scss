@@ -4,8 +4,8 @@ form {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
-	//form title
-	h1 {
+	
+	h1 { //form title
 		flex: 0 1 100%;
 		text-align: center;
 	}
@@ -17,7 +17,8 @@ form {
 		margin-bottom: 22px;
 		font-family: $avenir;
 		font-size: rem-calc(18);
-		display: inline-block;
+		//display: inline-block;
+		width: 100%;
 	}
 
 	textarea {
@@ -28,18 +29,20 @@ form {
 		margin-bottom: 22px;
 		font-family: $avenir;
 		font-size: rem-calc(18);
-		display: inline-block;
+		//display: inline-block;
 		resize: none;
-		max-width: 100%;
+		width: 100%;
 		box-sizing: border-box;
 	}
 
 	.form-item {
-		display: flex;
+		//display: flex;
 	}
 
 	#edit-actions {
-		flex: 0 1 100%;
+		//flex: 0 1 100%;
+		//display: flex;
+		//align-content: center;
 	}
 
 	#edit-message_counter {
@@ -47,33 +50,29 @@ form {
 	}
 }
 
-#webform-submission-about-contact-form {
-	.form-col1 {
-		flex: 0 1 60%;
-		margin-right: 40px;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
+#webform-submission-about-contact-block-content-7-form {
+	display: flex;
+	flex-wrap: wrap;
 
-		.form-item  {
-			flex: 0 1 40%;
-			input {
-				width: 100%;
-			}
-		}
-
-		.js-form-type-textarea {
-			flex: 0 1 100%;
-			display: flex;
-
-			textarea {
-				position: relative;
-				float: left;
-				flex: 1 1 auto;
-			}
-		}
-
+	.js-form-type-textfield, .js-form-type-email {
+		flex: 0 1 40%;
 	}
+
+	.js-form-type-textarea {
+		flex: 0 1 90%;
+	}
+
+	#edit-actions {
+		flex: 0 1 90%;
+		display: flex;
+
+		input {
+			align-self: flex-start;
+			flex: 0 1 40%;
+		}
+	}
+
+	
 }
 
 
