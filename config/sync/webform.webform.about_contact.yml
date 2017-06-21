@@ -10,11 +10,11 @@ id: about_contact
 title: Contact
 description: ''
 category: ''
-elements: "full_name:\n  '#type': textfield\n  '#title': 'Full Name'\n  '#title_display': invisible\n  '#placeholder': 'Full Name'\n  '#autocomplete': 'off'\n  '#required': true\nemail_address:\n  '#type': email\n  '#title': 'Email Address'\n  '#title_display': invisible\n  '#placeholder': 'Email Address'\n  '#required': true\nphone:\n  '#type': textfield\n  '#title': Phone\n  '#title_display': invisible\n  '#placeholder': 'Phone (Optional)'\n  '#input_mask': '(999) 999-9999'\n  '#admin_title': Phone\ncompany:\n  '#type': textfield\n  '#title': Company\n  '#title_display': invisible\n  '#placeholder': Company\nmessage:\n  '#type': textarea\n  '#title': Message\n  '#title_display': invisible\n  '#placeholder': Message\n  '#required': true\n  '#counter_type': word\n  '#counter_maximum': '1000'\n"
+elements: "'#attributes':\n  class:\n    - main-contact\nfull_name:\n  '#type': textfield\n  '#title': 'Full Name'\n  '#title_display': invisible\n  '#placeholder': 'Full Name'\n  '#autocomplete': 'off'\n  '#required': true\nemail_address:\n  '#type': email\n  '#title': 'Email Address'\n  '#title_display': invisible\n  '#placeholder': 'Email Address'\n  '#required': true\nphone:\n  '#type': textfield\n  '#title': Phone\n  '#title_display': invisible\n  '#placeholder': 'Phone (Optional)'\n  '#input_mask': '(999) 999-9999'\n  '#admin_title': Phone\ncompany:\n  '#type': textfield\n  '#title': Company\n  '#title_display': invisible\n  '#placeholder': Company\nmessage:\n  '#type': textarea\n  '#title': Message\n  '#title_display': invisible\n  '#placeholder': Message\n  '#required': true\n  '#counter_type': word\n  '#counter_maximum': '1000'\n"
 css: ''
 javascript: ''
 settings:
-  page: true
+  page: false
   page_submit_path: ''
   page_confirm_path: ''
   form_submit_once: false

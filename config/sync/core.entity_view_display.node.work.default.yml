@@ -5,9 +5,11 @@ dependencies:
   config:
     - field.field.node.work.body
     - field.field.node.work.field_descktop_description
+    - field.field.node.work.field_desktop
     - field.field.node.work.field_desktop_image
     - field.field.node.work.field_desktop_title
     - field.field.node.work.field_hero_image
+    - field.field.node.work.field_logo_work
     - field.field.node.work.field_mobile_image
     - field.field.node.work.field_mobile_script
     - field.field.node.work.field_platform
@@ -77,6 +79,15 @@ content:
   field_hero_image:
     weight: 2
     label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_logo_work:
+    weight: 19
+    label: above
     settings:
       image_style: ''
       image_link: ''

@@ -1,0 +1,38 @@
+uuid: c7cc5763-a861-4a98-96ad-ab4c4afade62
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_logo_work
+    - node.type.work
+  module:
+    - image
+id: node.work.field_logo_work
+field_name: field_logo_work
+entity_type: node
+bundle: work
+label: Logo
+description: 'The company logo or a small snapshot of the website'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image
