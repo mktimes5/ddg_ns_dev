@@ -1,0 +1,14 @@
+uuid: e77b1d20-69d9-483a-9818-d3782a7b9818
+langcode: en
+status: true
+dependencies: {  }
+name: desk_scale
+label: desk-scale
+effects:
+  10537545-13d1-405d-8389-fb6b4d9454f8:
+    uuid: 10537545-13d1-405d-8389-fb6b4d9454f8
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 672
+      height: 596

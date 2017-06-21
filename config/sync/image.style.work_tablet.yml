@@ -5,10 +5,11 @@ dependencies: {  }
 name: work_tablet
 label: work-tablet
 effects:
-  c893590f-9f3a-4482-86f1-f86f383f4ceb:
-    uuid: c893590f-9f3a-4482-86f1-f86f383f4ceb
-    id: image_scale_and_crop
-    weight: 1
+  a32439f1-c82c-4088-8f26-3d61008ad56c:
+    uuid: a32439f1-c82c-4088-8f26-3d61008ad56c
+    id: image_crop
+    weight: 2
     data:
       width: 343
       height: 262
+      anchor: center-center

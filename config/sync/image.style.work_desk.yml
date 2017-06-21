@@ -5,10 +5,11 @@ dependencies: {  }
 name: work_desk
 label: work-desk
 effects:
-  1915024b-4246-4820-9cd3-1cf46ca8f324:
-    uuid: 1915024b-4246-4820-9cd3-1cf46ca8f324
-    id: image_scale_and_crop
-    weight: 1
+  780c3303-b4a0-41c4-8df3-520f80e04220:
+    uuid: 780c3303-b4a0-41c4-8df3-520f80e04220
+    id: image_crop
+    weight: 2
     data:
       width: 672
       height: 596
+      anchor: center-center

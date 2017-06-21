@@ -65,9 +65,9 @@ third_party_settings:
     group_mobile:
       children:
         - field_mobile_script
+        - field_desktop_image
         - field_tablet_image
         - field_mobile_image
-        - field_desktop_image
       parent_name: group_tab_group
       weight: 1
       format_type: tab
@@ -111,7 +111,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_desktop_image:
-    weight: 13
+    weight: 10
     settings:
       entity_browser: browse_files_modal
       field_widget_remove: true
@@ -158,7 +158,7 @@ content:
     type: entity_browser_file
     region: content
   field_mobile_image:
-    weight: 11
+    weight: 12
     settings:
       entity_browser: browse_files_modal
       field_widget_remove: true
@@ -193,7 +193,7 @@ content:
     type: string_textfield
     region: content
   field_tablet_image:
-    weight: 10
+    weight: 11
     settings:
       entity_browser: browse_files_modal
       field_widget_remove: true

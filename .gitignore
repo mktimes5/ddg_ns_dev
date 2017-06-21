@@ -69,3 +69,6 @@ devel.toolbar.settings.yml
 
 #ignore config databse backups
 config/database
+
+#ignore php storm files
+.idea
