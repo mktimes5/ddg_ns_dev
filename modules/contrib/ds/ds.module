@@ -7,6 +7,7 @@
 
 use Drupal\Component\Utility\Html;
 use Drupal\Component\Utility\Xss;
+use Drupal\Core\Cache\CacheableMetadata;
 use Drupal\Core\Entity\Display\EntityDisplayInterface;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Field\FieldConfigInterface;
@@ -364,8 +365,15 @@ function ds_entity_view_alter(&$build, EntityInterface $entity, EntityDisplayInt
       $field_value = $field_instance->build();
       $field_title = $field_instance->getTitle();
 
+      // If the field value is cache data then we presume the value was empty
+      // and we just have cache data as to why it's empty.
+      if ($field_value instanceof CacheableMetadata) {
+        CacheableMetadata::createFromRenderArray($build)
+          ->merge($field_value)
+          ->applyTo($build);
+      }
       // Only allow non empty fields.
-      if (!empty($field_value)) {
+      elseif (!empty($field_value)) {
         $build[$key] = [
           '#theme' => 'field',
           '#field_type' => 'ds',
@@ -590,11 +598,20 @@ function ds_preprocess_ds_layout(&$variables) {
 
       // Let other modules alter the ds array before rendering.
       $context = [
-        'entity' => isset($variables[$entity_type_id]) ? $variables[$entity_type_id] : (isset($variables['content']['#' . $entity_type_id]) ? $variables['content']['#' . $entity_type_id] : ''),
+        'entity' => NULL,
         'entity_type' => $variables['content']['#entity_type'],
         'bundle' => $variables['content']['#bundle'],
         'view_mode' => $variables['content']['#view_mode'],
       ];
+
+      // Special case for User entity, becase $variables['user'] contains the currently logged in user
+      if($entity_type_id !== 'user' && isset($variables[$entity_type_id])) {
+        $context['entity'] = $variables[$entity_type_id];
+      }
+      elseif (isset($variables['content']['#' . $entity_type_id])) {
+        $context['entity'] = $variables['content']['#' . $entity_type_id];
+      }
+
       \Drupal::moduleHandler()->alter('ds_pre_render', $variables['content'], $context, $variables);
     }
   }
@@ -1087,6 +1104,13 @@ function ds_entity_type_alter(array &$entity_types) {
       if ($entity_type->hasLinkTemplate('canonical')) {
         $entity_type->setLinkTemplate('display', $entity_type->getLinkTemplate('canonical') . '/manage-display');
       }
+    }
+  }
+  // Undo field_layout changes to EntityViewDisplay.
+  if (\Drupal::moduleHandler()->moduleExists('field_layout')) {
+    $entity_types['entity_view_display']->setClass($entity_types['entity_view_display']->getOriginalClass());
+    if (\Drupal::moduleHandler()->moduleExists('field_ui')) {
+      $entity_types['entity_view_display']->setFormClass('edit', 'Drupal\field_ui\Form\EntityViewDisplayEditForm');
     }
   }
 }
