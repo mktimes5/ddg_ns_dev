@@ -152,10 +152,10 @@ content:
     label: hidden
     settings:
       trim_length: 80
+      rel: nofollow
+      target: _blank
       url_only: false
       url_plain: false
-      rel: ''
-      target: ''
     third_party_settings: {  }
     type: link
     region: content
