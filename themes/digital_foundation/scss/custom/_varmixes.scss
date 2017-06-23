@@ -261,7 +261,11 @@ $white-op: rgba(253,247,246, 0.1);
 	}
 }
 
-
+/// Animations //
+@keyframes work_logo {
+	from {transform: rotateX(0deg);}
+	to {transform: rotateX(90deg);}
+}
 
 
 

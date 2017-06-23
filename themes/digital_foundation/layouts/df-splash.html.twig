@@ -6,6 +6,11 @@
 		</div>
 
 		<div class="splash-right">
+			{% if content.right_title %}
+			<div class="right-title">
+				{{ content.right_title }}
+			</div>
+			{% endif %}
 			{{ content.splash_right }}
 		</div>
 	

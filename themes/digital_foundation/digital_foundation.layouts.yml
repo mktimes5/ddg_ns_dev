@@ -10,6 +10,8 @@ df_splash_page:
       label: Splash Left
     splash_right:
       label: Splash Right
+    right_title:
+      label: Right Title
     mid:
       label: Mid
     footer:

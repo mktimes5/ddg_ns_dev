@@ -232,16 +232,19 @@
 // work view
 
 .work-view {
-
+	position: relative;
+	//margin-top: 190px;
+	//overflow: scroll;
+	//height: 800px;
 	ul {
 		@include clean-list;
-
 		li {
 			display: inline-block;
 			width: 100%;
-			padding: 32px;
+			//padding: 32px;
 			border-top: 1px solid $dark-grey;
 			position: relative;
+			height: 202px;
 		}
 
 		li:last-child {
@@ -274,7 +277,7 @@
 		width: 100%;
 		display: inline-block;
 		text-align: center;
-		margin: 10px 0px;
+		margin: 30px 0px 10px 0px;
 		color: $c-black;
 		font-size: rem-calc(34);
 
@@ -282,9 +285,24 @@
 			color: $c-black;
 		}
 	}
+
+	.work-logo {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+		height: 202px;
+		width: 100%;
+		//transform: rotateX(90deg);
+		animation-name: work_logo;
+		animation-duration: 0.5s;
+		animation-delay: 4s;
+		animation-fill-mode: forwards;
+		//opacity: 0.8;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
 	
 }
-
 
 //mac book http://purecssapple.com/ -->
 
