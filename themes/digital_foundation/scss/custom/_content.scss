@@ -108,6 +108,24 @@
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-between;
+	flex-direction: column;
+	border: 0px solid #111;
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+
+	@media screen and (min-width: 60em) {
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		flex-direction: row;
+		height: 951px;
+		border: 1px solid $dark-grey;
+		position: relative;
+		background-color: $light-grey;
+		width: 115%;
+		padding: 0px;
+		position: relative;
+	}
 
 	.splash-left {
 		align-self: flex-end;
@@ -117,6 +135,17 @@
 		padding: 62px 27px 62px 45px;
 		min-height: 685px;
 		background-color: rgba(255, 255, 255, 0.9);
+		display: none;
+		@media screen and (min-width: 60em) {
+			align-self: flex-end;
+			margin-left: -30px;
+			width: 38%;
+			border: 1px solid $dark-grey;
+			padding: 62px 27px 62px 45px;
+			min-height: 685px;
+			background-color: rgba(255, 255, 255, 0.9);
+			display: block;
+		}
 
 		.field--type-text-with-summary {
 			p  {
@@ -128,24 +157,31 @@
 	}
 
 	.splash-right {
-      align-self: flex-end;
-      width: 46%;
-      height: 800px;
-      border: 1px solid $dark-grey;
+      align-self: flex-start;
+      width: 100%;
+      height: auto;
+      border: 0px solid $dark-grey;
       position: relative;
-      overflow: scroll;
-      padding-top: 190px;
+      overflow: visible;
+
+		@media screen and (min-width: 60em) {
+			align-self: flex-end;
+			width: 46%;
+			height: 800px;
+			border: 1px solid $dark-grey;
+			position: relative;
+			overflow-y: scroll;
+
+		}
 
       .right-title {
-        //position: absolute;
-        //top: 0;
-        //right: 0;
-        width:100%;
+		  position: sticky;
+		  top: 0;
+		  right: 0;
+		  width:100%;
+		  z-index: 20;
         .block-region-right-title {
-          position: absolute;
-          top: 0;
-          right: 0;
-          width:100%
+
         }
 
       }
