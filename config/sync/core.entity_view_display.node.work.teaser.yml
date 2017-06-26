@@ -5,10 +5,34 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.work.body
+    - field.field.node.work.field_descktop_description
+    - field.field.node.work.field_desktop
+    - field.field.node.work.field_desktop_image
+    - field.field.node.work.field_desktop_title
+    - field.field.node.work.field_hero_image
+    - field.field.node.work.field_logo_work
+    - field.field.node.work.field_mobile_image
+    - field.field.node.work.field_mobile_script
+    - field.field.node.work.field_platform
+    - field.field.node.work.field_sub_title
+    - field.field.node.work.field_tablet_image
+    - field.field.node.work.field_techniques
+    - field.field.node.work.field_work_url
+    - field.field.node.work.field_work_year
     - node.type.work
   module:
+    - image
+    - link
+    - panelizer
+    - responsive_image
     - text
     - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
 id: node.work.teaser
 targetEntityType: node
 bundle: work
@@ -17,12 +41,134 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    weight: 1
     settings:
       trim_length: 600
     third_party_settings: {  }
     region: content
-  links:
-    weight: 100
+  field_descktop_description:
+    type: text_default
+    weight: 2
     region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_desktop:
+    type: string
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_desktop_image:
+    type: image
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_desktop_title:
+    type: string
+    weight: 5
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_hero_image:
+    type: image
+    weight: 7
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_logo_work:
+    type: responsive_image
+    weight: 6
+    region: content
+    label: hidden
+    settings:
+      responsive_image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_mobile_image:
+    type: image
+    weight: 8
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_mobile_script:
+    type: text_default
+    weight: 9
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_platform:
+    type: entity_reference_label
+    weight: 10
+    region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_sub_title:
+    type: string
+    weight: 11
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_tablet_image:
+    type: image
+    weight: 12
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_techniques:
+    type: entity_reference_label
+    weight: 13
+    region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_work_url:
+    type: link
+    weight: 15
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_work_year:
+    type: number_integer
+    weight: 14
+    region: content
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }

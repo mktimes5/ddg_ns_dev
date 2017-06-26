@@ -16,7 +16,7 @@ provider: null
 plugin: 'block_content:dc4eb3f7-2a4a-4543-b33a-233d578e6f2b'
 settings:
   id: 'block_content:dc4eb3f7-2a4a-4543-b33a-233d578e6f2b'
-  label: 'follow Us Footer'
+  label: 'STAY CONNECTED'
   provider: block_content
   label_display: visible
   status: true

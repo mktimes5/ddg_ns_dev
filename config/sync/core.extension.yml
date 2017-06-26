@@ -69,6 +69,7 @@ module:
   twig_field_value: 0
   update: 0
   user: 0
+  views_infinite_scroll: 0
   views_parity_row: 0
   views_ui: 0
   webform: 0
