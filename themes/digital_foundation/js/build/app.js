@@ -1,6 +1,7 @@
 //$(document).foundation();
 
 /// header effect ////
+"use strict";
 
 let last_scroll_pos = 0;
 let scrolling = false;
@@ -39,57 +40,131 @@ function logoToggle( sPosition ) {
 
 //  Team toggle
 
+function teamBioXfer() {
 
-function teamBioReveal() {
-	console.log('team bio reveal function on');
-	let toggleEle = document.querySelectorAll('.team-reveal');
-	//let revealEle = document.querySelectorAll('.team-modal');
-	//console.log(toggleEle);
-	toggleEle.forEach(el => {
-		el.addEventListener('click', teamToggle);
 
-		function teamToggle() {
-			let checkToggles = document.querySelectorAll('.bio-expanded');
-			
-			if (checkToggles.length < 1 ) {
-				console.log('Team Toggle');
-				//console.log(checkToggles.length);
-				//console.log(  el.parentNode.parentNode );
-				let elParent = el.parentNode.parentNode;
-				let revealParentNodes = elParent.childNodes;
-				//console.log(revealParentNodes);
-				// <! this will need to change if you are displaying twig template suggestions in theme !>
-				// <! show twig parent index = 8 | Production parent index = 2
-				let revealParent = revealParentNodes[8]; 
-				//console.log(revealParent);
-				revealParent.classList.toggle('bio-expanded');
-				//console.log( document.querySelectorAll('.bio-expanded'))
-			} else if ( checkToggles.length >= 1 ) {
-				
-				var removeExp = document.querySelectorAll('.bio-expanded');
-				//console.log( document.querySelectorAll('.bio-expanded') )
-				removeExp.forEach(el => {
-					el.classList.remove('bio-expanded');
-				});
-				//console.log('Team Toggle');
-				//console.log(checkToggles.length);
-				//console.log(  el.parentNode.parentNode );
-				let elParent = el.parentNode.parentNode;
-				let revealParentNodes = elParent.childNodes;
-				//console.log(revealParentNodes);
-				// <! this will need to change if you are displaying twig template suggestions in theme !>
-				// <! show twig parent index = 8 | Production parent index = 2
-				let revealParent = revealParentNodes[8]; 
-				//console.log(revealParent);
-				revealParent.classList.toggle('bio-expanded');
-			}
-		}
-	})
+            let toggleEle = document.querySelectorAll('.team-trigger');
+
+            toggleEle.forEach(el => {
+                el.addEventListener('click', bioXfer);
+
+            function bioXfer() {
+                // get the team members bio //
+
+                ssm.addState({
+                    id: 'mobile',
+                    query: '(min-width: 40em)',
+                    onEnter: function () {
+                        deskEffects();
+                    },
+                    onLeave: function () {
+                        mobileRemoval();
+                    }
+                });
+                function mobTog() {
+                    alert('mobTog');
+                }
+
+            function deskEffects() {
+                console.log(el);
+                el.removeEventListener('click', mobTog)
+                let findActive = document.querySelectorAll('.modal-team-bio');
+
+                findActive.forEach(yy => {
+                        if (yy.classList.contains("active") ) {
+                            yy.classList.remove("active");
+                        }
+
+                })
+
+                let findTeam = document.querySelectorAll('.team-name');
+
+                findTeam.forEach(xx => {
+                    if ( xx.classList.contains("active") ) {
+                    xx.classList.remove("active");
+                    }
+                })
+
+                let findRole = document.querySelectorAll('.team-role');
+                findRole.forEach(zz => {
+                    if ( zz.classList.contains("active") ) {
+                        zz.classList.remove("active");
+                    }
+
+                })
+
+                let elBio = el.previousElementSibling.textContent;
+                // get the next row element //
+                //console.log(elBio);
+                let bioRow = el.parentNode.parentElement.parentElement;
+                ///console.log(bioRow);
+                let bioRowNext = bioRow.nextElementSibling;
+                bioRowNext.textContent = elBio;
+                bioRowNext.classList.toggle("active");
+
+                //highlight name and role
+                let teamName = el.parentElement.nextElementSibling;
+                teamName.classList.toggle("active");
+
+                let teamRole = teamName.nextElementSibling;
+                teamRole.classList.toggle("active");
+
+            } //deskeffects
+
+            function mobileRemoval() {
+                let findActive = document.querySelectorAll('.modal-team-bio');
+
+                findActive.forEach(yy => {
+                        if (yy.classList.contains("active") ) {
+                            yy.classList.remove("active");
+                        }
+
+                })
+
+                let findTeam = document.querySelectorAll('.team-name');
+
+                findTeam.forEach(xx => {
+                    if ( xx.classList.contains("active") ) {
+                    xx.classList.remove("active");
+                    }
+                })
+
+                let findRole = document.querySelectorAll('.team-role');
+                findRole.forEach(zz => {
+                    if ( zz.classList.contains("active") ) {
+                        zz.classList.remove("active");
+                    }
+
+                })
+
+                let untoggleEle = document.querySelectorAll('.team-trigger');
+
+                untoggleEle.forEach(tt => {
+                    tt.removeEventListener('click', bioXfer);
+
+                 })
+
+                let mobileToggleEle = document.querySelectorAll('.team-trigger');
+                mobileToggleEle.forEach(uu => {
+                    uu.addEventListener('click', mobTog);
+
+                })
+
+            
+            } //mobileRemoval
+        } //bioXfer         
+                
+        })
+
+        
+      
+
+
+    
 	
-
 }
 
-window.onload = teamBioReveal;
+window.onload = teamBioXfer;
 
 window.onscroll = function (){
 	last_scroll_pos = window.pageYOffset;

@@ -6,6 +6,7 @@ libraries:
   - digital_foundation/rellax-lib
   - digital_foundation/global-styling
   - digital_foundation/ion-icons
+  - digital_foundation/simple-state
 #base theme: stable
 regions:
   header: Header

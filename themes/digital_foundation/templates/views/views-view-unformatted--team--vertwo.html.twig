@@ -1,0 +1,39 @@
+{#
+/**
+ * @file
+ * Theme override to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ */
+#}
+
+<article class="team-view-wrap">
+    <header>
+        <h3 id="who-we-are">Who We Are</h3>
+    </header>
+
+    {% for row in rows|batch(3,'free space') %}
+        <div class="row">
+
+            {% for row in row %}
+                  <div class="team-member">
+                    {{ row.content }}
+                  </div>
+            {% endfor %}
+
+        </div>
+        <div class="row modal-team-bio">
+
+        </div>
+
+    {% endfor %}
+</article>
