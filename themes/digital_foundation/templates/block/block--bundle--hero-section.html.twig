@@ -28,6 +28,17 @@
  */
 #}
 <style>
+
+	.hero-section:before {
+		background-color: {{ content.field_bg_color|field_value }};
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0.8;
+		content: " ";
+	}
 	.hero-section .hero-links li  {
 		border-color: {{ content.field_text_color|field_value }};
 	}
@@ -36,7 +47,7 @@
 		color: {{ content.field_text_color|field_value }};
 	}
 </style>
-<div class="hero-section" style="background-image:url('{{ file_url(content.field_hero_image_block.0['#item'].entity.uri.value) }}'); background-color: {{ content.field_bg_color|field_value }};">
+<div class="hero-section" style="background-image:url('{{ file_url(content.field_hero_image_block.0['#item'].entity.uri.value) }}');">
 
 	<div class="hero-title">
 		<h1 style="color: {{ content.field_text_color|field_value }};"> 
