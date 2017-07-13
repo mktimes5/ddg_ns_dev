@@ -18,3 +18,7 @@ ion-icons:
 simple-state:
   js:
     bower_components/simplestatemanager/dist/ssm.min.js: {}
+
+team-js:
+  js:
+    js/team.js: {}
