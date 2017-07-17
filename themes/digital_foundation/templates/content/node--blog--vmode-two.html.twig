@@ -85,7 +85,7 @@
 <article class="blog-vmode-2">
 	<div class="blog-view-text">
 		<div class="summary">
-			<h3>{{ label }}</h3>
+			<h3><a href="{{ url }}">{{ label }}</a></h3>
 			{% set text = content.body|render|striptags %}
 			{{ text|length > 200 ? text|slice(0, 200) ~ '...' : text }}
 		</div>

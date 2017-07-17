@@ -31,13 +31,15 @@
 
 
 #mobile-footer {
-	display:block;
-	position: fixed;
-	bottom: 0;
-	background-color: #C9C9C9;
-	width: 100%;
-	@media screen and (min-width: 48em) {
-		display:none;
+	display: none;
+
+	@media screen and (max-width: 48em) {
+		position: fixed;
+		bottom: 0;
+		background-color: #C9C9C9;
+		width: 100%;
+		z-index: 40;
+		display: block;
 	}
 
 		.item-list {
