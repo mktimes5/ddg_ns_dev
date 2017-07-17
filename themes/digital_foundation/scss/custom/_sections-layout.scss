@@ -125,10 +125,9 @@ ul.field--name-field-icon-widgets-field {
 
 	li {
 		flex: 0 1 20%;
-
 		@media screen and (max-width: 40em) {
 			width: 75%;
-			//margin: 0 auto;
+			margin: 0 auto;
 			flex: 0 1 auto;
 		}
 	}
