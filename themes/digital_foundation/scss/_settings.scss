@@ -116,6 +116,7 @@ $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-color: inherit;
 $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
+
 $header-styles: (
   small: (
     'h1': ('font-size': 24),
@@ -134,6 +135,7 @@ $header-styles: (
     'h6': ('font-size': 18),
   ),
 );
+
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
 $header-small-font-color: $medium-gray;

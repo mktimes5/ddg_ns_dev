@@ -6,6 +6,7 @@ var sassPaths = [
   'bower_components/foundation-sites/scss',
   'bower_components/motion-ui/src'
 ];
+var sourcemaps = require('gulp-sourcemaps');
 /*
 gulp.task('javascript', function() {
   return gulp.src(PATHS.javascript)
@@ -30,7 +31,8 @@ gulp.task('sass', function() {
   return gulp.src('scss/app.scss')
     .pipe($.sass({
       includePaths: sassPaths,
-      outputStyle: 'compressed' // if css compressed **file size**
+      outputStyle: 'compressed', // if css compressed **file size**
+      sourceMap: true
     })
       .on('error', $.sass.logError))
     .pipe($.autoprefixer({

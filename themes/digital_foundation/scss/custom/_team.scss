@@ -1,8 +1,7 @@
 .team-view {
 	background-color: #000;
 	color: $white;
-	transition: all 0.1s;
-	overflow: hidden;
+	width: 100%;
 	.team-ul {
 		@include clean-list;
 		display: flex;

@@ -1,14 +1,10 @@
-.df-section {
-	min-height: 200px;
-	width: 100%;
-
+#df-flex {
 	@include header-pack;
 
-
-}
-
-.df-section:nth-child(2n + 1) {
-	
+	.df-section {
+		display: inline-block;
+		width: 100%;
+	}
 }
 
 .hero-section {
@@ -77,14 +73,13 @@
 .icon-section {
 	min-height: 517px;
 	width: 100%;
-	background-blend-mode: overlay;
-	background-size: cover;
-	background-position: center center;
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	justify-content: center;
+	flex-direction: column;
 
 	h3 {
+		//margin-top: 82px;
 		text-align: center;
 		position: relative;
 		text-transform: uppercase;
@@ -105,6 +100,11 @@
 		margin-bottom: 54px;
 		padding: 0px 10px;
 		text-align: center;
+		flex: 1 1 auto;
+	}
+
+	.icon-widgets {
+		flex: 1 1 auto;
 	}
 
 }
@@ -117,16 +117,19 @@ ul.field--name-field-icon-widgets-field {
 	justify-content: space-around;
 	flex-direction: row;
 
-	@media screen and (max-width: 48em) {
+	@media screen and (max-width: 40em) {
 		flex-direction: column;
 		align-content: center;
 	}
 
+
 	li {
 		flex: 0 1 20%;
 
-		@media screen and (max-width: 48em) {
+		@media screen and (max-width: 40em) {
 			width: 75%;
+			//margin: 0 auto;
+			flex: 0 1 auto;
 		}
 	}
 	.icon-wrap {
@@ -135,7 +138,7 @@ ul.field--name-field-icon-widgets-field {
 		height: auto;
 
 
-		@media screen and (max-width: 48em) {
+		@media screen and (max-width: 40em) {
 			width: 75%;
 			margin: 0 auto;
 		}
