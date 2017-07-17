@@ -1,0 +1,31 @@
+uuid: ca97993f-a8f5-4108-9e6d-15d96883ddbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.icon_menu
+    - field.field.block_content.icon_menu.field_social_links
+  module:
+    - link
+id: block_content.icon_menu.default
+targetEntityType: block_content
+bundle: icon_menu
+mode: default
+content:
+  field_social_links:
+    weight: 26
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

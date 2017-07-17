@@ -20,5 +20,5 @@ default_value_callback: ''
 settings:
   link_type: 17
   title: 5
-  title_predefined: "social-facebook-outline|Facebook\r\nsocial-instagram-outline|Instagram\r\nsocial-linkedin-outline|LinkedIn\r\nsocial-googleplus|Google+"
+  title_predefined: "social-facebook-outline|Facebook\r\nsocial-instagram-outline|Instagram\r\nsocial-linkedin-outline|LinkedIn\r\nsocial-googleplus|Google+\r\nion-ios-telephone-outline|Phone icon\r\nion-quote|Quote icon\r\nion-android-folder-open|Folder icon\r\nion-image|Image Icon\r\nion-ios-home-outline|House icon"
 field_type: link

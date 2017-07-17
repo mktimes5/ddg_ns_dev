@@ -1,3 +1,5 @@
+
+
 .region-header {
 	.row {
 		background-color: $white;
@@ -47,6 +49,10 @@
 }
 
 #block-digital-foundation-main-menu {
+
+	@media screen and (max-width: 48em) {
+		display:none;
+	}
 	ul {
 		@include clean-list;
 		display:flex;
@@ -100,6 +106,10 @@
 	display: flex;
 	padding-left: 20px;
 	transition: all 0s;
+
+	@media screen and (max-width: 48em) {
+		display:none;
+	}
 }
 .news-letter {
 	font-family: $euphemia;

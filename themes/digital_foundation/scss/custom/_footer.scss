@@ -5,6 +5,10 @@
 	@include body-font;
 	@include header-pack;
 
+	@media screen and (max-width: 48em) {
+		display:none;
+	}
+
 	.region-footer {
 		padding: 13px 0px;
 		border-top: 1px solid $dark-grey;
@@ -25,3 +29,37 @@
 	}
 }
 
+
+#mobile-footer {
+	display:block;
+	position: fixed;
+	bottom: 0;
+	background-color: #C9C9C9;
+	width: 100%;
+	@media screen and (min-width: 48em) {
+		display:none;
+	}
+	#block-mobilemenu {
+
+		.item-list {
+			ul {
+				@include clean-list;
+				display: flex;
+				flex-wrap: nowrap;
+				align-items: center;
+				justify-content: space-around;
+				align-content: space-between;
+				li {
+				flex: 0 1 auto;
+					line-height: 2em;
+					a {
+						color: #000;
+						font-size: 2.5em;
+					}
+				}
+			}
+		}
+
+	}
+
+}

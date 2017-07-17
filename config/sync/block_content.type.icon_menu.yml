@@ -1,0 +1,8 @@
+uuid: 6dda0846-425b-4a66-a5a5-4fb59a18ed75
+langcode: en
+status: true
+dependencies: {  }
+id: icon_menu
+label: 'Icon Menu'
+revision: 1
+description: 'A menu of icons and links'

@@ -1,0 +1,25 @@
+uuid: 3ed6f62b-6958-4aa9-888a-d6c8ec607fe8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:icon_menu:bc1327ac-f9e8-410e-a33b-09d57bbf8eb6'
+  module:
+    - block_content
+  theme:
+    - digital_foundation
+id: mobilemenu
+theme: digital_foundation
+region: mobile
+weight: 0
+provider: null
+plugin: 'block_content:bc1327ac-f9e8-410e-a33b-09d57bbf8eb6'
+settings:
+  id: 'block_content:bc1327ac-f9e8-410e-a33b-09d57bbf8eb6'
+  label: 'Mobile Menu'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

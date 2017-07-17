@@ -1,0 +1,24 @@
+uuid: 0467c59d-8795-4f03-b4f8-3661150d04e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.icon_menu
+    - field.storage.block_content.field_social_links
+  module:
+    - link
+id: block_content.icon_menu.field_social_links
+field_name: field_social_links
+entity_type: block_content
+bundle: icon_menu
+label: Links
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 5
+  title_predefined: "social-facebook-outline|Facebook\r\nsocial-instagram-outline|Instagram\r\nsocial-linkedin-outline|LinkedIn\r\nsocial-googleplus|Google+\r\nios-telephone-outline|Phone icon\r\nquote|Quote icon\r\nandroid-folder-open|Folder icon\r\nimage|Image Icon\r\nios-home-outline|House icon"
+field_type: link
