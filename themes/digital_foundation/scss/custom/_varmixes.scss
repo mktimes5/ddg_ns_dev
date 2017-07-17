@@ -38,6 +38,12 @@ $white-op: rgba(253,247,246, 0.1);
 	width: 115%;
 	padding: 0px;
 	position: relative;
+
+	@media screen and (max-width: 48em) {
+		height: auto;
+		width: 100%;
+		padding: 0px 10px;
+	}
 }
 
 @mixin step-ladder {
