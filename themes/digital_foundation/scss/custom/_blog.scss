@@ -7,6 +7,12 @@
 		letter-spacing: 0.4em;
 		font-weight: bold;
 		color: $white;
+		font-size: 3em;
+
+
+		@media #{$break-tablet} {
+			font-size: 2.5em;
+		}
 
 	}
 
@@ -22,11 +28,21 @@
 	.blue-col-blog-left-script {
 		@include off-col-right($light-blue-op, 27.28%);
 
+		@media #{$break-large} {
+			@include  off-col-right($light-blue-op, 10%);
+		}
+
 		.blog-body {
 			margin-left: 30%;
 			padding: 28px 0px;
 			width: 70%;
 			min-height: 470px;
+
+			@media #{$break-large} {
+				margin-left: 9.5%;
+				width: 90%;
+			}
+
 		}
 		
 	}
