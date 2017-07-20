@@ -5,6 +5,11 @@
 
 let last_scroll_pos = 0;
 let scrolling = false;
+// ie for-each polyfill
+(function () {
+    if ( typeof NodeList.prototype.forEach === "function" ) return false;
+    NodeList.prototype.forEach = Array.prototype.forEach;
+})();
 
 function headerToggle( sPosition ) {
 	let headerEle = document.querySelector('.region-header');

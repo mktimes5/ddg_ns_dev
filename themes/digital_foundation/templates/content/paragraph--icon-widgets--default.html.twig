@@ -55,7 +55,9 @@
   <img src={{ file_url(content.field_icon_para|field_target_entity.uri.value) }} alt={{ content.field_image|field_raw('alt') }} />
 </div>
 <h5>{{ content.field_title_icon|field_value }}</h5>
-<p>{{ content.field_script_icon|field_value }}</p>
+<div class="icon-text-field">
+    {{ content.field_script_icon|field_value }}
+</div>
 
 
 
