@@ -39,12 +39,9 @@ function logoToggle( sPosition ) {
 function mobileMenu() {
 	let mobileLinks = document.querySelectorAll('.linkicon__item');
     var currentPage = window.location.href;
-    console.log(currentPage);
 	mobileLinks.forEach(el => {
-        console.log(el.href);
 		if (currentPage == el.href) {
 			el.classList.toggle("active");
-
 		}
 	})
 }
