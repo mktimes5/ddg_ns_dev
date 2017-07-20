@@ -36,6 +36,9 @@ function logoToggle( sPosition ) {
 	}
 }
 
+let footerMenu = document.getElementById("mobile-footer");
+footerMenu.addEventListener("load", mobileMenu());
+
 function mobileMenu() {
 	let mobileLinks = document.querySelectorAll('.linkicon__item');
     var currentPage = window.location.href;
@@ -49,8 +52,6 @@ function mobileMenu() {
 // </ /// header effect //// 
 
 //  Team toggle
-
-window.onload = mobileMenu;
 
 window.onscroll = function (){
 	last_scroll_pos = window.pageYOffset;
