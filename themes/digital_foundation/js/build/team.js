@@ -2,13 +2,17 @@
 
 'use strict';
 
+if (window.NodeList && !NodeList.prototype.forEach) {
+    NodeList.prototype.forEach = function (callback, thisArg) {
+        thisArg = thisArg || window;
+        for (var i = 0; i < this.length; i++) {
+            callback.call(thisArg, this[i], i, this);
+        }
+    };
+}
+
 window.onload = teamBioXfer;
 
-
-(function () {
-    if ( typeof NodeList.prototype.forEach === "function" ) return false;
-    NodeList.prototype.forEach = Array.prototype.forEach;
-})();
 
 function teamBioXfer() {
     // using simple state manager to toggle desktop and mobile functions
