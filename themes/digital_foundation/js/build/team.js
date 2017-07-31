@@ -1,7 +1,7 @@
 /// this library is loaded via the view template //
 
 'use strict';
-
+// NodeList.forEach Polyfill
 if (window.NodeList && !NodeList.prototype.forEach) {
     NodeList.prototype.forEach = function (callback, thisArg) {
         thisArg = thisArg || window;

@@ -1,5 +1,6 @@
 /// this library is loaded via the view template //
-'use strict';if(window.NodeList&&!NodeList.prototype.forEach){NodeList.prototype.forEach=function(callback,thisArg){thisArg=thisArg||window;for(var i=0;i<this.length;i++){callback.call(thisArg,this[i],i,this);}};}window.onload=teamBioXfer;function teamBioXfer(){// using simple state manager to toggle desktop and mobile functions
+'use strict';// NodeList.forEach Polyfill
+if(window.NodeList&&!NodeList.prototype.forEach){NodeList.prototype.forEach=function(callback,thisArg){thisArg=thisArg||window;for(var i=0;i<this.length;i++){callback.call(thisArg,this[i],i,this);}};}window.onload=teamBioXfer;function teamBioXfer(){// using simple state manager to toggle desktop and mobile functions
 ssm.addState({id:'desk',query:'(min-width: 40em)',onEnter:function onEnter(){teamEffect.deskEffect();//console.log('desk effect called');
 }});ssm.addState({id:'mobile',query:'(max-width: 40em)',onEnter:function onEnter(){teamEffect.mobileEffect();}});}var teamEffect={teamTriggers:document.querySelectorAll('.team-trigger'),deskBio:function deskBio(){//this.clearActiveClass;
 //this would be the el passed in deskListen for each
