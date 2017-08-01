@@ -175,7 +175,7 @@ let teamEffect = {
 
             let findMobActive = document.querySelectorAll('.team-bio-mobile');
             findMobActive.forEach(yy =>{
-                yy.innerHTML = "";
+                yy.innerHTML = " ";
                 if ( yy.classList.contains("active") ) {
                 yy.classList.remove("active");
                 }
