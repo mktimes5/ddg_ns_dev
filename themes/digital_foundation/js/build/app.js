@@ -5,6 +5,7 @@
 
 let last_scroll_pos = 0;
 let scrolling = false;
+
 // ie for-each polyfill
 (function () {
     if ( typeof NodeList.prototype.forEach === "function" ) return false;
