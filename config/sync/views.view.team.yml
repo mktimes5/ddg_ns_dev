@@ -1017,7 +1017,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"team-pic\">\n{{ user_picture }}\n<div class=\"team-bio\">\n{{ field_bio }}\n</div>\n<div class=\"team-trigger\"><p>- More -</p></div>\n</div>"
+            text: "<div class=\"team-pic\">\n{{ user_picture }}\n<div class=\"team-bio\">\n<p>{{ field_bio }}</p>\n</div>\n<div class=\"team-trigger\"><p>- More -</p></div>\n</div>"
             make_link: false
             path: ''
             absolute: false
