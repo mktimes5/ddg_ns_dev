@@ -160,9 +160,10 @@
 				}
 
 				.team-bio-mobile {
-					max-height: 0;
+					max-height: 100px;
 					transition: max-height 1s, background-color 1s;
-					background-color: #000;
+					//background-color: #000;
+					background-color: #cc00ff;
 					color: #000;
 					padding: 0;
 					margin-bottom: 0;
