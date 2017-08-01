@@ -45,11 +45,6 @@
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
   ]
 %}
-<style>
-
-  
-</style>
-
 
 <div class="icon-wrap">
   <img src={{ file_url(content.field_icon_para|field_target_entity.uri.value) }} alt={{ content.field_image|field_raw('alt') }} />
@@ -58,24 +53,3 @@
 <div class="icon-text-field">
     {{ content.field_script_icon|field_value }}
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
