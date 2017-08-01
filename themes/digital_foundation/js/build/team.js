@@ -67,13 +67,10 @@ let teamEffect = {
                 }
             })
 
-            let elBio = this.previousElementSibling.textContent;
-            // get the next row element //
-            //console.log(elBio);
+            let elBio = this.previousElementSibling.innerHTML;
             let bioRow = this.parentNode.parentElement.parentElement;
-            ///console.log(bioRow);
             let bioRowNext = bioRow.nextElementSibling;
-            bioRowNext.textContent = elBio;
+            bioRowNext.innerHTML = elBio;
             bioRowNext.classList.toggle("active");
 
             //highlight name and role
@@ -108,18 +105,18 @@ let teamEffect = {
                 }
             })
 
-            let elBio = this.previousElementSibling.textContent;
+            let elBio = this.previousElementSibling.innerHTML;
             let mobBio = this.parentNode.nextElementSibling.nextElementSibling.nextElementSibling;
-            mobBio.textContent = elBio;
+            mobBio.innerHTML = elBio;
             mobBio.classList.toggle("active");
 
             //highlight name and role
             let teamName = this.parentElement.nextElementSibling;
-            console.log(teamName);
+
             teamName.classList.toggle("active");
 
             let teamRole = teamName.nextElementSibling;
-            console.log(teamRole);
+
             teamRole.classList.toggle("active");
 
 
@@ -128,7 +125,6 @@ let teamEffect = {
         },
 
         deskListen: function() {
-            console.log('deskListen called');
             this.teamTriggers.forEach(el => {
                 el.addEventListener('click', this.deskBio);
             })
@@ -141,7 +137,6 @@ let teamEffect = {
         },
 
         mobileListen: function() {
-            console.log('mob listen called');
           this.teamTriggers.forEach(el => {
               el.addEventListener('click', this.mobBio);
           })
