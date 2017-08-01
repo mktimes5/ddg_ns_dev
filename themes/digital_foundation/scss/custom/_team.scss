@@ -207,7 +207,7 @@
 				color: #000;
 			}
 		}
-
+		/*
 		.modal-team-bio {
 			padding: 0px 0px;
 			max-height: 0;
@@ -231,6 +231,19 @@
 			transition-duration: 1.0s;
 			transition-property: all;
 			background-color: #fff;
+		}
+		*/
+
+		.modal-team-bio {
+			padding: 0px 0px;
+			background-color: #000;
+			color: #fff;
+			transition-duration: 1.0s;
+			transition-property: all;
+			display: flex;
+			text-align: center;
+			margin-bottom: 60px;
+			flex: 1 1 auto;
 		}
 
 		header {
