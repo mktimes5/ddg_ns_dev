@@ -167,8 +167,10 @@
 					color: #000;
 					padding: 0;
 					margin-bottom: 0;
+					// ie10 bug fixes
 					-ms-flex: 1 1 100%;
 					width: 100%;
+					position: relative;
 				}
 
 				.team-bio-mobile.active {
@@ -178,7 +180,9 @@
 					color: #000;
 					padding: 20px 10px;
 					margin-bottom: 10px;
+					// ie10 bug fixes
 					-ms-flex: 1 1 100%;
+					position: relative;
 				}
 			}
 
