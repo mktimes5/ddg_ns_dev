@@ -39,9 +39,11 @@
 		z-index: 20;
 		padding: 0px 10px;
 		text-align: center;
+		position: relative;
 
 		h4 {
 			z-index: 40;
+			position: relative;
 		}
 	}
 
@@ -49,10 +51,13 @@
 		margin-top: 120px;
 		display: flex;
 		z-index: 40;
+		position: relative;
 
 		h5 {
 			margin-bottom: 5px;
 			line-height: rem-calc(25);
+			z-index: 40;
+			position: relative;
 		}
 
 		ul {
@@ -60,12 +65,17 @@
 			align-self: center;
 			justify-content: center;
 			flex: 1 1 auto;
+			z-index: 41;
+			position: relative;
 			li {
 				padding: 0px 10px 0px 10px;
 				border-right-style: solid;
 				border-right-width: 3px;
+				z-index: 42;
+				position: relative;
 				a {
-					
+					z-index: 43;
+					position: relative;
 				}
 			}
 				
