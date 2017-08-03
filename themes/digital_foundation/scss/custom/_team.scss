@@ -133,8 +133,7 @@
 				.team-pic {
 					position: relative;
 					width: 100%;
-					//ie10 bug fixes
-					-ms-flex: 1 1 100%;
+
 					img {
 						height: auto;
 						width: 100%;
