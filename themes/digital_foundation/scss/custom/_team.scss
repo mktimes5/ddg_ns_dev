@@ -173,6 +173,15 @@
 					position: relative;
 					z-index: 10;
 
+					p {
+						// ie10 bug fixes
+						display: block;
+						background-color: #fff;
+						position: relative;
+						float: left;
+						clear: both;
+					}
+
 				}
 
 				.team-bio-mobile.active {
