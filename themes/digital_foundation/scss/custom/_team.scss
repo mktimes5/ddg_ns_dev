@@ -245,6 +245,8 @@
 			text-align: center;
 			margin-bottom: 60px;
 			flex: 1 1 auto;
+			// ie10 bug fixes
+			-ms-flex: 1 1 100%;
 		}
 
 		.modal-team-bio.active {
@@ -255,6 +257,8 @@
 			transition-duration: 1.0s;
 			transition-property: all;
 			background-color: #fff;
+			// ie10 bug fixes
+			-ms-flex: 1 1 100%;
 		}
 
 
