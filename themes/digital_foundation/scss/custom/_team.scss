@@ -175,11 +175,7 @@
 
 					p {
 						// ie10 bug fixes
-						display: block;
-						background-color: #fff;
-						position: relative;
-						float: left;
-						clear: both;
+						-ms-flex: 1 1 100%;
 					}
 
 				}
