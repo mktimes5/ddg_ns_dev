@@ -260,6 +260,14 @@
 			// ie10 bug fixes
 			-ms-flex: 1 1 100%;
 			position: relative;
+
+			 p {
+				 // ie10 bug fixes
+				 display: block;
+				 position: relative;
+				 width: 100%;
+				 -ms-flex: 1 1 100%;
+			 }
 		}
 
 
