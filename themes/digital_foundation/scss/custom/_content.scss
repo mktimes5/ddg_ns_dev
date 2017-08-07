@@ -362,14 +362,10 @@
 
 		p {
 			// ie10 bug fixes
-			display: block;
-			position: relative;
-			max-width: 100%;
-			float: left;
 			-ms-flex: 0 1 auto;
 
 			@media #{$break-tablet} {
-				max-width: 48em;
+				-ms-flex: 0 1 auto;
 			}
 		}
 
