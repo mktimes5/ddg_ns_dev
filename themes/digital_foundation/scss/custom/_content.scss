@@ -301,7 +301,7 @@
 		z-index: 5;
 
 		@media screen and (max-width: 40em) {
-			flex: 1 1 100%;
+			flex: 0 1 100%;
 			margin-right: 0px;
 			//ie10 bug fixes
 			-ms-flex: 1 1 100%;
