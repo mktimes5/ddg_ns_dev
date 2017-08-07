@@ -304,7 +304,7 @@
 			flex: 1 1 100%;
 			margin-right: 0px;
 			// ie10 bug fixes
-			-ms-flex: 0 1 100%;
+			-ms-flex: 0 1 auto;
 			position: relative;
 		}
 	}
