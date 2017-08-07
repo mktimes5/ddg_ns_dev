@@ -353,19 +353,19 @@
 		//margin-top: 84px;
 		margin-left: -20px;
 		// ie10 fixes
-		-ms-flex: 1 1 100%;
+		-ms-flex: 0 1 auto;
 
 		p {
 			// ie10 bug fixes
 			display: block;
 			position: relative;
 			width: 100%;
-			-ms-flex: 1 1 100%;
+			-ms-flex: 0 1 auto;
 		}
 
 		@media screen and (max-width: 40em) {
 			margin-left: 0px;
-			-ms-flex: 1 1 100%;
+			-ms-flex: 0 1 auto;
 
 		}
 	}
@@ -377,9 +377,11 @@
 		align-self: flex-end;
 		padding-bottom: 100px;
 		padding-top: 62px;
+		-ms-flex: 0 1 auto;
 
 		@media screen and (max-width: 40em) {
 			align-self: auto;
+			-ms-flex: 0 1 auto;
 		}
 	}
 
