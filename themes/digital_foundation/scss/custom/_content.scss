@@ -337,6 +337,7 @@
 	flex-direction: row;
 	//ie10 bug fixes
 	-ms-flex: 1 1 100%;
+	position: relative;
 
 	@media screen and (max-width: 40em) {
 		flex-direction: column;
