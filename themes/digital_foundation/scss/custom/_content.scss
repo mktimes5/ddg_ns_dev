@@ -363,7 +363,7 @@
 			// ie10 bug fixes
 			display: block;
 			position: relative;
-			width: 100%;
+			max-width: 100%;
 			float: left;
 			-ms-flex: 0 1 auto;
 		}
