@@ -356,16 +356,17 @@
 		//margin-top: 84px;
 		margin-left: -20px;
 		// ie10 fixes
-		-ms-flex: 0 1 auto;
+		-ms-flex: 0 0 auto;
 		position: relative;
-		display: -ms-flexbox;
+		width: 100%;
+
 
 		p {
 			// ie10 bug fixes
-			-ms-flex: 0 1 auto;
+			//-ms-flex: 0 1 auto;
 
 			@media #{$break-tablet} {
-				-ms-flex: 0 1 auto;
+				//-ms-flex: 0 1 auto;
 			}
 		}
 
