@@ -259,7 +259,7 @@
 	}
 	.link-ele-title {
 		flex: 1 1 auto;
-
+		z-index: 10;
 		h2 {
 			text-transform: uppercase;
 			//transform: rotate(90deg);
@@ -271,7 +271,7 @@
 			line-height: rem-calc(150);
 			display: block;
 			//ie 10 bu fixes
-			z-index: 10;
+			z-index: 15;
 
 
 			@media screen and (max-width: 48em) {
