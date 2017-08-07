@@ -249,6 +249,8 @@
 .link_element-left {
 	display: flex;
 	flex-direction: row;
+	//ie10 bug fixes
+	-ms-flex: 1 1 100%;
 	
 	@media screen and (max-width: 48em) {
 		flex-direction: column;
@@ -292,7 +294,6 @@
 		margin-top: -80px;
 		margin-right: -80px;
 
-
 		@media screen and (max-width: 40em) {
 			flex: 1 1 100%;
 			margin-right: 0px;
@@ -305,6 +306,8 @@
 		font-size: rem-calc(30);
 		font-family: $lora;
 		color: $light-blue;
+		//ie10 bug fixes
+		-ms-flex: 1 1 100%;
 
 	}
 
