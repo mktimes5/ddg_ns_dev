@@ -293,6 +293,8 @@
 		padding: 77px 70px 10px 25px;
 		margin-top: -80px;
 		margin-right: -80px;
+		//ie10 bug fixes
+		-ms-flex: 1 1 100%;
 
 		@media screen and (max-width: 40em) {
 			flex: 1 1 100%;
