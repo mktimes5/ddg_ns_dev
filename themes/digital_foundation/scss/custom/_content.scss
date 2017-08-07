@@ -357,6 +357,7 @@
 		// ie10 fixes
 		-ms-flex: 0 1 auto;
 		position: relative;
+		display: -ms-flexbox;
 
 		p {
 			// ie10 bug fixes
