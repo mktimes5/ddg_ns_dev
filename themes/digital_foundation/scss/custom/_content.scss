@@ -335,6 +335,8 @@
 .link_element-right {
 	display: flex;
 	flex-direction: row;
+	//ie10 bug fixes
+	-ms-flex: 1 1 100%;
 
 	@media screen and (max-width: 40em) {
 		flex-direction: column;
