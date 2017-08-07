@@ -295,12 +295,14 @@
 		margin-right: -80px;
 		//ie10 bug fixes
 		-ms-flex: 1 1 100%;
+		position: relative;
 
 		@media screen and (max-width: 40em) {
 			flex: 1 1 100%;
 			margin-right: 0px;
 			//ie10 bug fixes
 			-ms-flex: 1 1 100%;
+			position: relative;
 		}
 	}
 
@@ -310,6 +312,7 @@
 		color: $light-blue;
 		//ie10 bug fixes
 		-ms-flex: 1 1 100%;
+		position: relative;
 
 	}
 
