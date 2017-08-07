@@ -367,6 +367,10 @@
 			max-width: 100%;
 			float: left;
 			-ms-flex: 0 1 auto;
+
+			@media #{$break-tablet} {
+				max-width: 48em;
+			}
 		}
 
 		@media screen and (max-width: 40em) {
