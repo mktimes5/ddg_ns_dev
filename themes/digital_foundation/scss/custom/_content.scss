@@ -270,6 +270,8 @@
 			font-size: rem-calc(150);
 			line-height: rem-calc(150);
 			display: block;
+			//ie 10 bu fixes
+			z-index: 10;
 
 
 			@media screen and (max-width: 48em) {
