@@ -356,12 +356,14 @@
 		margin-left: -20px;
 		// ie10 fixes
 		-ms-flex: 0 1 auto;
+		position: relative;
 
 		p {
 			// ie10 bug fixes
 			display: block;
 			position: relative;
 			width: 100%;
+			float: left;
 			-ms-flex: 0 1 auto;
 		}
 
