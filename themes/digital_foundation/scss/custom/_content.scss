@@ -296,7 +296,8 @@
 		margin-top: -80px;
 		margin-right: -80px;
 		// ie10 bug fixes
-		-ms-flex: 0 1 100%;
+		-ms-flex: 0 1 auto
+		%;
 		position: relative;
 		z-index: 5;
 
