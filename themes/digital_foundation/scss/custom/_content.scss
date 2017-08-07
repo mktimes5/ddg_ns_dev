@@ -295,16 +295,16 @@
 		padding: 77px 70px 10px 25px;
 		margin-top: -80px;
 		margin-right: -80px;
-		//ie10 bug fixes
+		// ie10 bug fixes
 		-ms-flex: 0 1 100%;
 		position: relative;
 		z-index: 5;
 
 		@media screen and (max-width: 40em) {
-			flex: 0 1 100%;
+			flex: 1 1 100%;
 			margin-right: 0px;
-			//ie10 bug fixes
-			-ms-flex: 1 1 100%;
+			// ie10 bug fixes
+			-ms-flex: 0 1 100%;
 			position: relative;
 		}
 	}
