@@ -8,10 +8,11 @@
 		font-weight: bold;
 		color: $white;
 		font-size: 3em;
-
+		overflow-wrap: break-word;
 
 		@media #{$break-tablet} {
 			font-size: 2em;
+			overflow-wrap: break-word;
 		}
 
 	}
@@ -175,14 +176,17 @@
 				text-decoration: underline;
 				width: 100%;
 				font-size: rem-calc(30);
+				overflow-wrap: break-word;
 				@media screen and (min-width: 60em) {
 					text-align: center;
 					text-decoration: underline;
 					width: 100%;
 					font-size: rem-calc(25);
+					overflow-wrap: break-word;
 				}
 				a {
 					color: $white;
+					overflow-wrap: break-word;
 				}
 			}
 		}
