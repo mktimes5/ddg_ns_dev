@@ -353,11 +353,20 @@
 		//margin-top: 84px;
 		margin-left: -20px;
 		// ie10 fixes
-		-ms-flex: 0 1 auto;
+		-ms-flex: 1 1 100%;
+
+		p {
+			// ie10 bug fixes
+			display: block;
+			position: relative;
+			width: 100%;
+			-ms-flex: 1 1 100%;
+		}
 
 		@media screen and (max-width: 40em) {
 			margin-left: 0px;
-			-ms-flex: 0 1 auto;
+			-ms-flex: 1 1 100%;
+
 		}
 	}
 
