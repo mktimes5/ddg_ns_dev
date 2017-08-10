@@ -60,7 +60,7 @@ $break-phone: "screen and (max-width: 40em)";
 
 @mixin off-col-right($color ,$percent) {
 	width: 100%;
-	background: linear-gradient( 90deg, $color $percent, rgba(255, 255, 255, 0.0) $percent);
+	background: linear-gradient( 90deg, $color $percent, rgba(255, 255, 255, 1.0) $percent);
 	
 	//padding-right: 10%;
 }

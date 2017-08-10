@@ -1,5 +1,9 @@
 #node-work {
 
+	.work-header {
+		z-index: 10;
+	}
+
 	.work-title {
 		mix-blend-mode: difference;
 		margin-top: 25px;
@@ -20,18 +24,24 @@
 
 	.hero-image {
 		width: 100%;
-		min-height: 669px;
+		min-height: 469px;
 		background-position: top center;
 		background-repeat: none;
 		background-size: cover;
 	}
 
+	.work-body-section {
+		background-color: #fff;
+		z-index: 20;
+	}
+
 
 	.blue-col-work-left-script {
-		@include off-col-right($light-blue-op, 27.28%);
+		@include off-col-right($light-blue, 27.28%);
+		z-index: 20;
 
 		@media #{$break-large} {
-			@include  off-col-right($light-blue-op, 10%);
+			@include  off-col-right($light-blue, 10%);
 		}
 
 		.sub-title {
@@ -40,6 +50,7 @@
 			width: 70%;
 			position: relative;
 			margin-top: 21px;
+
 			@media #{$break-large} {
 				margin-left: 0%;
 				width: 100%;
@@ -68,6 +79,8 @@
 			padding: 28px 0px;
 			width: 70%;
 			min-height: 470px;
+			background-color: #fff;
+			z-index: 20;
 
 			@media #{$break-large} {
 				margin-left: 9.5%;
@@ -81,6 +94,8 @@
 	.blue-col-work-right-script {
 		display:flex;
 		justify-content: flex-end;
+		background-color: #fff;
+		z-index: 20;
 		h1,h2,h3,h4,h5 {
 			font-family: $avenir;
 		}

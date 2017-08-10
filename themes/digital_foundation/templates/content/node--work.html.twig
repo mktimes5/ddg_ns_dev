@@ -96,36 +96,37 @@
 #}
 <article id="node-work">
   
-	<section class="row">
-		<div class="hero-image large-12 columns" style="background-image:url('{{ file_url(node.field_hero_image.entity.fileuri) }}')">
+	<section class="row work-header">
+		<div class="hero-image rellax large-12 columns" style="background-image:url('{{ file_url(node.field_hero_image.entity.fileuri) }}')">
 	  		<h1 class="work-title">{{ label }}</h1>
 		</div>
 	</section>
-	<section class="row rellax" data-rellax-speed="7">
 
-	  	<div class="large-9 small-12 columns blue-col-work-left-script">
-	  		<div class="sub-title">
-	  			<h2>{{ content.field_sub_title }}</h2>
-	  		</div>
-	  		<div class="work-body">
-	  			{{ content.body }}
-	  		</div>
-	  	</div>
+	<section class="row work-body-section">
 
-	  	<div class="large-3 small-11 columns blue-col-work-right-script">
-	  		<div class="techs">
-	  			<ul>
-		  			<li>{{ content.field_platform }}</li>
+		<div class="large-9 small-12 columns blue-col-work-left-script">
+			<div class="sub-title">
+				<h2>{{ content.field_sub_title }}</h2>
+			</div>
+			<div class="work-body">
+				{{ content.body }}
+			</div>
+		</div>
+
+		<div class="large-3 small-11 columns blue-col-work-right-script">
+			<div class="techs">
+				<ul>
+					<li>{{ content.field_platform }}</li>
 					<li>{{ content.field_work_year }}</li>
 					<li>{{ content.field_techniques }}</li>
 				</ul>
-	  		</div>
-	  	</div>
+			</div>
+		</div>
 
-  	</section>
+	</section>
 
-  	<section class="row">
-  	
+	<section class="row">
+
 		{% if content.field_mobile_image %}
 			<div class="large-12 columns work-mobile-section">
 				<div class="row">
@@ -145,21 +146,21 @@
 						<div class="mob-col-2">
 							{{ content.field_desktop_image }}
 						</div>
-						
+
 					</div>
 
 				</div>
 			</div>
 		{% endif %}
-  	</section>
+	</section>
 
 	<section class="row work-visit">
-	  	
-	  	<div class="desktop-left-col">
-	  		<!-- css macbook -->
-	  		<div class="mac-wrap">
 
-	  			<div class='pca-hold'>
+		<div class="desktop-left-col">
+			<!-- css macbook -->
+			<div class="mac-wrap">
+
+				<div class='pca-hold'>
 					<div class='pca-main'>
 						<div class='pca-inner'>
 						</div>
@@ -190,14 +191,13 @@
 				</div><!-- 'pca-hold' -->
 			</div>
 
-	  	</div>
-	  	<div class="desktop-right-col">
-	  		<h3>Vist {{ label }}</h3>
-	  		{{ content.field_work_url }}
-	  	</div>
-	  	
+		</div>
+		<div class="desktop-right-col">
+			<h3>Vist {{ label }}</h3>
+			{{ content.field_work_url }}
+		</div>
+
 
 	</section>
-
 
 </article>

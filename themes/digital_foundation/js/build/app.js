@@ -74,4 +74,4 @@ window.onscroll = function (){
 }
 
 
-
+let rellax = new Rellax('.rellax');
