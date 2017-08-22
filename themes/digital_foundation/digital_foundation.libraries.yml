@@ -22,3 +22,7 @@ simple-state:
 team-js:
   js:
     js/team.js: {}
+
+scroll-magic:
+  js:
+    js/ScrollMagic.min.js: {}

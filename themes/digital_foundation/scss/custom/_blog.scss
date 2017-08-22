@@ -1,6 +1,6 @@
 #node-blog {
 
-	.blog-title {
+	#blog-title {
 		mix-blend-mode: difference;
 		margin-top: 25px;
 		text-align: center;
@@ -9,7 +9,6 @@
 		color: $white;
 		font-size: 3em;
 		overflow-wrap: break-word;
-
 		@media #{$break-tablet} {
 			font-size: 2em;
 			letter-spacing: 0.2em;
@@ -22,8 +21,9 @@
 		width: 100%;
 		min-height: 669px;
 		background-position: top center;
-		background-repeat: none;
+		background-repeat: no-repeat;
 		background-size: cover;
+		background-attachment: fixed;
 	}
 
 

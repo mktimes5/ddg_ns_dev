@@ -74,4 +74,24 @@ window.onscroll = function (){
 }
 
 
-let rellax = new Rellax('.rellax');
+//let rellax = new Rellax('.rellax');
+
+//scroll magic
+var controller = new ScrollMagic.Controller();
+
+// create a scene
+new ScrollMagic.Scene({
+    duration: 669,    // the scene should last for a scroll distance of
+    offset: 10        // start this scene after scrolling for
+})
+    .setPin("#blog-title") // pins the element for the the scene's duration
+    .addTo(controller); // assign the scene to the controller
+
+new ScrollMagic.Scene({
+    duration: 669,    // the scene should last for a scroll distance of
+    offset: 10        // start this scene after scrolling for
+})
+    .setPin("#work-title") // pins the element for the the scene's duration
+    .addTo(controller); // assign the scene to the controller
+
+
