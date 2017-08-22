@@ -1,10 +1,22 @@
 #df-flex {
 	@include header-pack;
-
+	padding
 	.df-section {
 		display: inline-block;
 		width: 100%;
 	}
+
+	.df-section-two {
+		padding-top: 100px;
+		margin-bottom: 100px;
+	}
+
+	.df-section-three {
+		padding-top: 100px;
+		margin-bottom: 100px;
+	}
+
+
 }
 
 .hero-section {

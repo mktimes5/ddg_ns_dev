@@ -74,7 +74,7 @@ window.onscroll = function (){
 }
 
 
-//let rellax = new Rellax('.rellax');
+let rellax = new Rellax('.rellax');
 
 //scroll magic
 var controller = new ScrollMagic.Controller();
@@ -93,5 +93,3 @@ new ScrollMagic.Scene({
 })
     .setPin("#work-title") // pins the element for the the scene's duration
     .addTo(controller); // assign the scene to the controller
-
-
