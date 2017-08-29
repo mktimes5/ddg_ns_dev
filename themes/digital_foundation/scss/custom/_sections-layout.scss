@@ -1,14 +1,18 @@
 #df-flex {
 	@include header-pack;
-	padding
+	//height: 2100px;
+	display: flex;
+	flex-direction: column;
 	.df-section {
-		display: inline-block;
-		width: 100%;
 	}
 
 	.df-section-two {
 		padding-top: 100px;
 		margin-bottom: 100px;
+
+		@media #{$break-phone} {
+			margin-bottom: 200px;
+		}
 	}
 
 	.df-section-three {
@@ -16,7 +20,12 @@
 		margin-bottom: 100px;
 	}
 
-
+	.df-section-four {
+		//padding-top: 100px;
+		//margin-bottom: 100px;
+		//background-color: #cc00ff;
+		//height: 200px;
+	}
 }
 
 .hero-section {
