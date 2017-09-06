@@ -23,6 +23,10 @@ team-js:
   js:
     js/team.js: {}
 
+effects-js:
+  js:
+    js/effects.js: {}
+
 scroll-magic:
   js:
     js/ScrollMagic.min.js: {}

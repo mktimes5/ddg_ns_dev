@@ -8,6 +8,7 @@ libraries:
   - digital_foundation/global-styling
   - digital_foundation/ion-icons
   - digital_foundation/simple-state
+  - digital_foundation/effects-js
 #base theme: stable
 regions:
   header: Header
