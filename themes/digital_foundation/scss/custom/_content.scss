@@ -63,6 +63,22 @@
 			}
 
 		}
+
+	.effect-wrap {
+		position: absolute;
+		bottom: 157px;
+		left: 91px;
+
+		@media screen and (max-width: 48em) {
+			position: relative;
+			display: inline-block;
+			float: left;
+			clear: both;
+			bottom: 0;
+			left: 0;
+		}
+
+	}
 }
 
 
