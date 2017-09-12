@@ -2,8 +2,8 @@
     var canvas = document.getElementById('html-effect'),
         /** @type {CanvasRenderingContext2D} */
         ctx = canvas.getContext('2d'),
-        width = 800,
-        height = 500,
+        width = 1200,
+        height = 335,
         half_width = width >> 1,
         half_height = height >> 1,
         size = width * (height + 2) * 2,
@@ -35,8 +35,8 @@
         save();
         //rotate(-0.785);
 
-        ctx.font = '250px consolas';
-        ctx.fillText('<html>', 10, 200);
+        ctx.font = '400px Source Sans Pro';
+        ctx.fillText('<html>', 10, 300);
         restore();
     }
 

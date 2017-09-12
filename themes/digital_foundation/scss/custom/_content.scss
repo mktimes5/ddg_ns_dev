@@ -30,12 +30,22 @@
 			color: $orange;
 			text-transform: uppercase;
 
+			@media #{$break-phone} {
+				font-size: rem-calc(32);
+			}
+
 			&:nth-child(2) {
 				margin-left: 70px;
+				@media #{$break-phone} {
+					margin-left: 30px;
+				}
 			}
 
 			&:nth-child(3) {
 				margin-left: 90px;
+				@media #{$break-phone} {
+					margin-left: 50px;
+				}
 			}
 			
 		}
@@ -44,6 +54,10 @@
 
 		li + li {
 			margin-top: 90px;
+
+			@media #{$break-phone} {
+				margin-top: 45px;
+			}
 		}
 
 	}
@@ -66,16 +80,18 @@
 
 	.effect-wrap {
 		position: absolute;
-		bottom: 157px;
-		left: 91px;
+		bottom: 145px;
+		left: 41px;
 
-		@media screen and (max-width: 48em) {
+		@media #{$break-phone} {
 			position: relative;
 			display: inline-block;
 			float: left;
 			clear: both;
 			bottom: 0;
 			left: 0;
+			margin-top: -100px;
+			margin-left: -100px;
 		}
 
 	}
@@ -472,76 +488,3 @@
 .layout--onecol {
 	overflow: hidden;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
