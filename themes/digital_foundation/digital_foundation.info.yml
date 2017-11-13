@@ -3,6 +3,7 @@ type: theme
 description: 'Custom theme using Foundation 6'
 core: 8.x
 libraries:
+  - digital_foundation/google-font-loader
   - digital_foundation/rellax-lib
   - digital_foundation/scroll-magic
   - digital_foundation/global-styling

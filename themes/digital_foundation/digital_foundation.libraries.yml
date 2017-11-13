@@ -19,6 +19,10 @@ simple-state:
   js:
     bower_components/simplestatemanager/dist/ssm.min.js: {}
 
+google-font-loader:
+  js:
+    js/webfontloader.js: {}
+
 team-js:
   js:
     js/team.js: {}
